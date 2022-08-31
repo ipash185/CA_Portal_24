@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../fonts/Montserrat-Regular.ttf');
+}
+
+
+.main{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 5em;
+}
+
+h1{
+    font-size: 3rem;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    font-family: Montserrat;
+    letter-spacing: 0.25em;
+}
+
+.box{
+    font-size: 2rem;
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 1em 2em;
+    background-color: rgba(255,255,255,0.8);
+    height: 100%;
+    width: 80%;
+    box-shadow: 0px 0px 35px #888888;
+}
+
+p{
+    font-family: Montserrat;
+    font-size: 0.8em;
+    text-align: justify;
+}
