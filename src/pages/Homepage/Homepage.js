@@ -10,9 +10,9 @@ function Home() {
                 <div className = {styles.vert}></div>
                 <h1 className={styles.heading}>CAMPUS<br/>AMBASSADOR<br/>PROGRAM</h1>
             </div>
-        
-        <About/>
-        
+            <div className={styles.about}>
+                <About/>
+            </div>
         </div>
     );
 
