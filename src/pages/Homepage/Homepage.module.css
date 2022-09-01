@@ -9,7 +9,7 @@ html{
 
 .container{
     position: absolute;
-    background-image: url('../../images/bg.svg');
+    
     top:0;
     left:0;
     bottom:0;
@@ -73,8 +73,33 @@ html{
 .about{
     position: relative;
     background-size:auto;
+    background-repeat:repeat;
+    background-image: url('../../images/bg.svg');
+    top:100%;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+
+.SignUp{
+    position: relative;
+    background-size:auto;
     background-repeat: repeat;
-    top:120%;
+    top:100%;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+
+.SignIn{
+    position: relative;
+    background-size:auto;
+    background-repeat: repeat;
+    top:130%;
     left:0;
     bottom:0;
     right:0;
