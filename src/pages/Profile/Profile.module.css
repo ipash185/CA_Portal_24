@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .cont {
+    background-image:url("ktj background.png");
+    height: 1024px;
+    width: 1530px;
+    left: -2px;
+    top: 0px;
+    border-radius: 0px;
+  }
+  
+  
+
+
+.ProfileDiv {
+    height: 749px;
+  width: 1159px;
+  left: 174.6px;
+  top: 208.04px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  opacity: 73%;
+  position: absolute;
+  box-shadow: 0px 2px 25px 17px #00000040;
+  background-blend-mode:multiply;
+  }
+  .ProfileSide {
+    background: url('ProfileSide.png');
+    height: 749px;
+  width: 429px;
+  left: 174.6px;
+  top: 208.04px;
+  border-top-left-radius: 25px; 
+  border-bottom-left-radius: 25px;
+  position: absolute;
+  opacity:80%;
+  background-blend-mode:multiply;
+  }
+  .ButtonAvatar {
+    height: 45px;
+  width: 250px;
+  left: 264.6px;
+  top: 556.04px;
+  border-radius: 10px;
+  background: #F8F5F5;
+  box-shadow: 4px 4px 4px 1px #00000040;
+  position:absolute;
+  }
+
+  .ButtonText {
+    height: 27px;
+width: 196px;
+left: 286.6px;
+top: 566.04px;
+border-radius: nullpx;
+font-family: Montserrat;
+font-size: 22px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: center;
+vertical-align: top;
+color: #0F2A70;
+position:absolute;
+
+  }
+  .NameOf{
+    height: 60px;
+    width: 383px;
+    left: 196.6px;
+    top: 637.04px;
+    border-radius: nullpx;
+    font-family: Montserrat;
+font-size: 39px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+position:absolute;
+  }
+
+.HeadPro {
+height: 69px;
+width: 301px;
+left: 579.6px;
+top: 241.4px;
+border-radius: nullpx;
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 600;
+line-height: 49px;
+letter-spacing: 0em;
+text-align: center;
+color: #0F2A70;
+position:absolute;
+  }
+  .EditProB {
+    height: 57px;
+width: 130px;
+left: 1163.6px;
+top: 225.04px;
+border-radius: 10px;
+background: #0F2A70BF 75%;
+box-shadow: 0px 4px 4px 0px #00000040;
+position:absolute;
+
+
+  }
+  .EditBText {
+    height: 49px;
+width: 127px;
+left: 1194.6px;
+top: 238.04px;
+border-radius: nullpx;
+font-family: Montserrat;
+font-size: 27px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+position:absolute;
+
+  }
+  .PLabel1 {
+    height: 31.21019172668457px;
+width: 127.51592254638672px;
+left: 645.6px;
+top: 335.04px;
+ position: absolute;
+
+  }
+  .PLabel2 {
+    height: 31.21019172668457px;
+width: 127.51592254638672px;
+left: 996.6px;
+top: 335.04px;
+position:absolute;
+  }
+
+  
+  .PLabel3 {
+    height: 31.21019172668457px;
+width: 127.51592254638672px;
+left: 645.6px;
+top: 435.04px;
+position:absolute;
+  }
+  .PLabel4 {
+    height: 31.21019172668457px;
+width: 127.51592254638672px;
+left: 996.6px;
+top: 435.04px;
+position:absolute;
+  }
+  .PLabel5 {
+    height: 31.21019172668457px;
+width: 127.51592254638672px;
+left: 649.6px;
+top: 535.04px;
+position:absolute;
+  }
+  .PLabel6 {
+    height: 31.21019172668457px;
+width: 178.3439483642578px;
+left: 650.07px;
+top: 634.04px;
+position: absolute;
+  }
+  .PLabel7 {
+    height: 31.21019172668457px;
+width: 127.51592254638672px;
+left: 648.6px;
+top: 731.04px;
+border-radius: nullpx;
+position: absolute;
+  }
+  .PLabel8 {
+    height: 31.21019172668457px;
+width: 127.51592254638672px;
+left: 995.6px;
+top: 731.04px;
+position:absolute;
+  }
+  .PLabel9 {
+    height: 31.21019172668457px;
+width: 127.51592254638672px;
+left: 641.6px;
+top: 831.04px;
+position:absolute;
+  }
+ .PLabel {
+    border-radius: nullpx;
+font-family: Montserrat;
+font-size: 22px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: justified;
+color: #322929;
+
+  }
+  input {
+    border-radius: 10.700636863708496px;
+background: #F8F5F5;
+box-shadow: 0px 3.5668790340423584px 3.5668790340423584px 0px #00000040;
+
+  }
+  .PIn1 {
+    height: 44.58598709106445px;
+width: 261.2738952636719px;
+left: 646.6px;
+top: 371.04px;
+position:absolute;
+  }
+  .PIn2 {
+    height: 44.53924560546875px;
+width: 261px;
+left: 993.6px;
+top: 371.04px;
+position:absolute;
+  }
+  .PIn3 {
+    height: 44.58598709106445px;
+width: 261.2738952636719px;
+left: 646.6px;
+top: 471.4px;
+position:absolute;
+  }
+  .PIn4 {
+    height: 44.53924560546875px;
+width: 261px;
+left: 993.6px;
+top: 466.04px;
+border-radius: 10.68941879272461px;
+position:absolute;
+  }
+  .PIn5 {
+    height: 48.48726272583008px;
+width: 609px;
+left: 645.6px;
+top: 566.04px;
+border-radius: 11.636941909790039px;
+position:absolute;
+  }
+  .PIn6 {
+    height: 48.48726272583008px;
+width: 609px;
+left: 646.6px;
+top: 663.30px;
+border-radius: 11.636941909790039px;
+position: absolute;
+  }
+  .PIn7 {
+    height: 44.58598709106445px;
+width: 261.2738952636719px;
+left: 645.6px;
+top: 767.07px;
+border-radius: 10.700636863708496px;
+position:absolute;
+  }
+  .PIn8 {
+    height: 44.53924560546875px;
+width: 261px;
+left: 992.6px;
+top: 762.04px;
+border-radius: 10.68941879272461px;
+position:absolute;
+  }
+  .PIn9 {
+    height: 48.48726272583008px;
+width: 609px;
+left: 641.6px;
+top: 858.52px;
+border-radius: 11.636941909790039px;
+position:absolute;
+  }
