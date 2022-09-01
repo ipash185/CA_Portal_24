@@ -5,7 +5,7 @@ import styles from './Sign.module.css'
 
 const SignIn = () => {
   return (
-    <div className={styles.cont}>
+    <div>
       
         <div className={styles.SignIn}></div>
         <div className={styles.SignSide}></div>

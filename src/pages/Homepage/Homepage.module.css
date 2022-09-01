@@ -9,7 +9,7 @@ html{
 
 .container{
     position: absolute;
-    
+    background-image: url('../../images/bg.svg');
     top:0;
     left:0;
     bottom:0;
@@ -74,7 +74,7 @@ html{
     position: relative;
     background-size:auto;
     background-repeat:repeat;
-    background-image: url('../../images/bg.svg');
+    
     top:100%;
     left:0;
     bottom:0;

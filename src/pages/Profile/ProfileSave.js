@@ -31,7 +31,7 @@ const ProfileSave = () => {
       <input type="text" className={styles.PIn6}></input>
       <input type="text" className={styles.PIn7}></input>
       <input type="text" className={styles.PIn8}></input>
-      <input type="text" className={styles.PIn9}></input>
+      <input type="password" className={styles.PIn9}></input>
     </div>
   )
 }

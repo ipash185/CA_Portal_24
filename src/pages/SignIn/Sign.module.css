@@ -15,14 +15,7 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  .cont {
-    background-image:url("ktj background.png");
-    height: 1024px;
-    width: 1530px;
-    left: -2px;
-    top: 0px;
-    border-radius: 0px;
-  }
+  
   
   .Head {
     height: 121px;
@@ -368,4 +361,14 @@ body {
   }
   .Linksto Link {
     color:linear-gradient(0deg, #35469E, #35469E);
+  }
+  input {
+    font-size: xx-large;
+    padding: auto;
+  }
+  @media only screen and (max-width:344px) {
+    .SignIn, .Already, .Button1, .ButtonLabel, .ForgotPassword{
+      width:100%;
+      position: relative;
+    }
   }

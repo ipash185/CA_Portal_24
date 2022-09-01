@@ -3,8 +3,7 @@ import styles from './Homepage.module.css';
 import About from '../About/about';
 import SignIn from '../SignIn/SignIn';
 import SignUp from '../SignIn/SignUp';
-import ProfileEdit from '../Profile/ProfileEdit';
-import ProfileSave from '../Profile/ProfileSave';
+
 
 
 
@@ -26,12 +25,7 @@ function Home() {
             <div className={styles.SignIn}>
                 <SignIn />
             </div>
-            <div className={styles.ProfileE}>
-                <ProfileEdit />
-            </div>
-            <div className={styles.ProfileS}>
-                <ProfileSave />
-            </div>
+            
         </div>
         
      </div>
