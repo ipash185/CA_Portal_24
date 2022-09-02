@@ -23,7 +23,15 @@ const ProfileEdit = () => {
       <div className={styles.PLabel8}>State</div>
       <div className={styles.PLabel9}>Password</div>
       </div>
-      
+      <input type="text" className={styles.PIn1}></input>
+      <input type="text" className={styles.PIn2}></input>
+      <input type="text" className={styles.PIn3}></input>
+      <input type="text" className={styles.PIn4}></input>
+      <input type="text" className={styles.PIn5}></input>
+      <input type="text" className={styles.PIn6}></input>
+      <input type="text" className={styles.PIn7}></input>
+      <input type="text" className={styles.PIn8}></input>
+      <input type="password" className={styles.PIn9}></input>
     </div>
   )
 }

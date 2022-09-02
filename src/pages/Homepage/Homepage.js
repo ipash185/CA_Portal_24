@@ -19,10 +19,10 @@ function Home() {
             <div className={styles.about}>
                 <About/>
             </div>
-            <div className={styles.SignUp}>
+            <div className={styles.SignUpD}>
                 <SignUp />
             </div>
-            <div className={styles.SignIn}>
+            <div className={styles.SignInD}>
                 <SignIn />
             </div>
             

@@ -75,7 +75,7 @@ html{
     background-size:auto;
     background-repeat:repeat;
     
-    top:100%;
+    top:100vh;
     left:0;
     bottom:0;
     right:0;
@@ -83,11 +83,11 @@ html{
     width:100%;
 }
 
-.SignUp{
+.SignUpD{
     position: relative;
     background-size:auto;
     background-repeat: repeat;
-    top:100%;
+    top:100vh;
     left:0;
     bottom:0;
     right:0;
@@ -95,11 +95,11 @@ html{
     width:100%;
 }
 
-.SignIn{
+.SignInD{
     position: relative;
     background-size:auto;
     background-repeat: repeat;
-    top:130%;
+    top:100vh;
     left:0;
     bottom:0;
     right:0;
@@ -110,7 +110,7 @@ html{
     position: relative;
     background-size:auto;
     background-repeat: repeat;
-    top:160%;
+    top:1vh;
     left:0;
     bottom:0;
     right:0;
@@ -122,7 +122,7 @@ html{
     position: relative;
     background-size:auto;
     background-repeat: repeat;
-    top:195%;
+    top:1vh;
     left:0;
     bottom:0;
     right:0;
@@ -130,17 +130,47 @@ html{
     width:100%;
 }
  @media screen and (max-width:1200px) {
-    .SignIn,.SignUp {
-        top:200%;
+    .SignInD,.SignUpD {
+        top:150vh;
     }
  }
- @media  screen and (max-width:700px) {
-    .SignIn,.SignUp {
-        top:300%;
+ @media  screen and (max-width:850px) {
+    .SignInD,.SignUpD {
+        top:200vh;
     }
  }
- @media  screen and (max-width:600px) {
-    .SignIn,.SignUp {
-        top:450%;
+ @media  screen and (max-width:720px) {
+    .SignInD,.SignUpD {
+        top:250vh;
+    }
+ }
+ @media  screen and (max-width:650px) {
+    .SignInD,.SignUpD {
+        top:300vh;
+    }
+ }
+ @media  screen and (max-width:570px) {
+    .SignInD,.SignUpD {
+        top:360vh;
+    }
+ }
+ @media  screen and (max-width:550px) {
+    .SignInD,.SignUpD {
+        top:400vh;
+    }
+ }
+ @media  screen and (max-width:520px) {
+    .SignInD,.SignUpD {
+        top:450vh;
+    }
+ }
+ @media  screen and (max-width:480px) {
+    .SignInD,.SignUpD {
+        top:500vh;
+    }
+ }
+ @media  screen and (max-width:460px) {
+    .SignInD,.SignUpD {
+        top:550vh;
     }
  }

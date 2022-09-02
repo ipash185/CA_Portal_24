@@ -5,9 +5,6 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-   
-   
-  
   }
  
   
@@ -26,23 +23,26 @@ body {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   Opacity: 80%;
-  background-blend-mode: Multiply;
+  background-blend-mode: multiply;
   background-image: url("div background.png");
    }
    .SignIn {
-    position:relative;
+    position:absolute;
     height:68.36vh;
-  width: 80.486vw;
+  width: 80.5vw;
   left: 9.166vw;
   top: 21.777vh;
   border-radius: 25px;
   background: #FFFFFF;
   box-shadow: 0px 2px 25px 17px #00000040;
-  display:flex;
-    justify-content: flex-start;
+  background-blend-mode: multiply;
+   }
+   @media screen and (max-width:1000px){
+    .SignIn {left: 9.166vw;
+      width: 80.5vw;}
    }
    .Sign {
-    height: 4vh;
+  height: 4vh;
   width: 100%;
   left: 42.916vw;
   top: 25vh;
@@ -221,7 +221,7 @@ body {
   .ButtonLabel {
     
     height: 2.54vh;
-  width: 14.5833vw;
+  width: 100%;
   left: 60vw;
   top: 78.22vh;
   border-radius: nullpx;
