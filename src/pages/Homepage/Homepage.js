@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Homepage.module.css';
 import About from '../About/about';
+import CarouselComponent from '../Carousel/car';
 
 function Home() {
     return(
@@ -12,7 +13,9 @@ function Home() {
             </div>
             <div className={styles.about}>
                 <About/>
+                <CarouselComponent/>
             </div>
+            
         </div>
     );
 

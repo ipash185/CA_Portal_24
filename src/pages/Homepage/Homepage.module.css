@@ -81,3 +81,25 @@ html{
     height:100%;
     width:100%;
 }
+
+@media only screen and (max-width: 1000px){
+    .bg{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .im{
+        grid-row: 2/3;
+        background-size: 30%;
+    }
+    vert{
+        display: none;
+    }
+    .heading{
+        grid-row: 3/4;
+        align-self: center;
+        justify-self: center;
+        text-justify: center;
+        grid-column: 1/-1;
+    }
+}
