@@ -12,6 +12,18 @@ const ProfileEdit = () => {
       <div className={styles.HeadPro}>Profile</div>
       <button className={styles.EditProB}></button>
       <div className={styles.EditBText}>Edit</div>
+      <div className={styles.PLabel}>
+      <div className={styles.PLabel1}>First Name</div>
+      <div className={styles.PLabel2}>Last Name</div>
+      <div className={styles.PLabel3}>Gender</div>
+      <div className={styles.PLabel4}>MobileNumber</div>
+      <div className={styles.PLabel5}>Email-ID</div>
+      <div className={styles.PLabel6}>College Name</div>
+      <div className={styles.PLabel7}>City</div>
+      <div className={styles.PLabel8}>State</div>
+      <div className={styles.PLabel9}>Password</div>
+      </div>
+      
     </div>
   )
 }
