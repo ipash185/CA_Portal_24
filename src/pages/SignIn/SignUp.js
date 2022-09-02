@@ -23,7 +23,7 @@ const SignUp = () => {
         <input type="text" className={styles.In5}></input>
         <button className={styles.Button1}></button>
         <div className={styles.ButtonLabel}>Sign Up</div>
-        <div className={styles.Linksto}>Already a member ? <Link to='/SignIn'>Sign In</Link></div>
+        <div className={styles.Linksto}>Already a member?<Link to='/SignIn'>Sign In</Link></div>
         
       
     </div>
