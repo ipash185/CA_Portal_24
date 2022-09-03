@@ -25,7 +25,12 @@ const ProfileSave = () => {
       </div>
       <input type="text" className={styles.PIn1}></input>
       <input type="text" className={styles.PIn2}></input>
-      <input type="text" className={styles.PIn3}></input>
+      <select name="gender" type="text" className={styles.PIn3}>
+      <option>Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+      </select>
       <input type="text" className={styles.PIn4}></input>
       <input type="text" className={styles.PIn5}></input>
       <input type="text" className={styles.PIn6}></input>
