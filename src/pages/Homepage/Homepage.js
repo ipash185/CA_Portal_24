@@ -4,13 +4,15 @@ import About from '../About/about';
 import CarouselComponent from '../Carousel/car';
 import SignIn from '../SignIn/SignIn';
 import SignUp from '../SignIn/SignUp';
-
+import Navbar from '../../components/navbar/navbar';
 
 
 
 function Home() {
     return (
         <div>
+
+            <Navbar />
             <div className={styles.container}>
                 <div className={styles.bg}>
                     <div className={styles.im}></div>
