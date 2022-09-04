@@ -152,10 +152,28 @@ position:absolute;
 .PLabel1,.PLabel2,.PLabel3,.PLabel4,.PLabel5,.PLabel6,.PLabel7,.PLabel8,.PLabel9 {
   font-size: 1.7vh;
   
-  
-  
+    
 }
   }
+  @media screen and (max-width:500px){
+    
+    .PIn1{
+left:15vw;
+width: 0vw;
+    }
+    .ProfileSide{
+      
+      width:0vw;
+    }
+    .HeadPro{
+      left:15vw;
+    }
+    .PLabel {
+      left:15vw;
+    }
+      }
+
+
   .PLabel1 {
     height: 3.05vh;
 width: 1005;

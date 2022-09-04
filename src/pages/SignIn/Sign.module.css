@@ -38,8 +38,8 @@ body {
   background-blend-mode: multiply;
    }
    @media screen and (max-width:1000px){
-    .SignIn {left: 9.166vw;
-      width: 80.5vw;}
+    .SignSide {left: 0vw;
+      width: 29.7916vw;}
    }
    .Sign {
   height: 4vh;
@@ -239,7 +239,7 @@ body {
   .Already {
     height: 2.54vh;
   width: 100%;
-  left: 48.75vw;
+  left: 45vw;
   top: 86.9vh;
   border-radius: nullpx;
   font-family: Montserrat;
@@ -249,16 +249,19 @@ body {
   letter-spacing: 0em;
   text-align: center;
   
-  font-family: Montserrat;
-  font-size: 2vh;
-  font-weight: 400;
-  line-height: 2.343vh;
-  letter-spacing: 0em;
-  text-align: center;
+ 
   padding:0;
   margin:0;
   position:absolute;
   }
+
+  @media screen and (max-width:430px){
+    .Linksto {
+      font-size: 1.5vh;
+    }
+   }
+
+
   #SignInB {
     color:linear-gradient(0deg, #35469E, #35469E);
   }
