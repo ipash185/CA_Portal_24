@@ -14,7 +14,6 @@ function App() {
     const requestOptions = {
       method: 'GET',
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem('token') }
-
     };
 
     fetch("http://127.0.0.1:5000/user/login_check", requestOptions)
