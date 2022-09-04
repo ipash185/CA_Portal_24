@@ -334,18 +334,18 @@ font-size: 2.6vh;
   line-height: 3.5vh;
 }
   }
-  @media screen and (max-width:400px){
+  @media screen and (max-width:768px){
     
     .PIn1,.PIn3,.PIn7,.PIn9{
-left:12vw;
+left:19vw;
 width: 32vw;
     }
     .PIn6,.PIn5{
-      left:12vw;
+      left:19vw;
       width: 68vw;
     }
     .PIn2,.PIn4,.PIn8{
-      left:47vw;
+      left:55vw;
       width: 32vw;
           }
 
@@ -353,21 +353,21 @@ width: 32vw;
       display: none;
     }
     .HeadPro{
-      left:12vw;
+      left:19vw;
     }
     .PLabel1,.PLabel3,.PLabel5,.PLabel7,.PLabel9,.PLabel6 {
-      left:12vw;
+      left:19vw;
       font-size: 2vh;
     }
     .PLabel2,.PLabel4,.PLabel8 {
-      left:47vw;
+      left:55vw;
       font-size: 2vh;
     }
     .ButtonAvatar,.ButtonText{
        display: none;
     }
     .ProfileDiv{
-      left:8vw;
+      left:15vw;
       
     }
     .EditBText {
