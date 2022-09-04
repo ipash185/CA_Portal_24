@@ -12,10 +12,23 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+  .cont {
+    background-image:url("ktj background.png");
+    height: 120vh;
+    width: 130vw;
+    background-repeat:no-repeat;
+    border-radius: 0px;
+    display:flex;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow:hidden;
+    position:fixed;
+  }
   
   
    .SignSide {
-    height: 68.36vh;
+    height: 69vh;
   width: 29.7916vw;
   left: 9.166vw;
   top: 21.777vh;
@@ -28,7 +41,7 @@ body {
    }
    .SignIn {
     position:absolute;
-    height:68.36vh;
+    height:69vh;
   width: 80.5vw;
   left: 9.166vw;
   top: 21.777vh;
@@ -363,19 +376,52 @@ body {
       left:0;
     }
   }
-  @media screen and (max-width:435px){
+  @media screen and (max-width:768px){
     .Linksto {
       font-size: 1.5vh;
       top:84vh;
+      left:30vw;
     }
     .RememberMe,.ForgotPassword {
       font-size: 1.7vh;
     }
     .FormLabel1,.FormLabel3,.FormLabel4,.FormLabel5,.In1,.In3,.In4,.In5 {
-      left:37vw;
+      left:13vw;
       font-size:1.9vh;
+    }
+    .In3,.In4,.In5 {
+      width:78vw;
+    }
+    .In1,.In2 {
+      width:35vw;
+      
     }
     .FormLabel2,.In2 {
       font-size: 1.9vh;
+      left:55vw;
+    }
+    .SignSide {
+      display:none;
+    }
+    .Button1 {
+      left:30vw;
+    }
+    .ButtonLabel {
+      left: 44vw;
+    }
+    .Remember {
+      left:15vw;
+    }
+    .RememberMe {
+      left:18vw;
+    }
+    .ForgotPassword {
+      left:72vw;
+    }
+    .SignInB {
+      left:30vw;
+    }
+    .SignInT{
+      left:46vw;
     }
    }
