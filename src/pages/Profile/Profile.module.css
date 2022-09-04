@@ -15,12 +15,13 @@ body {
   }
   .cont {
     background-image:url("ktj background.png");
-    height: 100vh;
-    width: 106.25vw;
-    left: -2px;
-    top: 0px;
+    height: 120vh;
+    width: 130vw;
+    background-repeat:no-repeat;
     border-radius: 0px;
     display:flex;
+    background-size: cover;
+    background-position: center;
   }
   
   
@@ -336,12 +337,12 @@ font-size: 2.6vh;
   @media screen and (max-width:400px){
     
     .PIn1,.PIn3,.PIn7,.PIn9{
-left:8.5vw;
+left:12vw;
 width: 32vw;
     }
     .PIn6,.PIn5{
-      left:8.5vw;
-      width: 70vw;
+      left:12vw;
+      width: 68vw;
     }
     .PIn2,.PIn4,.PIn8{
       left:47vw;
@@ -352,22 +353,22 @@ width: 32vw;
       display: none;
     }
     .HeadPro{
-      left:8.5vw;
+      left:12vw;
     }
     .PLabel1,.PLabel3,.PLabel5,.PLabel7,.PLabel9,.PLabel6 {
-      left:8.5vw;
+      left:12vw;
       font-size: 2vh;
     }
     .PLabel2,.PLabel4,.PLabel8 {
-      left:49vw;
+      left:47vw;
       font-size: 2vh;
     }
     .ButtonAvatar,.ButtonText{
        display: none;
     }
     .ProfileDiv{
-      left:3vw;
-      bottom: vh;
+      left:8vw;
+      
     }
     .EditBText {
       left:67vw;
