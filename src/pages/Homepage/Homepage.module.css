@@ -129,3 +129,57 @@ html {
   height: 100%;
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  .SignInD,
+  .SignUpD {
+    top: 150vh;
+  }
+}
+@media screen and (max-width: 850px) {
+  .SignInD,
+  .SignUpD {
+    top: 200vh;
+  }
+}
+@media screen and (max-width: 720px) {
+  .SignInD,
+  .SignUpD {
+    top: 250vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  .SignInD,
+  .SignUpD {
+    top: 300vh;
+  }
+}
+@media screen and (max-width: 570px) {
+  .SignInD,
+  .SignUpD {
+    top: 360vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  .SignInD,
+  .SignUpD {
+    top: 400vh;
+  }
+}
+@media screen and (max-width: 520px) {
+  .SignInD,
+  .SignUpD {
+    top: 450vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .SignInD,
+  .SignUpD {
+    top: 500vh;
+  }
+}
+@media screen and (max-width: 460px) {
+  .SignInD,
+  .SignUpD {
+    top: 550vh;
+  }
+}
