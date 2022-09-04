@@ -12,6 +12,19 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+  .cont {
+    background-image:url("ktj background.png");
+    height: 120vh;
+    width: 130vw;
+    background-repeat:no-repeat;
+    border-radius: 0px;
+    display:flex;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow:hidden;
+    position:fixed;
+  }
   
   
    .SignSide {

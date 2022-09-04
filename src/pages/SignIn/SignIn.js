@@ -24,7 +24,7 @@ const SignIn = () => {
       .finally(() => setLoading(false));
   };
   return (
-    <div>
+    <div className={styles.cont}>
 
       <div className={styles.SignIn}></div>
       <div className={styles.SignSide}></div>
