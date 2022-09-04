@@ -3,16 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 require('dotenv').config();
-
-
-
-
-
-
-const app = express()
-
-
-
+const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
@@ -41,7 +32,7 @@ mongoose
 
 const signinRouter = require('./routes/signin');
 const signupRouter = require('./routes/signup');
-const usersRouter = require('./routes/users');
+const usersRouter = require('./routes/user');
 
 app.use('/signup', signupRouter);
 app.use('/signin', signinRouter);

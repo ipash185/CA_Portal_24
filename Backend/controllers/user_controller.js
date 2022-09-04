@@ -1,9 +1,7 @@
-const router = require('express').Router();
 const jwt = require('jsonwebtoken');
 const User = require('../models/user.model');
-// router.get('/', (req, res) => { res.send("test") });
 
-router.get('/login_check', async (req, res) => {
+exports.login_check = async (req, res) => {
 
     try {
         const token = req.headers.authorization.split(" ")[1];
@@ -34,6 +32,38 @@ router.get('/login_check', async (req, res) => {
         });
     }
 
-});
+}
+exports.profileedit = async (req, res) => {
+    try {
+        const { phone, college, city, state } = req?.body;
 
-module.exports = router;
+        let user = await User.findOne({ ca_id: req.user.ca_id });
+        if (phone) {
+            if (phone != null)
+                user.phone = phone;
+            if (college)
+                user.college = college;
+            if (city)
+                user.city = city;
+            if (state)
+                user.state = state;
+            await user.save();
+            return res.status(200).json({
+                message: "profile updated",
+                user: user,
+            });
+        }
+        else {
+            return res.status(404).json({
+                message: "user not found",
+            });
+        }
+
+
+    }
+    catch (err) {
+        return res.status(500).json({ message: "some error occured" });
+    }
+
+
+}
