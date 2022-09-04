@@ -18,8 +18,11 @@ function App() {
 
     fetch("http://127.0.0.1:5000/user/login_check", requestOptions)
       .then((res) => res.json())
-      .then((data) => { setUser(data.user); setLoading(false); })
-      .catch((err) => console.log(err))
+      .then((data) => {
+        // setUser(data.user);
+        setLoading(false);
+      })
+      .catch((err) => { console.log(err); localStorage.removeItem('token'); })
       .finally(() => setLoading(false));
   }, []);
   return (
@@ -31,7 +34,6 @@ function App() {
         <Route path='/SignIn' element={<SignIn />} />
         <Route path='/ProfileEdit' element={<ProfileEdit />} />
         <Route path='/ProfileSave' element={<ProfileSave />} />
-
       </Routes>
 
 
