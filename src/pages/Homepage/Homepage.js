@@ -5,7 +5,7 @@ import CarouselComponent from '../Carousel/car';
 import SignIn from '../SignIn/SignIn';
 import SignUp from '../SignIn/SignUp';
 import Navbar from '../../components/navbar/navbar';
-
+import Incentives from '../incentives/Incentives';
 
 
 function Home() {
@@ -22,6 +22,11 @@ function Home() {
                 <div className={styles.about}>
                     <About />
                 </div>
+                <div className={styles.about}>
+                    <Incentives/>
+                </div>
+                
+
                 {/* <div className={styles.SignUpD}>
                     <SignUp />
                 </div>
