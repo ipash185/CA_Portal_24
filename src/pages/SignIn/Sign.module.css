@@ -255,12 +255,7 @@ body {
   position:absolute;
   }
 
-  @media screen and (max-width:430px){
-    .Linksto {
-      font-size: 1.5vh;
-    }
-   }
-
+  
 
   #SignInB {
     color:linear-gradient(0deg, #35469E, #35469E);
@@ -368,3 +363,19 @@ body {
       left:0;
     }
   }
+  @media screen and (max-width:435px){
+    .Linksto {
+      font-size: 1.5vh;
+      top:84vh;
+    }
+    .RememberMe,.ForgotPassword {
+      font-size: 1.7vh;
+    }
+    .FormLabel1,.FormLabel3,.FormLabel4,.FormLabel5,.In1,.In3,.In4,.In5 {
+      left:37vw;
+      font-size:1.9vh;
+    }
+    .FormLabel2,.In2 {
+      font-size: 1.9vh;
+    }
+   }
