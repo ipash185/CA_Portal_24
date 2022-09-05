@@ -4,6 +4,7 @@ import About from '../About/about';
 import CarouselComponent from '../Carousel/car';
 import SignIn from '../SignIn/SignIn';
 import SignUp from '../SignIn/SignUp';
+import Incentives from '../Incentives/incentive';
 
 
 
@@ -17,15 +18,14 @@ function Home() {
                     <div className={styles.vert}></div>
                     <h1 className={styles.heading}>CAMPUS<br />AMBASSADOR<br />PROGRAM</h1>
                 </div>
-                <div className={styles.about}>
-                    <About />
+                <div className={styles.bod}>
+                    <About/>
+                    <Incentives/>
+                    <CarouselComponent/>
                 </div>
-                <div className={styles.SignUpD}>
-                    <SignUp />
-                </div>
-                <div className={styles.SignInD}>
-                    <SignIn />
-                </div>
+                <div className={styles.cara}></div>
+            
+                
 
             </div>
 
