@@ -1,215 +1,53 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../../fonts/Montserrat-Regular.ttf");
+  }
 
-.container{
-    background-image: url("ktj background.png");
-} 
+.elem{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;   
+    font-family: Montserrat;
+    align-items: center;
+    justify-items: center;
+}
+
+.circle{
+    box-sizing: border-box;
+    border-radius: 30rem;
+    background-color: gray;
+    height: 8rem;
+    width: 8rem;
+}
+
+.para{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:0.5rem;
+}
+
+.sub{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap:0.5rem;
+}
 
 .heading{
-    position: absolute;
-    width: 79.375vw;
-    height: 15.9179688vh;
-    left: 11.2777778vw;
-    top: 20.8007813vh;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 61px;
-    text-align: center;
-    letter-spacing: 0.22em;
-
-    color: #312B2B;
-
+    padding-bottom: 5rem;
 }
 
-.circlebox{
-    display: flex;
+.o{
+    grid-row: 1/2;
 }
 
-.circle1{
-    position: absolute;
-    width: 9.444444444vw;
-    height: 13.28125vh;
-    left: 10.0416667vw;
-    top: 36.71875vh;
+.e{
+    grid-row: 2/3;
 }
-
-.circle2{
-    position: absolute;
-    width: 9.444444444vw;
-    height: 13.28125vh;
-    left: 47.6388889vw;
-    top: 36.71875vh;
-}  
-
-.circle3{
-    position: absolute;
-    width: 9.444444444vw;
-    height: 13.28125vh;
-    left: 84.0277778vw;
-    top: 36.71875vh;
-
-}
-
-.circle4{
-    position: absolute;
-    width: 9.444444444vw;
-    height: 13.28125vh;
-    left: 27.4305556vw;
-    top: 58.8867188vh;
-
-    
-}
-
-.circle5{
-    position: absolute;
-    width: 9.444444444vw;
-    height: 13.28125vh;
-    left: 67.638889vw;
-    top: 58.3007813vh;
-    
-     
-}
-
-.text1{
-    position: absolute;
-    width: 15.4861111vw;
-    height: 18.75vh;
-    left: 7.23611111vw;
-    top: 54.1992188vh;
-    
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6875rem;
-    line-height: 1.5rem;
-    /* or 67% */
-    
-    text-align: center; 
-    color: #363434;
-    
-}
-
-.text2{
-    position: absolute;
-    width: 15.4861111vw;
-    height: 18.75vh;
-    left: 44.5833333vw;
-    top: 53.6132813vh;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6875rem;
-    line-height: 1.5rem;
-    /* or 67% */
-
-    text-align: center;
-    color: #000000;
-}
-
-.text3{
-    position: absolute;
-    width: 15.4861111vw;
-    height: 18.75vh;
-    left: 80.9722222vw;
-    top: 53.6132813vh;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6875rem;
-    line-height: 1.5rem;
-    /* or 67% */
-    text-align: center;
-    color: #000000;
-}
-
-.text4{
-    position: absolute;
-    width: 15.4861111vw;
-    height: 18.75vh;
-    left: 24.4166667vw;
-    top: 75.6835938vh;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6875rem;
-    line-height: 1.5rem;
-    /* or 67% */
-    text-align: center;
-    color: #363232;
-
-}
-
-.text5{
-    position: absolute;
-    width: 15.4861111vw;
-    height: 18.75vh;
-    left: 64.5833333vw;
-    top: 75.6835938vh;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6875rem;
-    line-height: 1.5rem;
-    /* or 67% */
-    text-align: center;
-    color: #000000;
-}
-
-@media all and (max-width: 768px){
-    .circlebox{
-        display: flex;
-        flex-direction:column;
-        /* flex-wrap:wrap; */
-    }
-
-    .circle1{
-        position:relative;
-        left:50vw;
-    }
-    .circle2{
-        position:relative;
-        left:50vw;
-    }
-    .circle3{
-        position:relative;
-        left:50vw;
-    }
-    .circle4{
-        position:relative;
-        left:50vw;
-        top:37vh;
-    }
-    .circle5{
-        position:relative;
-        left:50vw;
-        top:37vh;
-    }
-
-    .text1{
-        position:relative;
-        left:47vw;
-        top:40vh;
-    }
-    .text2{
-        position:relative;
-        left:47vw;
-        top:40vh;
-    }
-    .text3{
-        position:relative;
-        left:47vw;
-        top:40vh;
-    }
-    .text4{
-        position:relative;
-        left:47vw;
-        top:40vh;
-    }
-    .text5{
-        position:relative;
-        left:47vw;
-        top:40vh;
-    }
-}
-
