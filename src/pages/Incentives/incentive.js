@@ -3,7 +3,7 @@ import Incomp from './incomp';
 
 function Incentives(){
     return(
-        <div>
+        <div className={styles.cov}>
         <h1 className={styles.heading}>INCENTIVES</h1>
         <div className={styles.main}>
             <div className={styles.sub}><div className={styles.o}><Incomp/></div></div>

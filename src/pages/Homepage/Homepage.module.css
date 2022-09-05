@@ -61,7 +61,7 @@ html {
 .heading {
   font-family: Montserrat;
   padding: 3%;
-  font-size: 4em;
+  font-size: 6rem;
   color: #393232;
   letter-spacing: 0.5em;
   text-shadow: 0px 4px 4px #999;
@@ -80,123 +80,35 @@ html {
   width: 100%;
 }
 
-.cara{
-  position: relative;
-  top: 170vh;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+@media only screen and (max-width:1000px) {
+    .bg{
+      display: grid;
+      grid-template-rows: repeat(16, 1fr);
+      grid-template-columns: repeat(16, 1fr);
+      column-gap: 1em;
+      z-index: 2;
+    }
+
+    .im{
+      grid-column: 6/12;
+      grid-row: 6/10;
+    }
+
+    .vert{
+      grid-column: 6/12;
+      grid-row: 9/10;
+      height: 10%;
+      width: 100%;
+      align-self: center;
+    }
+
+    .heading{
+      grid-column:6/12;
+      grid-row: 10/12;
+      margin-left: 2rem;
+      align-self: center;
+      justify-self: center;
+      font-size: 4rem;
+    }
 }
 
-.inc{
-  position: relative;
-  top: 150vh;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.SignUpD {
-  position: relative;
-  background-size: auto;
-  background-repeat: repeat;
-  top: 100vh;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.SignInD {
-  position: relative;
-  background-size: auto;
-  background-repeat: repeat;
-  top: 100vh;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-.ProfileE {
-  position: relative;
-  background-size: auto;
-  background-repeat: repeat;
-  top: 1vh;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.ProfileS {
-  position: relative;
-  background-size: auto;
-  background-repeat: repeat;
-  top: 1vh;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-@media screen and (max-width: 1200px) {
-  .SignInD,
-  .SignUpD {
-    top: 150vh;
-  }
-}
-@media screen and (max-width: 850px) {
-  .SignInD,
-  .SignUpD {
-    top: 200vh;
-  }
-}
-@media screen and (max-width: 720px) {
-  .SignInD,
-  .SignUpD {
-    top: 250vh;
-  }
-}
-@media screen and (max-width: 650px) {
-  .SignInD,
-  .SignUpD {
-    top: 300vh;
-  }
-}
-@media screen and (max-width: 570px) {
-  .SignInD,
-  .SignUpD {
-    top: 360vh;
-  }
-}
-@media screen and (max-width: 550px) {
-  .SignInD,
-  .SignUpD {
-    top: 400vh;
-  }
-}
-@media screen and (max-width: 520px) {
-  .SignInD,
-  .SignUpD {
-    top: 450vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  .SignInD,
-  .SignUpD {
-    top: 500vh;
-  }
-}
-@media screen and (max-width: 460px) {
-  .SignInD,
-  .SignUpD {
-    top: 550vh;
-  }
-}

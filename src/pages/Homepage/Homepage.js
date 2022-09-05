@@ -2,16 +2,13 @@ import React from 'react';
 import styles from './Homepage.module.css';
 import About from '../About/about';
 import CarouselComponent from '../Carousel/car';
-import SignIn from '../SignIn/SignIn';
-import SignUp from '../SignIn/SignUp';
 import Navbar from '../../components/navbar/navbar';
-import Incentives from '../incentives/Incentives';
+import Incentive from '../incentives/incentive';
 
 
 function Home() {
     return (
         <div>
-
             <Navbar />
             <div className={styles.container}>
                 <div className={styles.bg}>
@@ -21,16 +18,10 @@ function Home() {
                 </div>
                 <div className={styles.bod}>
                     <About/>
-                    <Incentives/>
+                    <Incentive/>
                     <CarouselComponent/>
                 </div>
-                <div className={styles.cara}></div>
-            
-                
-
-            </div>
-
-
+        </div>
         </div>
     );
 

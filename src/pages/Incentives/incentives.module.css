@@ -16,13 +16,15 @@
 .circle{
     box-sizing: border-box;
     border-radius: 30rem;
-    background-color: gray;
-    height: 8rem;
-    width: 8rem;
+    background: url('./sample.png');
+    background-position: center;
+    background-size:cover;
+    height: 15rem;
+    width: 15rem;
 }
 
 .para{
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -41,7 +43,7 @@
 }
 
 .heading{
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 
 .o{
@@ -51,3 +53,22 @@
 .e{
     grid-row: 2/3;
 }
+
+.cov{
+    margin-bottom: 20rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-gap:5rem;
+    }
+
+    .sub{
+        display: block;
+    }
+
+}
+    

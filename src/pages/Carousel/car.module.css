@@ -6,16 +6,19 @@
     flex-direction: row;
     text-align: center;
     padding: 2rem;
+    min-height: 100%;
+    padding-bottom: 20rem;
 }
 
 .cara{
     padding-top: 2rem;
+    padding-bottom: 8rem;
 }
 
 .elem{
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 5fr;
     font-size: 2rem;
     border-radius: 1rem;
     gap: 1rem;
@@ -24,9 +27,9 @@
     align-items: center;
     justify-items: center;
     justify-self: center;
-    padding: 1.5rem 1.5rem;
+    padding: 3rem 3rem;
     background-color: rgba(255,255,255,1);
-    min-height: 35rem;
+    min-height: 40rem;
     width: 80%;
     box-shadow: 0rem 0rem 13px 15px #BBB;
 }
@@ -34,27 +37,54 @@
 .box{
     width: 50%;
     height: 70%;
+    padding: 2rem;
     background-color: #AAA;
 }
 
 .para{
     grid-column: 2/3;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: justify;
+    padding: 5rem;
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1400px) and (min-device-width: 801px) {
+    .elem{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .cara{
+        padding-top:10%;
+        padding-bottom: 30%;
+    }
+
+    .para{
+        grid-row: 2/3;
+        font-size: 3rem;
+        grid-column: 1/-1;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
     .elem{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
     .para{
-            grid-row: 2/3;
-            text-align: justify;
-        }
-    .box{
-            width: 50%;
-        height: 50%;
-        }
+        grid-row: 2/3;
+        font-size: 3rem;
+        grid-column: 1/-1;
+        text-align: justify;
+    }
+
+    .cara{
+        padding-top:10%;
+        padding-bottom: 70%;
+    }
 }
