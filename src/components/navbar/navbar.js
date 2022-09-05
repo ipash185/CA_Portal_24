@@ -1,69 +1,69 @@
-import React, { useState } from "react";
-import "./navbar.css";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
+   import React, { useState } from "react";
+import classes from "./navbar.module.css";
+ import { GiHamburgerMenu } from "react-icons/gi";
+import img1 from "../../images/homepage_img.svg"
+import {GiWideArrowDunk} from "react-icons/gi"
+ 
 
-import { NavLink } from "react-router-dom";
-
-const Navbar = () => {
+ const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-    <>
-      <nav className="main-nav">
-        {/* 1st logo part  */}
-        <div className="logo">
-         
-             <img src="../images/homepage_img.svg" alt="" />
+    <>  
+      < div className={classes.main_nav}>
+       
+        <div className={classes.logo}>
+               
+             <img src={img1} alt="" />
              <span>KSHITIJ</span>
         </div>
 
        
         <div
           className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+                  showMediaIcons ? `${classes.menu_link} ${classes.mobile_menu_link}` : `${classes.menu_link}`
           }>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <a to="/">Home</a>
+            </li>
+            <li>  
+              <a to="/about">About Us</a>
+            </li>
+            <li> 
+              <a to="/Incentives">Incentives</a>
             </li>
             <li>
-              <NavLink to="/about">About Us</NavLink>
+              <a to="/Terms">Terms</a>
             </li>
             <li>
-              <NavLink to="/Incentives">Incentives</NavLink>
+              <a to="/contact">contact</a>
             </li>
-            <li>
-              <NavLink to="/Terms">Terms</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">contact</NavLink>
-            </li>
-             <button>
-              <NavLink to="/Login">Login</NavLink>
-             </button>
-             <button className="sign">
-              <NavLink to="/Signup">Signup</NavLink>
-             </button>
+             <li>
+              <div className="button">
              
+             
+             <button className={classes.sign} >
+              <div to="/Signup">Signup</div>
+             </button> 
+             <button className={classes.login}>
+              <div to="/Login">Sign In</div>
+             </button>
+              </div>
+              </li> 
           </ul>
-        </div>
-
- 
-             
-           
-         <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+          </div>
+   
+         <div className={classes.hamburger_menu}>
+            <a href="#" onClick={() =>setShowMediaIcons(!showMediaIcons)
+              // humburger.classList.remove('GiHamburgerMenu');
+              // humburger.classList.add('GiWideArrowDunk');
+            }>
               <GiHamburgerMenu />
             </a>
-          </div>
-      </nav>
- 
-    </>
-  );
-};
+        </div>
+      </div>
+      </>
 
-export default Navbar;
+  );
+        };
+        export default Navbar;
