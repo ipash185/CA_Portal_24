@@ -19,20 +19,14 @@ function Home() {
                     <div className={styles.vert}></div>
                     <h1 className={styles.heading}>CAMPUS<br />AMBASSADOR<br />PROGRAM</h1>
                 </div>
-                <div className={styles.about}>
-                    <About />
-                </div>
-                <div className={styles.about}>
+                <div className={styles.bod}>
+                    <About/>
                     <Incentives/>
+                    <CarouselComponent/>
                 </div>
+                <div className={styles.cara}></div>
+            
                 
-
-                {/* <div className={styles.SignUpD}>
-                    <SignUp />
-                </div>
-                <div className={styles.SignInD}>
-                    <SignIn />
-                </div> */}
 
             </div>
 

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../../fonts/Montserrat-Regular.ttf");
+  }
+
+.elem{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;   
+    font-family: Montserrat;
+    align-items: center;
+    justify-items: center;
+}
+
+.circle{
+    box-sizing: border-box;
+    border-radius: 30rem;
+    background-color: gray;
+    height: 8rem;
+    width: 8rem;
+}
+
+.para{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:0.5rem;
+}
+
+.sub{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap:0.5rem;
+}
+
+.heading{
+    padding-bottom: 5rem;
+}
+
+.o{
+    grid-row: 1/2;
+}
+
+.e{
+    grid-row: 2/3;
+}

@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
          
-             <img src="https://www.lawctopus.com/wp-content/uploads/2015/01/Kshitij_Logo.png" alt="" />
+             <img src="../images/homepage_img.svg" alt="" />
              <span>KSHITIJ</span>
         </div>
 
