@@ -1,0 +1,65 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2rem;
+    grid-gap: 2rem;
+    padding-bottom: 20rem;
+}
+
+
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    background: #484d4d;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin: 0 8rem;
+    transform: all 0.5s ease;
+}
+
+.card:hover{
+    transform: translate(-30px, -30px);
+    border: 2px solid #182122;
+}
+
+.name{
+    font-size: 2.5rem;
+    grid-row: 2/3;
+    color: white;
+}
+
+.job{
+    font-size: 2rem;
+    grid-row: 3/4;
+    color: white;
+}
+
+.icons{
+    color: white;
+    font-size: 3.5rem;
+}
+
+
+
+.num{
+    font-size: 2rem;
+    color: white;
+}
+
+.circle{
+    box-sizing: border-box;
+    border-radius: 30rem;
+    background: grey;
+    background-position: center;
+    background-size:cover;
+    height: 15rem;
+    width: 15rem;
+    align-self: center;
+    grid-row: 1/2;
+}
+

@@ -4,7 +4,8 @@ import About from '../About/about';
 import CarouselComponent from '../Carousel/car';
 import Navbar from '../../components/navbar/navbar';
 import Incentive from '../incentives/incentive';
-
+import Contact from '../ContactUs/contact';
+import SignUp from '../SignIn/SignUp';
 
 function Home() {
     return (
@@ -20,6 +21,8 @@ function Home() {
                     <About/>
                     <Incentive/>
                     <CarouselComponent/>
+                    <Contact/>
+                    <SignUp/>
                 </div>
         </div>
         </div>
