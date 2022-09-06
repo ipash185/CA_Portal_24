@@ -7,7 +7,7 @@ const ProfileSave = () => {
        <div className={styles.ProfileDiv}></div>
        <div className={styles.ProfileSide}></div>
       <button className={styles.ButtonAvatar}></button>
-      <div className={styles.ButtonText}>Change Avatar</div>
+      
       <div className={styles.NameOf}>Name Of Candi</div>
       <div className={styles.HeadPro}>Profile</div>
       <button className={styles.EditProB}></button>

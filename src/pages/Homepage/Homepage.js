@@ -3,9 +3,8 @@ import styles from './Homepage.module.css';
 import About from '../About/about';
 import CarouselComponent from '../Carousel/car';
 import Navbar from '../../components/navbar/navbar';
-import Incentive from '../incentives/incentive';
+import Incentives from '../Incentives/incentive';
 import Contact from '../ContactUs/contact';
-import SignUp from '../SignIn/SignUp';
 
 function Home() {
     return (
@@ -19,10 +18,9 @@ function Home() {
                 </div>
                 <div className={styles.bod}>
                     <About/>
-                    <Incentive/>
+                    <Incentives/>
                     <CarouselComponent/>
                     <Contact/>
-                    <SignUp/>
                 </div>
         </div>
         </div>
