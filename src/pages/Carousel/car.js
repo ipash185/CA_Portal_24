@@ -10,7 +10,7 @@ function CarouselComponent(){
 
     return (
       <div className={styles.main}>
-        <h1>TESTIMONIALS</h1>
+        <h1 className={styles.heading}>TESTIMONIALS</h1>
         <Carousel className={styles.cara}
           NextIcon={<ArrowForwardIosTwoToneIcon/>}
           PrevIcon={<ArrowBackIosTwoToneIcon/>}

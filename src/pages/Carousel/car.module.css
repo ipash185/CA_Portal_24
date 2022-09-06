@@ -10,6 +10,14 @@
     padding-bottom: 20rem;
 }
 
+.heading{
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
+
 .cara{
     padding-top: 2rem;
     padding-bottom: 8rem;
@@ -52,12 +60,13 @@
     .elem{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0.5rem;
     }
 
     .cara{
         padding-top:10%;
-        padding-bottom: 30%;
+        padding-bottom: 20%;
     }
 
     .para{
@@ -68,23 +77,53 @@
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) and (min-width:451px){
 
     .elem{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        padding: 0.5rem;
     }
 
     .para{
         grid-row: 2/3;
-        font-size: 3rem;
+        font-size: 1.8rem;
         grid-column: 1/-1;
         text-align: justify;
     }
 
     .cara{
         padding-top:10%;
-        padding-bottom: 70%;
+        padding-bottom: 20%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    .heading{
+        padding-left:0;
+        font-size: 3.5rem;
+    }
+
+    .elem{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0.5rem;
+        grid-gap:0.25rem;
+    }
+
+    .para{
+        grid-row: 2/3;
+        font-size: 1.5rem;
+        grid-column: 1/-1;
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    .cara{
+        padding-top:10%;
+        padding-bottom: 20%;
     }
 }

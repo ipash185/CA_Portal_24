@@ -66,6 +66,10 @@
         grid-gap:5rem;
     }
 
+    .cov{
+        margin-bottom: 5rem;
+    }
+
     .sub{
         display: block;
     }
