@@ -1,3 +1,7 @@
+.cov{
+    padding-top: 5rem;
+}
+
 .main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -7,10 +11,10 @@
     padding-bottom: 20rem;
 }
 
-
-
 .card{
     display: grid;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr repeat(4,1fr);
     align-items: center;
@@ -18,13 +22,57 @@
     background: #484d4d;
     text-align: center;
     padding: 2rem 4rem;
-    margin: 0 8rem;
-    transform: all 0.5s ease;
+    margin: 2rem 8rem;
+    transition: all 0.3s;
+    z-index: 20;
+}
+
+.card1{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    display: grid;
+    position: absolute;
+    left: 2rem;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    background: #484d4dc7;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin: 2rem 8rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    transition:all 0.3s ease;
+    z-index: 10;
+}
+
+.card2{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    display: grid;
+    position: absolute;
+    left: 2rem;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    background: #484d4dc7;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin: 2rem 8rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .card:hover{
-    transform: translate(-30px, -30px);
-    border: 2px solid #182122;
+    transform: translateY(-3.8rem);
+}
+
+.card:hover + .card1{
+    transform: translateY(-2rem);
 }
 
 .name{
