@@ -50,8 +50,9 @@ p{
         padding: 2rem 4rem;
         background-color: rgba(255,255,255,0.8);
         min-height: 100%;
-        min-width: 100%;
+        min-width: 80%;
         box-shadow: none;
+        margin: 0 1.2rem 0 1.2rem ;
     }
 
     .main{

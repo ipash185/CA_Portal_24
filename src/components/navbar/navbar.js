@@ -25,19 +25,22 @@ import {GiWideArrowDunk} from "react-icons/gi"
           } >
           <ul>
             <li>
-              <a to="/">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>  
-              <a to="/about">About Us</a>
+              <a href = "#about">About Us</a>
             </li>
             <li> 
-              <a to="/Incentives">Incentives</a>
+              <a href = "#resp">Responibilities</a>
+            </li>
+            <li> 
+              <a href = "#inc">Incentives</a>
             </li>
             <li>
-              <a to="/Terms">Terms</a>
+              <a href = "#testimonials">Testimonials</a>
             </li>
             <li>
-              <a to="/contact">contact</a>
+              <a href = "#contact">Contact</a>
             </li>
              <li>
               <div className="button">
