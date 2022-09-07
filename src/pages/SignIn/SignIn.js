@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Sign.module.css'
 import { useState } from 'react'
+import Navbar from '../../components/navbar/navbar';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -27,6 +28,8 @@ const SignIn = () => {
   };
 
   return (
+    <div>
+      <Navbar />
     <div className={styles.cont}>
 
       <div className={styles.SignIn}></div>
@@ -41,6 +44,7 @@ const SignIn = () => {
       <button className={styles.SignInB} ></button>
       <div className={styles.SignInT} onClick={handleSubmit}>Sign In</div>
       <div className={styles.Linksto}>New Here ? <Link to='/SignUp'>Sign Up</Link></div>
+    </div>
     </div>
   )
 }
