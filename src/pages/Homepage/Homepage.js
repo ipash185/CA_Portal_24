@@ -27,7 +27,7 @@ function Home() {
                 <div id="testimonials" className={styles.scroll}><CarouselComponent/></div>
                 <div id="contact" className={styles.scroll}><Contact/></div>
             </div>
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     );
 
