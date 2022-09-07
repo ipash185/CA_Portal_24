@@ -1,33 +1,49 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Sign.module.css'
 import { useState } from 'react'
-const SignUp = () => {
-  const [first_name, setFirstName] = useState('');
-  const [last_name, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [college, setCollege] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const user = { first_name, last_name, email, password, college };
-    console.log(user);
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(user)
-    };
-    fetch("http://", requestOptions)
-      .then((res) => res.json())
-      .then((data) => { console.log(data); })
-      .catch((err) => console.log(err))
-      .finally(() => setLoading(false));
+import useForm from './useForm'
+const SignUp = () => {
+
+  const formElement = useRef(null);
+
+  const additionalData = {
+    sent: new Date().toISOString(),
   };
 
+  const {handleSubmit,status,message} = useForm({
+    form: formElement.current,
+    additionalData
+  })
+
+
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const user = { first_name, last_name, email, password, college };
+  //   console.log(user);
+  //   const requestOptions = {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify(user)
+  //   };
+  //   fetch("http://", requestOptions)
+  //     .then((res) => res.json())
+  //     .then((data) => { console.log(data); })
+  //     .catch((err) => console.log(err))
+  //     .finally(() => setLoading(false));
+  // };
+
   return (
+
+    <form
+      
+      onSubmit = {handleSubmit}
+      method = "POST"
+      target= "_blank"
+      ref = {formElement}
+      >
 
     <div className={styles.cont}>
 
@@ -36,8 +52,8 @@ const SignUp = () => {
       <div className={styles.Sign}>Sign Up</div>
       <div className={styles.FormLabel1}>First Name</div>
       <div className={styles.FormLabel2}>Last Name</div>
-      <input type="text" className={styles.In1}></input>
-      <input type="text" className={styles.In2}></input>
+      <input type="text"  name = "first_name" className={styles.In1}></input>
+      <input type="text" name = "last_name" className={styles.In2}></input>
       <div className={styles.PLabel}>
       <div className={styles.PLabel3}>Gender</div>
       <div className={styles.PLabel4}>MobileNumber</div>
@@ -53,20 +69,25 @@ const SignUp = () => {
         <option>Female</option>
         <option>Others</option>
       </select>
-      <input type="text" className={styles.PIn4}></input>
-      <input type="text" className={styles.PIn5}></input>
-      <input type="text" className={styles.PIn6}></input>
-      <input type="text" className={styles.PIn7}></input>
-      <input type="text" className={styles.PIn8}></input>
+      <input type="text"  name = "phone" className={styles.PIn4}></input>
+      <input type="text" name = "email" className={styles.PIn5}></input>
+      <input type="text" name = "college" className={styles.PIn6}></input>
+      <input type="text" name= "city" className={styles.PIn7}></input>
+      <input type="text" name = "state" className={styles.PIn8}></input>
       <input type="password" className={styles.PIn9}></input>
-      <button className={styles.Button1}></button>
+      <button type = "submit" className={styles.Button1}></button>
       <div className={styles.ButtonLabel}>Sign Up</div>
       <div className={styles.Linksto}>Already a member?<Link to='/SignIn'>Sign In</Link></div>
 
 
     </div>
 
+    </form>
+
   )
 }
+
+
+
 
 export default SignUp

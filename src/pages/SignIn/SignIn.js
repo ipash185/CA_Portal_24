@@ -11,18 +11,21 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const user = { email, password };
-    console.log(user);
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(user)
-    };
-    fetch("http://127.0.0.1:5000/signin", requestOptions)
-      .then((res) => res.json())
-      .then((data) => { console.log(data); localStorage.setItem('token', data.token); })
-      .catch((err) => console.log(err))
-      .finally(() => setLoading(false));
+
+      //   axios.post(API_URL,JSON.stringify(user)).then((response)=>{
+      //           if (response.status !== 200) {
+      //       throw new Error(response.statusText);
+      //     }
+
+      //     return response.json();
+      // }).catch((error)=>{
+      //     setMessage(err.toString());
+      //     setStatus("error");
+      // })
+
+   
   };
+
   return (
     <div className={styles.cont}>
 
@@ -34,9 +37,7 @@ const SignIn = () => {
       <div className={styles.FormLabel4} >Password</div>
       <input type="password" className={styles.In4} onChange={(e) => { setPassword(e.target.value); }}></input>
       <div id='Eye'></div>
-      <div className={styles.ForgotPassword}>Forgot Password?</div>
-      <input type="checkbox" className={styles.Remember} />
-      <div className={styles.RememberMe}>Remember Me</div>
+      
       <button className={styles.SignInB} ></button>
       <div className={styles.SignInT} onClick={handleSubmit}>Sign In</div>
       <div className={styles.Linksto}>New Here ? <Link to='/SignUp'>Sign Up</Link></div>

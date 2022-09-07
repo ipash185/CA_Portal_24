@@ -3,7 +3,7 @@ import styles from './Homepage.module.css';
 import About from '../About/about';
 import CarouselComponent from '../Carousel/car';
 import Navbar from '../../components/navbar/navbar';
-import Incentives from '../incentives/incentive';
+import Incentives from '../Incentives/incentive';
 import Contact from '../ContactUs/contact';
 import Footer from '../../components/footer/footer';
 import ButtonUnstyled from '@mui/base/ButtonUnstyled';
