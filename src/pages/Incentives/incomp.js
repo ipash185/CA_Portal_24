@@ -1,4 +1,4 @@
-import styles from './incentives.module.css';
+import styles from './incentive.module.css';
 
 function Incomp(){
     return(
