@@ -24,7 +24,7 @@ function Home() {
                 <div id ="about" className={styles.scroll}><About/></div>
                 <div id = "resp" className={styles.scroll}><Responsibility/></div>
                 <div id="inc" className={styles.scroll}><Incentives/></div>
-                <div id="car" className={styles.scroll}><CarouselComponent/></div>
+                <div id="testimonials" className={styles.scroll}><CarouselComponent/></div>
                 <div id="contact" className={styles.scroll}><Contact/></div>
             </div>
             {/* <Footer/> */}
