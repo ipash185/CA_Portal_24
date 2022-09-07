@@ -1,5 +1,5 @@
 import styles from './Incentives.module.css';
-import Incomp from './incomp';
+import Incomp from './Incomp';
 
 function Incentives(){
     return(
