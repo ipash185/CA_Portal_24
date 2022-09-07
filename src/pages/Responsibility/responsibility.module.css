@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Mplus;
+    src: url("../../fonts/Mplus1p-Regular.otf");
+  }
+
+.cov{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2rem;
+    grid-gap: 2rem;
+    padding-bottom: 20rem;
+}
+
+.card{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-items: center;
+    background: #484d4d;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin: 2rem 8rem;
+    transition: all 0.3s;
+    z-index: 20;
+    max-height: 50vh;
+    min-height: 50vh;
+    max-width: 50vw;
+}
+
+.circle{
+    box-sizing: border-box;
+    border-radius: 30rem;
+    background: grey;
+    background-position: center;
+    background-size:cover;
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: 8rem;
+    transition: all ease 0.3s;
+}
+
+.para{
+    display: none;
+    color: white;
+    font-size: Mplus;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.card:hover .para{
+    display: block;
+}
+
+.card:hover .circle{
+    display: none;
+}

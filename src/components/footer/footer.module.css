@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    position: fixed;
+    bottom: 3vh;
+    justify-content: center;
+    width: 100%;
+    z-index: 300;
+}
+
+.icon{
+    margin: 2rem;
+    font-size: 3rem;
+}

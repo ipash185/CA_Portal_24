@@ -32,7 +32,7 @@
     border-radius: 0.5rem;
     display: grid;
     position: absolute;
-    left: 2rem;
+    left: 2.2rem;
     width: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr repeat(4,1fr);
@@ -53,7 +53,7 @@
     border-radius: 0.5rem;
     display: grid;
     position: absolute;
-    left: 2rem;
+    left: 2.5rem;
     width: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr repeat(4,1fr);
@@ -67,13 +67,103 @@
     grid-row: 1/2;
 }
 
+.card3{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    display: grid;
+    position: absolute;
+    left: 34.3vw;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    background: #484d4dc7;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin: 2rem 8rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    transition:all 0.3s ease;
+    z-index: 11;
+}
+
+.card4{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    display: grid;
+    position: absolute;
+    left: 34.3vw;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    background: #484d4dc7;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin: 2rem 8rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.card5{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    display: grid;
+    position: absolute;
+    left: 67.2vw;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    background: #484d4dc7;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin: 2rem 8rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    transition:all 0.3s ease;
+    z-index: 11;
+}
+
+.card6{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    display: grid;
+    position: absolute;
+    left: 67.2vw;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    background: #484d4dc7;
+    text-align: center;
+    padding: 2rem 4rem;
+    margin: 2rem 8rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+
 .card:hover{
-    transform: translateY(-3.8rem);
+    transform: translateY(-3.6rem);
 }
 
 .card:hover + .card1{
     transform: translateY(-2rem);
 }
+
+.card:hover + .card3{
+    transform: translateY(-2rem);
+}
+
+.card:hover + .card5{
+    transform: translateY(-2rem);
+}
+
 
 .name{
     font-size: 2.5rem;

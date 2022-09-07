@@ -8,7 +8,29 @@
   src: url("../../fonts/Mplus1p-Regular.otf");
 }
 
-html {scroll-snap-type: y mandatory}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .container{
   background-image: url('../../images/backnew.svg');
@@ -45,6 +67,27 @@ html {scroll-snap-type: y mandatory}
   font-family: Mplus-Bold;
   font-size: 4rem;
   color: #4D4141;
+}
+
+.btn{
+  font-family: Mplus-Bold;
+  font-size: 2rem;
+  background-color: #007FFF;
+  margin-top: 5rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  transition: all 150ms ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover{
+  background-color: #0072E5;
+}
+
+.btn:active{
+  background-color: #0059B2;
 }
 
 @media only screen and (max-width:1000px) {

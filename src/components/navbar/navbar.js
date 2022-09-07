@@ -8,7 +8,6 @@ import {GiWideArrowDunk} from "react-icons/gi"
  const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-    <>  
       < div className={classes.main_nav}>
        
         <div className={classes.logo}>
@@ -24,19 +23,22 @@ import {GiWideArrowDunk} from "react-icons/gi"
           }>
           <ul>
             <li>
-              <a to="/">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>  
-              <a to="/about">About Us</a>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#resp">Responsibility</a>
             </li>
             <li> 
-              <a to="/Incentives">Incentives</a>
+              <a href="#inc">Incentives</a>
             </li>
             <li>
-              <a to="/Terms">Terms</a>
+              <a href="#car">Testimonials</a>
             </li>
             <li>
-              <a to="/contact">contact</a>
+              <a href="#contact">contact</a>
             </li>
              <li>
               <div className="button">
@@ -62,8 +64,6 @@ import {GiWideArrowDunk} from "react-icons/gi"
             </a>
         </div>
       </div>
-      </>
-
   );
         };
         export default Navbar;

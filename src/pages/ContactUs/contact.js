@@ -35,6 +35,20 @@ function Contact() {
           <div className={styles.icons}><MdEmail/>&nbsp;<MdFacebook/>&nbsp;<AiFillLinkedin/></div>
           <div className={styles.num}>NUMBER</div>
         </div>
+        <div className={styles.card3}>
+        <div className={styles.circle}></div>
+          <div className={styles.name}>NAME OF PERSONdd</div>
+          <div className={styles.job}>JOB Descriptioncs s</div>
+          <div className={styles.icons}><MdEmail/>&nbsp;<MdFacebook/>&nbsp;<AiFillLinkedin/></div>
+          <div className={styles.num}>NUMBER</div>
+          </div>
+        <div className={styles.card4}>
+        <div className={styles.circle}></div>
+          <div className={styles.name}>NAME OF PERSONdd</div>
+          <div className={styles.job}>JOB Description</div>
+          <div className={styles.icons}><MdEmail/>&nbsp;<MdFacebook/>&nbsp;<AiFillLinkedin/></div>
+          <div className={styles.num}>NUMBER</div>
+          </div>    
         <div className={styles.card}>
           <div className={styles.circle}></div>
           <div className={styles.name}>NAME OF PERSON</div>
@@ -42,6 +56,20 @@ function Contact() {
           <div className={styles.icons}><MdEmail/>&nbsp;<MdFacebook/>&nbsp;<AiFillLinkedin/></div>
           <div className={styles.num}>NUMBER</div>
         </div>
+        <div className={styles.card5}>
+        <div className={styles.circle}></div>
+          <div className={styles.name}>NAME OF PERSONdd</div>
+          <div className={styles.job}>JOB Description</div>
+          <div className={styles.icons}><MdEmail/>&nbsp;<MdFacebook/>&nbsp;<AiFillLinkedin/></div>
+          <div className={styles.num}>NUMBER</div>
+          </div>
+        <div className={styles.card6}>
+        <div className={styles.circle}></div>
+          <div className={styles.name}>NAME OF PERSONdd</div>
+          <div className={styles.job}>JOB Description</div>
+          <div className={styles.icons}><MdEmail/>&nbsp;<MdFacebook/>&nbsp;<AiFillLinkedin/></div>
+          <div className={styles.num}>NUMBER</div>
+          </div>    
       </div>
       </div>
       );
