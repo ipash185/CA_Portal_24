@@ -6,8 +6,10 @@ import {GiWideArrowDunk} from "react-icons/gi"
  
 
  const Navbar = () => {
+   
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
+    <>  
       < div className={classes.main_nav}>
        
         <div className={classes.logo}>
@@ -20,36 +22,34 @@ import {GiWideArrowDunk} from "react-icons/gi"
         <div
           className={
                   showMediaIcons ? `${classes.menu_link} ${classes.mobile_menu_link}` : `${classes.menu_link}`
-          }>
+          } >
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a to="/">Home</a>
             </li>
             <li>  
-              <a href="#about">About Us</a>
-            </li>
-            <li>
-              <a href="#resp">Responsibility</a>
+              <a to="/about">About Us</a>
             </li>
             <li> 
-              <a href="#inc">Incentives</a>
+              <a to="/Incentives">Incentives</a>
             </li>
             <li>
-              <a href="#car">Testimonials</a>
+              <a to="/Terms">Terms</a>
             </li>
             <li>
-              <a href="#contact">contact</a>
+              <a to="/contact">contact</a>
             </li>
              <li>
               <div className="button">
              
              
-             <button className={classes.sign} >
+             <button  
+             className={classes.sign}>
               <div to="/Signup">Signup</div>
              </button> 
-             <button className={classes.login}>
+             {/* <button className={classes.login}>
               <div to="/Login">Sign In</div>
-             </button>
+             </button> */}
               </div>
               </li> 
           </ul>
@@ -60,10 +60,12 @@ import {GiWideArrowDunk} from "react-icons/gi"
               // humburger.classList.remove('GiHamburgerMenu');
               // humburger.classList.add('GiWideArrowDunk');
             }>
-              <GiHamburgerMenu />
+              <GiHamburgerMenu/>
             </a>
         </div>
       </div>
+      </>
+
   );
         };
         export default Navbar;
