@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import styles from './Sign.module.css'
 import { useState } from 'react'
 import Navbar from '../../components/navbar/navbar';
+import img1 from "../../images/homepage_img.svg"
 
 import useForm from './useForm'
 const SignUp = () => {
@@ -50,7 +51,10 @@ const SignUp = () => {
     <div className={styles.cont}>
 
       <div className={styles.SignIn}></div>
-      <div className={styles.SignSide}></div>
+      <div className={styles.SignSide}>
+        <img src={img1} />
+        <div className='SideDivT'><h1>CA Programme Registration</h1></div>
+      </div>
       <div className={styles.Sign}>Sign Up</div>
       
       
