@@ -62,7 +62,7 @@ body {
   position:absolute;
   border-radius: nullpx;
   font-family: Montserrat;
-  font-size: 3vh;
+  font-size: 4vh;
   font-weight: 600;
   line-height: 37px;
   letter-spacing: 0em;
@@ -163,7 +163,7 @@ body {
   top: 88.5vh;
   border-radius: nullpx;
   font-family: Montserrat;
-  font-size: 2.15vh;
+  font-size: 2.3vh;
   font-weight: 700;
   line-height: 2.636vh;
   letter-spacing: 0em;
@@ -260,7 +260,7 @@ body {
   top: 72.65vh;
   border-radius: nullpx;
   font-family: Montserrat;
-  font-size: 2.15vh;
+  font-size: 2.3vh;
   font-weight: 700;
   line-height: 2.636vh;
   letter-spacing: 0em;
@@ -276,9 +276,9 @@ body {
   top: 93vh;
   border-radius: nullpx;
   font-family: Montserrat;
-  font-size: 1.9vh;
+  font-size: 2.3vh;
   font-weight: 600;
-  line-height: 2.34vh;
+  line-height: 2.636vh;
   letter-spacing: 0em;
   text-align: center;
   color: linear-gradient(0deg, #000000, #000000);
@@ -358,6 +358,7 @@ width: 18.144vw;
 left: 42.916vw;
 top: 41.5vh;
 position:absolute;
+background:#D9D9D9;
   }
   .PIn4 {
     height: 4.35vh;
@@ -366,6 +367,7 @@ left: 67.29vw;
 top: 41.5vh;
 border-radius: 10.68941879272461px;
 position:absolute;
+background:#D9D9D9;
   }
   .PIn5 {
     height: 4.735vh;
@@ -374,6 +376,7 @@ left: 42.916vw;
 top: 51.5vh;
 border-radius: 11.636941909790039px;
 position:absolute;
+background:#D9D9D9;
   }
   .PIn6 {
     height: 4.735vh;
@@ -382,6 +385,7 @@ left: 42.916vw;
 top: 61.6vh;
 border-radius: 11.636941909790039px;
 position: absolute;
+background:#D9D9D9;
   }
   .PIn7 {
     height: 4.354vh;
@@ -390,6 +394,7 @@ left: 42.916vw;
 top: 71.3vh;
 border-radius: 10.700636863708496px;
 position:absolute;
+background:#D9D9D9;
   }
   .PIn8 {
     height: 4.35vh;
@@ -398,6 +403,7 @@ left: 67.29vw;
 top: 71.3vh;
 border-radius: 10.68941879272461px;
 position:absolute;
+background:#D9D9D9;
   }
   .PIn9 {
     height: 4.735vh;
@@ -406,6 +412,7 @@ left: 42.916vw;
 top: 80vh;
 border-radius: 11.636941909790039px;
 position:absolute;
+background:#D9D9D9;
   }
   .FormLabel3 {
     height: 3.05vh;
