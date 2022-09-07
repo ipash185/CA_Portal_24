@@ -9,11 +9,10 @@
 }
 
 .main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 2rem;
-    grid-gap: 2rem;
     padding-bottom: 20rem;
 }
 

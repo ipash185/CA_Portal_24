@@ -9,12 +9,17 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 63.4%;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
   
+}
+
+li a{
+  font-size: 2.2rem;
 }
 
 li {
@@ -52,7 +57,7 @@ li {
 }
 
 .menu_link {
-  width: 100%;
+  width: 80%;
   margin-left: 0rem;
   padding-top: 2.4rem;
   transition: all 1s ease;
@@ -66,6 +71,7 @@ li {
   color: white;
   font-weight: 400;
   font-size: 3.4rem;
+  /* width: 80%; */
 }
 .menu_link .login{
  

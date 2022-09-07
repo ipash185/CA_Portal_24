@@ -27,7 +27,7 @@ function Home() {
                 <div id="car" className={styles.scroll}><CarouselComponent/></div>
                 <div id="contact" className={styles.scroll}><Contact/></div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     );
 
