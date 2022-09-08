@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Sign.module.css'
 import { useState } from 'react'
+import img1 from "../../images/homepage_img.svg"
 import Navbar from '../../components/navbar/navbar';
 import axios from 'axios'
 const SignIn = () => {
@@ -37,7 +38,10 @@ const SignIn = () => {
       <div className={styles.cont}>
 
         <div className={styles.SignIn}></div>
-        <div className={styles.SignSide}></div>
+        <div className={styles.SignSide}>
+          <img src={img1} />
+          <div className='SideDivT'><h1>CA Programme Registration</h1></div>
+        </div>
         <div className={styles.Sign}>Sign In</div>
         <div className={styles.FormLabel3}>Email-ID</div>
         <input type="text" className={styles.In3} onChange={(e) => { setEmail(e.target.value) }}></input>

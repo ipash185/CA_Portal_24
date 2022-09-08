@@ -32,6 +32,11 @@
     min-height: 50vh;
     width: 30rem;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle{
@@ -50,10 +55,17 @@
 .para{
     display: none;
     color: white;
-    font-size: Mplus;
+    font-size: 2rem;
     text-align: center;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
+
+}
+
+.pos{
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.3rem;
 }
 
 .card:hover .para{
@@ -64,10 +76,34 @@
     display: none;
 }
 
+@media (max-width: 1400px) {
+    .card{
+        width: 45%;
+        height: max-content;
+        margin: 1.4rem 0 1.4rem 0;
+    }
+
+    .card .para{
+        font-size: 3rem;
+    }
+
+    .pos{
+        font-size: 3.2rem;
+    }
+}
+
 @media (max-width: 1000px) {
     .card{
         width: 70%;
         height: max-content;
         margin: 1.4rem 0 1.4rem 0;
+    }
+
+    .card .para{
+        font-size: 2rem;
+    }
+
+    .pos{
+        font-size: 2.2rem;
     }
   }

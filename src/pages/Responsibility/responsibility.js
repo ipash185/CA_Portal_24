@@ -8,22 +8,24 @@ function Responsibility() {
       <div className={styles.main}>
         <div className={styles.card}>
           <div className={styles.circle}></div>
-          <p className={styles.para}>COORDINATION<br></br>
-            CAs arrange workshops and activities in their respective
-            colleges with the aid of KTJ. Thus, they serve as the
-            liaison between KTJ and the respective college administrations.</p>
+          <p className={styles.para}><div className={styles.pos}>1</div><br/>
+            To act as a bridge between Kshitij, IIT Kharagpur and your respective college</p>
         </div>
         <div className={styles.card}>
           <div className={styles.circle}></div>
-          <p className={styles.para}>COLLEGE PUBLICITY<br />
-            A campus ambassador also helps in publicising KTJ, and
-            ensuring participation of the respective campus community</p>
+          <p className={styles.para}><div className={styles.pos}>2</div><br />
+            Publicising Kshitij in your respective colleges by circulating posters, mails or messages in the official college groups.
+          </p>
         </div>
         <div className={styles.card}>
           <div className={styles.circle}></div>
-          <p className={styles.para}>ON SOCIAL MEDIA<br />
-            CAs must also promote KTJ via the social media platform by utilizing
-            their social media network for the development of KTJ'23.</p>
+          <p className={styles.para}><div className={styles.pos}>3</div><br />
+            Help conduct the Kshitij’s regional event Kascade in their respective hometowns.</p>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.circle}></div>
+          <p className={styles.para}><div className={styles.pos}>4</div><br />
+            Ensuring participation from your respective colleges for various events conducted by Kshitij.</p>
         </div>
       </div>
     </div>

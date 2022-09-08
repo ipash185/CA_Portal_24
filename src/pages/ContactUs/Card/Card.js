@@ -3,14 +3,17 @@ import { MdEmail, MdFacebook } from 'react-icons/md';
 import { AiFillLinkedin } from 'react-icons/ai';
 import styles from './Card.module.css'
 
-function Card() {
+function Card(props) {
+
+    const email = "mailto:" + props.email;
+
     return (
         <div className={styles.card}>
             <div className={styles.circle}></div>
-            <div className={styles.name}>NAME OF PERSON</div>
-            <div className={styles.job}>JOB Description</div>
-            <div className={styles.icons}><MdEmail />&nbsp;<MdFacebook />&nbsp;<AiFillLinkedin /></div>
-            <div className={styles.num}>NUMBER</div>
+            <div className={styles.name}>{props.name}</div>
+            <div className={styles.job}>J{props.job}</div>
+            <div className={styles.icons}><a href={email}><MdEmail /></a>&nbsp;<a href={props.fb}><MdFacebook /></a>&nbsp;<a href={props.li}><AiFillLinkedin /></a></div>
+            <div className={styles.num}>{props.num}</div>
         </div>
     )
 }
