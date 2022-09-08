@@ -81,7 +81,7 @@ const SignUp = () => {
       <input type="text" name = "college" className={styles.PIn6}></input>
       <input type="text" name= "city" className={styles.PIn7}></input>
       <input type="text" name = "state" className={styles.PIn8}></input>
-      <input type="password" className={styles.PIn9}></input>
+      <input type="password" name = "passsword" className={styles.PIn9}></input>
       <button type = "submit" className={styles.Button1}></button>
       <div className={styles.ButtonLabel}>Sign Up</div>
       <div className={styles.Linksto}>Already a member?<Link to='/SignIn'>Sign In</Link></div>
