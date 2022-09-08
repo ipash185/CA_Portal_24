@@ -53,7 +53,7 @@ const SignUp = () => {
       <div className={styles.SignIn}></div>
       <div className={styles.SignSide}>
         <img src={img1} />
-        <div className='SideDivT'><h1>CA Programme Registration</h1></div>
+        <h1>CA Programme Registration</h1>
       </div>
       <div className={styles.Sign}>Sign Up</div>
       
