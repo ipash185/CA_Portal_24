@@ -42,7 +42,6 @@ const SignUp = () => {
     <form
       
       onSubmit = {handleSubmit}
-      method = "POST"
       target= "_blank"
       ref = {formElement}
       >
