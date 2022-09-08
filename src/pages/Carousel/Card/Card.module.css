@@ -30,8 +30,12 @@
     width: 50%;
     height: 70%;
     padding: 2rem;
-    background-color: #AAA;
+    background-color: rgb(255, 255, 255);
     transition: all ease 0.6s;
+}
+
+.box img{
+    width: 100%;
 }
 
 .para {
