@@ -215,9 +215,9 @@ li {
 
   .mobile_menu_link {
     background-color: #17084ab9 ;
-    height: 24rem;
+    height: 25rem;
     align-items: right;
-
+    padding-bottom: 1.5rem;
     transition: all 1s linear;
     transform-origin: top;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -225,13 +225,13 @@ li {
   }
 
   .mobile_menu_link ul {
-    height: 2rem;
+    height: 1.2rem;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: start;
     margin-left: 3rem;
-    margin-top: 10rem;
+    margin-top: 11rem;
     z-index: 10;
     gap: 1px;
 
@@ -276,7 +276,9 @@ li {
     height: 6rem;
     grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
   }
-
+  .mobile_menu_link{
+    margin-top: 1rem;
+  }
   .logo{
     height: 5rem;
   }
