@@ -9,11 +9,12 @@
 }
 
 .main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
+    /* gap: 2rem; */
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 2rem;
-    grid-gap: 2rem;
     padding-bottom: 20rem;
 }
 
@@ -25,12 +26,12 @@
     background: #484d4d;
     text-align: center;
     padding: 2rem 4rem;
-    margin: 2rem 8rem;
     transition: all 0.3s;
     z-index: 20;
     max-height: 50vh;
     min-height: 50vh;
-    max-width: 50vw;
+    width: 30rem;
+    overflow-y: scroll;
 }
 
 .circle{
@@ -62,3 +63,11 @@
 .card:hover .circle{
     display: none;
 }
+
+@media (max-width: 1000px) {
+    .card{
+        width: 70%;
+        height: max-content;
+        margin: 1.4rem 0 1.4rem 0;
+    }
+  }

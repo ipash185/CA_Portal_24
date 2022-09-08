@@ -2,6 +2,8 @@ import React,{useRef} from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Sign.module.css'
 import { useState } from 'react'
+import Navbar from '../../components/navbar/navbar';
+import img1 from "../../images/homepage_img.svg"
 
 import useForm from './useForm'
 const SignUp = () => {
@@ -44,17 +46,21 @@ const SignUp = () => {
       target= "_blank"
       ref = {formElement}
       >
-
+<div>
+  <Navbar />
     <div className={styles.cont}>
 
       <div className={styles.SignIn}></div>
-      <div className={styles.SignSide}></div>
+      <div className={styles.SignSide}>
+        <img src={img1} />
+        <div className='SideDivT'><h1>CA Programme Registration</h1></div>
+      </div>
       <div className={styles.Sign}>Sign Up</div>
+      
+      
+      <div className={styles.PLabel}>
       <div className={styles.FormLabel1}>First Name</div>
       <div className={styles.FormLabel2}>Last Name</div>
-      <input type="text"  name = "first_name" className={styles.In1}></input>
-      <input type="text" name = "last_name" className={styles.In2}></input>
-      <div className={styles.PLabel}>
       <div className={styles.PLabel3}>Gender</div>
       <div className={styles.PLabel4}>MobileNumber</div>
       <div className={styles.PLabel5}>Email-ID</div>
@@ -63,6 +69,8 @@ const SignUp = () => {
       <div className={styles.PLabel8}>State</div>
       <div className={styles.PLabel9}>Password</div>
       </div>
+      <input type="text"  name = "first_name" className={styles.In1}></input>
+      <input type="text" name = "last_name" className={styles.In2}></input>
       <select name="gender" type="text" className={styles.PIn3}>
       <option>Select</option>
         <option>Male</option>
@@ -80,6 +88,7 @@ const SignUp = () => {
       <div className={styles.Linksto}>Already a member?<Link to='/SignIn'>Sign In</Link></div>
 
 
+    </div>
     </div>
 
     </form>

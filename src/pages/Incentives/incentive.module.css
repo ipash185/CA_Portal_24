@@ -73,7 +73,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5,1fr);
-        grid-gap:5rem;
+        grid-gap:10rem;
     }
 
     .cov{
