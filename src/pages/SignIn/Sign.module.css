@@ -40,8 +40,17 @@ body {
   background-image: url("div background.png");
    }
 
-   .SideDivT {
-position:relative;
+   .SignSide h1 {
+position: absolute;
+top:50vh;
+left:1.5vw;
+font-size:2.9rem;
+   }
+   .SignSide img {
+    position:absolute;
+    height:50vh;
+    width:30vw;
+    left:0.5vw;
    }
    .SignIn {
     position:absolute;
@@ -62,11 +71,11 @@ position:relative;
   height: 4vh;
   width: 100%;
   left: 42.916vw;
-  top: 22vh;
+  top: 21vh;
   position:absolute;
   border-radius: nullpx;
   font-family: Montserrat;
-  font-size: 4vh;
+  font-size: 6vh;
   font-weight: 600;
   line-height: 37px;
   letter-spacing: 0em;
@@ -509,28 +518,29 @@ background:#D9D9D9;
   }
   @media screen and (max-width:768px){
     .Linksto {
-      font-size: 1.5vh;
-      top:84vh;
+      font-size: 1.6vh;
+      top:93vh;
       left:30vw;
     }
     .RememberMe,.ForgotPassword {
       font-size: 1.7vh;
     }
-    .FormLabel1,.FormLabel3,.FormLabel4,.FormLabel5,.In1,.In3,.In4,.In5 {
+    .FormLabel1,.FormLabel3,.In3,.PLabel3,.FormLabel4,.PLabel5,.PLabel7,.PIn7,.PLabel6,.PIn6,.PLabel9,.PIn9,.In1,.PIn3,.In4,.PIn5 {
       left:13vw;
       font-size:1.9vh;
     }
-    .In3,.In4,.In5 {
-      width:78vw;
+    .PIn5,.PIn6,.PIn9,.In3,.In4 {
+      width:77vw;
     }
-    .In1,.In2 {
+    .In1,.In2,.PIn3,.PIn4,.PIn7,.PIn8 {
       width:35vw;
       
     }
-    .FormLabel2,.In2 {
+    .FormLabel2,.In2,.PLabel4,.PIn4,.PIn8,.PLabel8 {
       font-size: 1.9vh;
       left:55vw;
     }
+    
     .SignSide {
       display:none;
     }
@@ -550,7 +560,8 @@ background:#D9D9D9;
       left:72vw;
     }
     .SignInB {
-      left:30vw;
+      left:21vw;
+      width:60vw;
     }
     .SignInT{
       left:46vw;

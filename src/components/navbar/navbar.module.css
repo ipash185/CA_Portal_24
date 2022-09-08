@@ -38,6 +38,7 @@ li {
   background-color: #302849b9;;
   position: absolute;
   z-index: 40;
+  position: fixed;
 }
 
 .logo {
