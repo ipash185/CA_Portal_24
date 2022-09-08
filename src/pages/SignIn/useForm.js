@@ -26,17 +26,17 @@ function useForm({ form, additionalData, endpointUrl }) {
       console.log(data);
 
 
-      axios.post("https://cap-ktj-backend.herokuapp.com/signup",JSON.stringify(data)).then((response)=>{
-                if (response.status !== 200) {
-            throw new Error(response.statusText);
-          }
+      axios.post("http://localhost:5000/signup", data).then((response) => {
+        if (response.status !== 200) {
+          throw new Error(response.statusText);
+        }
 
-          return response.json();
-      }).catch((err)=>{
-          setMessage(err.toString());
-          setStatus("error");
+        return response.json();
+      }).catch((err) => {
+        setMessage(err.toString());
+        setStatus("error");
       })
-      
+
 
     }
   };
