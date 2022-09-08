@@ -29,7 +29,7 @@
 }
 
 .elem:hover .para{
-    transform: scale(1.12);
+    transform: scale(1.04);
 }
 
 .para{
@@ -44,6 +44,7 @@
     justify-content: center;
     flex-direction: row;
     max-width: 96%;
+    padding-left:4.16666667vw;
 }
 
 .sub{
@@ -85,5 +86,6 @@
         display: block;
     }
 
+   
 }
     
