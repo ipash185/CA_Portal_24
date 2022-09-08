@@ -17,6 +17,10 @@
   /* border-radius: 25px; */
   z-index: 5;
 }
+
+.social li a{
+  color: white;
+}
 .footup{
   display: flex;
   flex-direction: row;

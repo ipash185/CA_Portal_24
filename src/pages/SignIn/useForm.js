@@ -1,9 +1,23 @@
 import { useState } from "react";
 import axios from "axios"
+import {Redirect } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 function useForm({ form, additionalData, endpointUrl }) {
+
+  let navigate = useNavigate();
+
+
   const [status, setStatus] = useState("");
   const [message, setMessage] = useState("");
+
+  const showSuccessMessage = ()=>{
+    return <h1> Register Successfully</h1>
+  }
+
+  const showErrorMessage = ()=>{
+    return <h1> Register Error </h1>
+  }
 
   const handleSubmit = (e) => {
     if (form) {
@@ -26,22 +40,39 @@ function useForm({ form, additionalData, endpointUrl }) {
       console.log(data);
 
 
-      axios.post("https://cap-ktj-backend.herokuapp.com/signup",JSON.stringify(data)).then((response)=>{
-                if (response.status !== 200) {
-            throw new Error(response.statusText);
-          }
+      axios.post("https://cap-ktj-backend.herokuapp.com/signup", data).then((response) => {
+        if (response.status !== 200) {
+          throw new Error(response.statusText);
+        }
 
-          return response.json();
-      }).catch((err)=>{
-          setMessage(err.toString());
-          setStatus("error");
+
+         setMessage(true)
+
+         navigate('/home');
+
+         console.log("Success")
+         
+        return response.json();
+       
+        
+        
+
+      }).catch((err) => {
+
+        navigate('/SignUp',{message:true})
+        setMessage(err.toString());
+        setStatus(false);
+        
+       
       })
-      
+
 
     }
   };
 
-  return { handleSubmit, status, message };
+  <h1>Registeration Successfull</h1>
+
+  return { handleSubmit, status, message,message };
 }
 
 export default useForm;

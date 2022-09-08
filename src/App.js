@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './pages/Homepage/Homepage';
+import Home2 from './pages/Homepage/Homepage2'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from './pages/SignIn/SignUp';
 import SignIn from './pages/SignIn/SignIn';
@@ -30,10 +31,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/SignUp' element={<SignUp />} />
+        <Route path='/SignUp' getMessage={({ params }) => params.message} element={<SignUp />} />
         <Route path='/SignIn' element={<SignIn />} />
         <Route path='/ProfileEdit' element={<ProfileEdit />} />
         <Route path='/ProfileSave' element={<ProfileSave />} />
+        <Route path  = '/home' element = {<Home2/>}/>
       </Routes>
 
 
