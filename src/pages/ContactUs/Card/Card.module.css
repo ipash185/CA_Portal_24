@@ -52,6 +52,11 @@
     align-self: center;
     grid-row: 1/2;
 }
+.circle img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 30rem;
+}
 
 .icons a{
     text-decoration: none;
