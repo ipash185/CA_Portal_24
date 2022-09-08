@@ -67,7 +67,6 @@
 }
 
 @media only screen and (max-width: 1400px) and (min-device-width: 1400px) {
-<<<<<<< HEAD
     .elem{
         
         padding: 0.5rem;
@@ -77,22 +76,6 @@
 
     .para{
        
-=======
-    .elem {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 0.5rem;
-    }
-
-    .cara {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
-
-    .para {
-        grid-row: 2/3;
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
         font-size: 3rem;
         text-align: justify;
     }
@@ -100,15 +83,6 @@
 
 @media only screen and (max-width: 1000px) and (min-width:980px) {
 
-<<<<<<< HEAD
-    .elem{
-        
-        padding: 0.5rem;
-    }
-
-    .para{
-        
-=======
     .elem {
         display: grid;
         grid-template-columns: 1fr;
@@ -118,19 +92,14 @@
 
     .para {
         grid-row: 2/3;
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
         font-size: 1.8rem;
         padding:1em;
     }
 
-<<<<<<< HEAD
-    
-=======
     .cara {
         padding-top: 10%;
         padding-bottom: 20%;
     }
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
 }
 
 @media only screen and (max-width: 980px) {
@@ -140,15 +109,6 @@
         font-size: 3.5rem;
     }
 
-<<<<<<< HEAD
-    .elem{
-       
-        padding: 0.8rem;
-        grid-gap:0.25rem;
-    }
-
-    .para{
-=======
     .elem {
         display: grid;
         grid-template-columns: 1fr;
@@ -159,24 +119,10 @@
 
     .para {
         grid-row: 2/3;
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
         font-size: 1.5rem;
         padding: 2rem;
     }
 
-<<<<<<< HEAD
-    
-}
-@media only screen and (max-width: 500px){
-
-    .heading{
-        padding-left:0;
-        font-size: 2.5rem;
-    }
-
-    .elem{
-        
-=======
     .cara {
         padding-top: 10%;
         padding-bottom: 20%;
@@ -194,7 +140,6 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
         padding: 0.5rem;
         grid-gap: 0.25rem;
     }
@@ -204,39 +149,23 @@
         font-size: 1.2rem;
         grid-column: 1/-1;
         text-align: justify;
-<<<<<<< HEAD
-        padding: 2rem;
-    }}
-=======
         padding: 1rem;
     }
 }
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
 
 @media only screen and (max-width: 300px) {
 
-<<<<<<< HEAD
-    .heading{
-        padding:0;
-        font-size: 1.8rem;
-=======
     .heading {
         padding-left: 0;
         font-size: 3.5rem;
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
     }
 
     .elem {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-<<<<<<< HEAD
-        padding: 0.1rem;
-        grid-gap:0.25rem;
-=======
         padding: 0.5rem;
         grid-gap: 0.25rem;
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
     }
 
     .para {
@@ -251,28 +180,4 @@
         padding-top: 10%;
         padding-bottom: 20%;
     }
-<<<<<<< HEAD
 }
-
-@media only screen and (max-width:243px) {
-    .heading {
-        padding: 0;
-        font-size: 1.5em;
-    }
-    .cara {
-        padding-bottom: 50%;
-        padding-top: 30%;
-    }
-    .elem {
-        padding:0.1em;
-        
-        padding-top: 0;
-        
-    }
-    .para {
-        font-size: 0.5em;
-    }
-}
-=======
-}
->>>>>>> 96b9c296f25b5fc93f8fbdbf379803b808709321
