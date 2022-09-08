@@ -69,21 +69,15 @@
 
 @media only screen and (max-width: 1400px) and (min-device-width: 1400px) {
     .elem{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        
         padding: 0.5rem;
     }
 
-    .cara{
-        padding-top:10%;
-        padding-bottom: 20%;
-    }
+    
 
     .para{
-        grid-row: 2/3;
+       
         font-size: 3rem;
-        grid-column: 1/-1;
         text-align: justify;
     }
 }
@@ -91,23 +85,17 @@
 @media only screen and (max-width: 1000px) and (min-width:980px){
 
     .elem{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        
         padding: 0.5rem;
     }
 
     .para{
-        grid-row: 2/3;
+        
         font-size: 1.8rem;
-        grid-column: 1/-1;
-        text-align: justify;
+        padding:1em;
     }
 
-    .cara{
-        padding-top:10%;
-        padding-bottom: 20%;
-    }
+    
 }
 
 @media only screen and (max-width: 980px){
@@ -118,37 +106,27 @@
     }
 
     .elem{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 0.5rem;
+       
+        padding: 0.8rem;
         grid-gap:0.25rem;
     }
 
     .para{
-        grid-row: 2/3;
         font-size: 1.5rem;
-        grid-column: 1/-1;
-        text-align: justify;
-        padding: 1rem;
+        padding: 2rem;
     }
 
-    .cara{
-        padding-top:10%;
-        padding-bottom: 20%;
-    }
+    
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
 
     .heading{
         padding-left:0;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .elem{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        
         padding: 0.5rem;
         grid-gap:0.25rem;
     }
@@ -158,30 +136,30 @@
         font-size: 1.2rem;
         grid-column: 1/-1;
         text-align: justify;
-        padding: 1rem;
+        padding: 2rem;
     }}
 
     @media only screen and (max-width: 300px){
 
     .heading{
-        padding-left:0;
-        font-size: 3.5rem;
+        padding:0;
+        font-size: 1.8rem;
     }
 
     .elem{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        padding: 0.5rem;
+        padding: 0.1rem;
         grid-gap:0.25rem;
     }
 
     .para{
         grid-row: 2/3;
-        font-size: 1rem;
+        font-size: 1.2rem;
         grid-column: 1/-1;
         text-align: justify;
-        padding: 1rem;
+        padding: 0rem 1em 1em 1em;
     }
 
     .cara{
@@ -190,3 +168,22 @@
     }
 }
 
+@media only screen and (max-width:243px) {
+    .heading {
+        padding: 0;
+        font-size: 1.5em;
+    }
+    .cara {
+        padding-bottom: 50%;
+        padding-top: 30%;
+    }
+    .elem {
+        padding:0.1em;
+        
+        padding-top: 0;
+        
+    }
+    .para {
+        font-size: 0.5em;
+    }
+}
