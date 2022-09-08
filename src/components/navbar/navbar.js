@@ -4,6 +4,7 @@ import classes from "./navbar.module.css";
 import img1 from "../../images/homepage_img.svg"
 import {GiWideArrowDunk} from "react-icons/gi"
 import {Link} from 'react-router-dom';
+
  
 
  const Navbar = () => {
@@ -47,10 +48,10 @@ import {Link} from 'react-router-dom';
               <div className="button">
              
              
-             <button  
+             {/* <button  
              className={classes.sign}>
               <Link to="/Signup">Signup</Link>
-             </button> 
+             </button>  */}
              {/* <button className={classes.login}>
               <div to="/Login">Sign In</div>
              </button> */}
