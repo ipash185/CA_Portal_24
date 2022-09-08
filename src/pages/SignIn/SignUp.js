@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Sign.module.css'
 import { useState } from 'react'
+import { TailSpin } from 'react-loading-icons'
 import axios from "axios"
 import {Redirect } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
@@ -17,6 +18,7 @@ const SignUp = (props) => {
 
   const [show,setShow] = useState(false)
   const [error,setError] = useState(false)
+  const [loading,setLoading] = useState(false)
 
   let navigate = useNavigate();
 
@@ -50,12 +52,15 @@ const SignUp = (props) => {
 
       console.log(data);
 
+      setLoading(true);
+
 
       axios.post("https://cap-ktj-backend.herokuapp.com/signup", data).then((response) => {
         if (response.status !== 200) {
           throw new Error(response.statusText);
         }
 
+         setLoading(false)
          setError(false)
 
          navigate('/home');
@@ -68,6 +73,8 @@ const SignUp = (props) => {
         
 
       }).catch((err) => {
+
+        setLoading(false)
 
         setError(true)
 
@@ -160,7 +167,19 @@ const SignUp = (props) => {
 
          
           
-          <button type="submit" onClick={()=>setShow(true)} style = {{color:"white",cursor:"pointer"}} className={styles.Button1}>Register</button>
+          <button type="submit" onClick={()=>setShow(true)} style = {{color:"white",cursor:"pointer"}} className={styles.Button1}>
+            
+          {loading ? (
+                        <span style={{ marginRight: '9px',marginTop:"5px" }}>
+                          <TailSpin width='20' height='12' />
+                        </span>
+                      ) : (
+                        ''
+                      )}
+
+             <span >Register</span>
+            
+            </button>
          
 
           
