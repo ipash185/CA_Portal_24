@@ -4,9 +4,7 @@ import classes from "./navbar.module.css";
 import img1 from "../../images/homepage_img.svg"
 import {GiWideArrowDunk} from "react-icons/gi"
 import {Link} from 'react-router-dom';
-
  
-
  const Navbar = () => {
    
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -27,7 +25,7 @@ import {Link} from 'react-router-dom';
           } >
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>  
               <a href = "#about">About Us</a>
