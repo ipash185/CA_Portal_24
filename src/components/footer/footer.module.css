@@ -7,7 +7,7 @@
  bottom: 0px;
  display: flex;
  flex-direction: column;
- background-color: rgb(24, 29, 190);
+ background-color:#a473ce;
   min-height: 60rem;
   max-height: 100%;
   width: 100%;
@@ -56,7 +56,7 @@
    /* font-weight:420; */
    /* margin: -5%; */
    position: absolute;
-   left: 17%;
+   left: 13%;
    width: 10%;
    color: white;
 }
@@ -191,15 +191,21 @@ text-align: center;
 }
  
  
- /* @media (max-width:1420px) {
+  @media (max-width:1000px) {
   .copy{
     margin-top: -15vw;
   }
   .social ul li{
     margin-top: -17vw;
   }
+  .logo{
+    left: 10%;
+  }
+  .content{
+    font-size: 2.5rem;
+  }
  }
- @media (max-width:1260px) {
+ /* @media (max-width:990px) {
   .copy{
     margin-top: -21vw;
   }
@@ -210,10 +216,10 @@ text-align: center;
     height: 85%;
     width: 85%;
     margin-top: 4.8vw;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     
-  }
- } */
+  } */
+ 
  /* @media (max-width:1209px) {
   .social ul li{
     margin-top:-20vw;
