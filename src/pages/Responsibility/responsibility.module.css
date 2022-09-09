@@ -4,8 +4,8 @@
   }
 
 .cov{
-    padding-top: 10vh;
-    padding-bottom: 5vh;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .main{
@@ -23,7 +23,7 @@
     border-radius: 0.5rem;
     align-items: center;
     justify-items: center;
-    background: #484d4d;
+    background: white;
     text-align: center;
     padding: 2rem 4rem;
     transition: all 0.3s;
@@ -54,7 +54,7 @@
 
 .para{
     display: none;
-    color: white;
+    color: #4D4141;
     font-size: 2rem;
     text-align: center;
     margin: auto;
