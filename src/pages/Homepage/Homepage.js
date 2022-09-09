@@ -1,4 +1,5 @@
 import React, { useEffect ,useState} from 'react';
+import bg from "../../images/bg.png"
 import styles from './Homepage.module.css';
 import About from '../About/about';
 import CarouselComponent from '../Carousel/car';
@@ -10,8 +11,6 @@ import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 import Responsibility from '../Responsibility/responsibility';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
-
 
 function Home() {
 
@@ -43,6 +42,9 @@ function Home() {
         <div>
             <Navbar show = {auth} />
             <div className={styles.container}>
+                <div className={styles.bg1}> 
+                <div className={styles.bg2}> <img src={bg}/>
+                </div>
                 <div className={styles.bg}> 
                     <h1 className={styles.heading}>CAMPUS AMBASSADOR PROGRAM</h1>
                     <h2 className ={styles.head2}> KSHITIJ, IIT KHARAGPUR</h2>
@@ -52,6 +54,7 @@ function Home() {
                         </ButtonUnstyled></Link>
                     }
                    
+                </div>
                 </div>
                 <div id ="about" className={styles.scroll}><About/></div>
                 <div id = "resp" className={styles.scroll}><Responsibility/></div>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Mplus;
+    src: url("../../fonts/Mplus1p-Regular.otf");
+}
+
 .main {
     display: block;
     justify-content: center;
@@ -11,11 +16,12 @@
 }
 
 .heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-left: 1rem;
     padding-bottom: 4rem;
     text-align: center;
-    letter-spacing: 0.25em;
+    /* letter-spacing: 0.25em; */
+    /* font-family: MPlus; */
 }
 
 .cara {

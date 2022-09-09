@@ -16,12 +16,11 @@
 .circle{
     box-sizing: border-box;
     border-radius: 30rem;
-    background: url('./sample.png');
-    background-position: center;
-    background-size:cover;
     height: 15rem;
     width: 15rem;
     transition: all ease 0.3s;
+    background-position: center;
+    background-size:cover;
 }
 
 .elem:hover .circle{

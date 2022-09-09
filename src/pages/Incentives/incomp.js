@@ -1,9 +1,10 @@
 import styles from './incentive.module.css';
 
+
 function Incomp(props){
     return(
         <div className={styles.elem}>
-            <div className={styles.circle}></div>
+            <img className={styles.circle} src={props.img} ></img>
             <p className={styles.para}><b style={{fontSize: '2rem'}}> {props.text}</b></p>
         </div>
     );

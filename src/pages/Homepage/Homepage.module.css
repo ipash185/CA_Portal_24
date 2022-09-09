@@ -1,6 +1,6 @@
 @font-face {
   font-family: Mplus-Bold;
-  src: url("../../fonts/\/Mplus1p-Bold.otf");
+  src: url("../../fonts/Mplus1p-Bold.otf");
 }
 
 @font-face {
@@ -40,27 +40,40 @@ p{
   background-image: url('../../images/Bgimgg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-size:100%; */
   scroll-behavior: smooth;
   background-size: cover;
+  /* background-size:100%; */
   /* scroll-snap-type: y mandatory; */
 }
-
+.bg1{
+  display: flex;
+  flex-flow: row wrap;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+}
+.bg2{
+  position: relative;
+  top: 6rem;
+  border-right: 2px solid black;
+}
+.bg2 img{
+  width: 90%;
+}
 .bg{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   position: relative;
-  top: 10rem;
-  padding-top: 30vh;
-  padding-bottom: 20vh;
-  /* scroll-snap-align: center; */
+  top: 1rem;
+  margin-bottom: -6rem;
 }
 
 .heading {
   font-family: Mplus-Bold;
-  font-size: 6rem;
+  font-size: 4rem;
   color: #4D4141;
 }
 
@@ -92,15 +105,19 @@ p{
 }
 
 @media only screen and (max-width:1000px) {
+    .bg2{
+      position: relative;
+      top: 6rem;
+      margin-bottom: -2rem;
+      border-right: none;
+    }
     .container{
       background-size: 400%;
       background-position: -20rem -20rem;
     }
 
     .bg{
-      top:5rem;
-      padding-top: 30rem;
-      padding-bottom: 30rem;
+      margin-bottom: 1rem;
     }
 
     .heading{

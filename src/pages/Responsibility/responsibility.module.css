@@ -31,7 +31,7 @@
     max-height: 50vh;
     min-height: 50vh;
     width: 30rem;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
