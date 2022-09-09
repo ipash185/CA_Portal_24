@@ -147,6 +147,7 @@ li {
 
  .hamburger_menu{
   display: none;
+  user-select: none;
  }
  
 
