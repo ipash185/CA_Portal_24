@@ -4,6 +4,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 exports.login = async (req, res) => {
+
+    
     // console.log(req.body);
     const email_or_ca_id = req.body.email;
     const password = req.body.password;

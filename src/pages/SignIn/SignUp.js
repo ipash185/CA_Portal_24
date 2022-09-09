@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from '../../components/navbar/navbar';
 import img1 from "../../images/homepage_img.svg"
 
+
 import Alert from '@mui/material/Alert';
 
 
@@ -68,8 +69,10 @@ const SignUp = (props) => {
          console.log("Success")
          
         return response.json();
-       
+
         
+        
+         
         
 
       }).catch((err) => {
@@ -135,7 +138,7 @@ const SignUp = (props) => {
             
             </div>
 
-
+          
 
 
           <div className={styles.PLabel}>
@@ -180,6 +183,11 @@ const SignUp = (props) => {
              <span >Register</span>
             
             </button>
+
+
+            
+
+            
          
 
           
