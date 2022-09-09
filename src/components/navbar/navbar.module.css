@@ -33,9 +33,11 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(29, 29, 78, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  background-color: #302849b9;;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+    background: #0F2A70C2;
+    Fill: Solid
+    rgba(15, 42, 112, 0.76);
   position: absolute;
   z-index: 40;
   position: fixed;

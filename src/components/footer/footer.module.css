@@ -7,7 +7,11 @@
  bottom: 0px;
  display: flex;
  flex-direction: column;
- background-color:#a473ce;
+ background: #0F2A7080;
+ Fill: Solid
+ rgba(15, 42, 112, 0.5);
+  min-height: 60rem;
+
   min-height: 50rem;
   max-height: 100%;
   width: 100%;

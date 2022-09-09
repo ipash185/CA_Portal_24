@@ -67,22 +67,16 @@
 }
 
 @media only screen and (max-width: 1400px) and (min-device-width: 1400px) {
-    .elem {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+    .elem{
+        
         padding: 0.5rem;
     }
 
-    .cara {
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
+    
 
-    .para {
-        grid-row: 2/3;
+    .para{
+       
         font-size: 3rem;
-        grid-column: 1/-1;
         text-align: justify;
     }
 }
@@ -99,8 +93,7 @@
     .para {
         grid-row: 2/3;
         font-size: 1.8rem;
-        grid-column: 1/-1;
-        text-align: justify;
+        padding:1em;
     }
 
     .cara {
@@ -127,9 +120,7 @@
     .para {
         grid-row: 2/3;
         font-size: 1.5rem;
-        grid-column: 1/-1;
-        text-align: justify;
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .cara {
@@ -179,10 +170,10 @@
 
     .para {
         grid-row: 2/3;
-        font-size: 1rem;
+        font-size: 1.2rem;
         grid-column: 1/-1;
         text-align: justify;
-        padding: 1rem;
+        padding: 0rem 1em 1em 1em;
     }
 
     .cara {
