@@ -4,8 +4,9 @@ import classes from "./navbar.module.css";
 import img1 from "../../images/homepage_img.svg"
 import {GiWideArrowDunk} from "react-icons/gi"
 import {Link} from 'react-router-dom';
+import { propsToClassKey } from "@mui/styles";
  
- const Navbar = () => {
+ const Navbar = (props) => {
    
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
@@ -46,13 +47,16 @@ import {Link} from 'react-router-dom';
               <div className="button">
              
              
-             {/* <button  
+             {!props.show?(<><button  
              className={classes.sign}>
               <Link to="/Signup">Signup</Link>
-             </button>  */}
-             {/* <button className={classes.login}>
+             </button>  
+              <button className={classes.login}>
               <div to="/Login">Sign In</div>
-             </button> */}
+             </button></>):""
+             
+             }
+
               </div>
               </li> 
           </ul>
