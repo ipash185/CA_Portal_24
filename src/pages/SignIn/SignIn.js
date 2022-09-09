@@ -14,7 +14,7 @@ const SignIn = () => {
     e.preventDefault();
     const user = { email, password };
 
-    axios.post("http://localhost:5000/signin/", user).then((response) => {
+    axios.post("https://cap-ktj-backend.herokuapp.com/signin/", user).then((response) => {
       if (response.status !== 200) {
         throw new Error(response.statusText);
       }

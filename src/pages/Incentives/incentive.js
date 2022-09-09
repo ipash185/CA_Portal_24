@@ -11,7 +11,7 @@ function Incentives() {
                 <div className={styles.sub}><div className={styles.e}><Incomp text="Invitation to all the events conducted 
             by Kshitij IIT Kharagpur."/></div></div>
                 <div className={styles.sub}><div className={styles.o}><Incomp text="Extensive networking with students of IIT 
-            Kharagpur and students from various colleges"/></div></div>
+            Kharagpur and students from various colleges."/></div></div>
                 <div className={styles.sub}><div className={styles.e}><Incomp text="A special post will be released on Kshitij's 
             social media handles announcing the top 10 best campus ambassadors."/></div></div>
                 <div className={styles.sub}><div className={styles.o}><Incomp text="Goodies and Hampers after the fest." /></div></div>

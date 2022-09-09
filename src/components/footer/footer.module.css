@@ -7,13 +7,13 @@
  bottom: 0px;
  display: flex;
  flex-direction: column;
- background-color: rgb(24, 29, 190);
+ background-color:#a473ce;
   min-height: 60rem;
   max-height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  border: 2px solid black;
+ 
   /* border-radius: 25px; */
   z-index: 5;
 }
@@ -56,7 +56,7 @@
    /* font-weight:420; */
    /* margin: -5%; */
    position: absolute;
-   left: 17%;
+   left: 13%;
    width: 10%;
    color: white;
 }
@@ -73,7 +73,7 @@
   text-align: center;
   /* margin-left: 15%; */
   /* margin-right: -20%; */
-  margin-top:2vw;
+  margin-top:4vw;
   width: 80%;
   height: 70%;
   display: flex;
@@ -129,6 +129,7 @@ text-align: center;
   text-align: left;
   margin-bottom: -15px;
   font-weight: 700;
+  font-size: 2.5rem;
  }
  .footdown{
   display: flex;
@@ -138,22 +139,27 @@ text-align: center;
  }
  .footdown{
   position:relative;
-  top: 12rem;
+  top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   /* background-color: aqua; */
   height: 4.5rem;
   width: 100%;
+  height: 6rem;
+ 
+  
  }
  .social{
   display: flex;
   /* border: 2px solid red; */
   margin-left: 5%;
+  margin-top: 0rem;
   height: 4rem;
   width: 50%;
   justify-content: space-around;
   align-items: center;
+ 
  }
  .social ul{
   display: flex;
@@ -163,23 +169,22 @@ text-align: center;
   align-items: center;
  }
  .social ul li{
-  margin-top: -10vw;
+  margin-top: 0vw;
   margin-right: 5vw;
 
  }
 
- /* .social ul li:a{
-  color: black;
- } */
+ 
   
  .copy{
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 4rem;
-  width: 50%;
-  margin-top: -12vw;
-  /* color: white; */
+  width: 60%;
+  margin-left: -1rem;
+   
+ 
  }
  .copy h3{
   color: white;
@@ -190,16 +195,174 @@ text-align: center;
   font-weight: bolder;
 }
  
- 
- /* @media (max-width:1420px) {
-  .copy{
-    margin-top: -15vw;
+ @media (max-width:1350px) {
+  .mainfoot{
+    display: flex;
+    flex-direction: column;
+  
   }
-  .social ul li{
-    margin-top: -17vw;
+   .footup{
+    display: flex;
+    flex-direction: column;
+  }
+  .footabout{
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 19%;
+  }
+  .logo{
+    margin-left: 20.5%;
+    
+  }.logo img{
+    height: 6rem;
+    width: 6rem;
+  }
+  .content{
+    margin-top: 15%;
+    width: 120%;
+    
+    
+  }
+  .content p{
+    font-size: 1.5rem;
+  }
+  .logo span{
+    font-size: 3rem;
+  }
+   
+  .footdown{
+    display: flex;
+    flex-direction: column;
+    background-color:  #a473ce
+  }
+  
+  .form{
+    width: 100%;
+    margin-left: -10%;
+  }
+  .forms input{
+    width: 100%;
+  }
+  .forms textarea{
+    width: 100%;
+  }
+   
+ }
+ @media (max-width:560px) {
+  .footdown{
+    background-color:  #a473ce
+
+  }
+  .content{
+    margin-top: 18%;
+    width: 120%;
+    
+    
+  }
+  .logo{
+    margin-left: 18%;
+  }
+  .copy{
+    width: 90%;
+  }
+  .form{
+    width: 100%;
+    margin-left: -15%;
+  }
+  
+ }
+ @media (max-width:430px) {
+  .footdown{
+    background-color:  #a473ce
+
+  }
+  .content{
+    margin-top:28%;
+    margin-left: 12%;
+  }
+  .logo{
+    margin-left: 15%;
+  }
+  .copy{
+    width: 90%;
+  }
+  .form{
+    width: 100%;
+    margin-left: -16%;
+  }
+  
+ }
+ @media (max-width:320px) {
+  .logo{
+    margin-left: 8%;
+  }
+  .content{
+    margin-top: 39%;
+   
+  }
+  .form{
+    margin-left: -23%;
+  }
+  .form h2{
+    font-size: 2rem;
+  }
+  .forms input{
+width: 120%;
+  }
+  .form textarea{
+    width: 120%;
+  }
+  .content p{
+    font-size: 1.2rem;
   }
  }
- @media (max-width:1260px) {
+ /* @media (max-width:950px) {
+  .mainfoot{
+    display: flex;
+    flex-direction: column;
+  }
+   .footup{
+    display: flex;
+    flex-direction: column;
+  }
+  .footabout{
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 22%;
+  }
+  .logo{
+    margin-left: 23%;
+    
+  }
+  .content{
+    margin-top: 13%;
+    width: 140%;
+    font-size: 4rem;
+    
+  }
+  .logo span{
+    font-size: 3rem;
+  }
+   
+  .footdown{
+    display: flex;
+    flex-direction: column;
+  }
+  .form{
+    width: 90%;
+  }
+  .forms input{
+    width: 90%;
+  }
+  .forms textarea{
+    width: 90%;
+  }
+   
+ } */
+   
+ /* @media (max-width:990px) {
   .copy{
     margin-top: -21vw;
   }
@@ -210,10 +373,10 @@ text-align: center;
     height: 85%;
     width: 85%;
     margin-top: 4.8vw;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     
-  }
- } */
+  } */
+ 
  /* @media (max-width:1209px) {
   .social ul li{
     margin-top:-20vw;
