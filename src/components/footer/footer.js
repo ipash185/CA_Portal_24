@@ -77,19 +77,19 @@ function Footer() {
           <div className={classes.social}>
             <ul>
               <li>
-                <a to="/" className='Bs'><BsFacebook /></a>
+                <a href='https://www.facebook.com/ktj.iitkgp' target="_blank" className='Bs'><BsFacebook /></a>
               </li>
               <li>
-                <a to="/" className='Bs'><BsInstagram /></a>
+                <a href='https://www.instagram.com/ktj.iitkgp/' target="_blank" className='Bs'><BsInstagram /></a>
               </li>
               <li>
-                <a to="/" className='Bs'><BsTwitter /></a>
+                <a  href='https://twitter.com/ktj_iitkgp' target="_blank" className='Bs'><BsTwitter /></a>
               </li>
               <li>
-                <a to="/" className='Bs'><BsLinkedin /></a>
+                <a  href='https://www.linkedin.com/company/kshitij-iit-kharagpur/' target="_blank" className='Bs'><BsLinkedin /></a>
               </li>
               <li>
-                <a to="/" className='Bs'><BsYoutube /></a>
+                <a  href='https://www.youtube.com/ktjiitkgp' target="_blank" className='Bs'><BsYoutube /></a>
               </li>
             </ul>
           </div>
