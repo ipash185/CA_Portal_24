@@ -1,10 +1,8 @@
-   import React, { useState } from "react";
+import React, { useState } from "react";
 import classes from "./navbar.module.css";
- import { GiHamburgerMenu } from "react-icons/gi";
-import img1 from "../../images/homepage_img.svg"
-import {GiWideArrowDunk} from "react-icons/gi"
+import { GiHamburgerMenu } from "react-icons/gi";
+import img1 from "../../images/icon2.png"
 import {Link} from 'react-router-dom';
-import { propsToClassKey } from "@mui/styles";
  
  const Navbar = (props) => {
    
@@ -49,7 +47,7 @@ import { propsToClassKey } from "@mui/styles";
              
              {!props.show?(<><button  
              className={classes.sign}>
-              <Link to="/Signup">Signup</Link>
+              <Link to="/Signup">Sign Up</Link>
              </button>  
               <button className={classes.login}>
               <div to="/Login">Sign In</div>

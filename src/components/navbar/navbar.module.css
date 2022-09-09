@@ -93,7 +93,6 @@ li {
   /* width: 80%; */
 }
 .menu_link .login{
- 
   height: 3.5rem;
   width: 8rem;
   color: white;
@@ -103,18 +102,19 @@ li {
   font-weight: 500;
 }
 .menu_link .sign{
- 
   height: 3.5rem;
-  width: 8rem;
+  width: 9rem;
   background-color: black;
   color: yellow;
   font-size: 2rem;
- border-top-left-radius: 1rem;
- border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   font-weight: 500;
   border-radius: 1rem;
   font-weight: 500;
-
+}
+.sign{
+  margin-right: 0.3rem;
 }
 .menu_link ul li {
   display: flex;
