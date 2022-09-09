@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p{
+  font-family: Mplus;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -48,8 +52,8 @@ html {
   justify-items: center;
   position: relative;
   top: 10rem;
-  padding-top: 40vh;
-  padding-bottom: 50vh;
+  padding-top: 30vh;
+  padding-bottom: 20vh;
   /* scroll-snap-align: center; */
 }
 
