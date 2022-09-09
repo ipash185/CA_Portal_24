@@ -70,7 +70,7 @@
     padding-top: 0vh;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1440px) {
     .main{
         display: grid;
         grid-template-columns: 1fr;

@@ -40,8 +40,9 @@ p{
   background-image: url('../../images/Bgimgg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size:100%;
+  /* background-size:100%; */
   scroll-behavior: smooth;
+  background-size: cover;
   /* scroll-snap-type: y mandatory; */
 }
 
@@ -99,7 +100,7 @@ p{
     .bg{
       top:5rem;
       padding-top: 30rem;
-      padding-bottom: 40rem;
+      padding-bottom: 30rem;
     }
 
     .heading{
