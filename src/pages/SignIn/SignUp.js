@@ -8,6 +8,8 @@ import {Redirect } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import Navbar from '../../components/navbar/navbar';
 import img1 from "../../images/homepage_img.svg"
+import Stack from '@mui/material/Stack';
+import Snackbar from '@mui/material/Snackbar';
 
 
 import Alert from '@mui/material/Alert';
@@ -20,6 +22,7 @@ const SignUp = (props) => {
   const [show,setShow] = useState(false)
   const [error,setError] = useState(false)
   const [loading,setLoading] = useState(false)
+  const [open, setOpen] = useState(false);
 
   let navigate = useNavigate();
 
@@ -62,9 +65,12 @@ const SignUp = (props) => {
         }
 
          setLoading(false)
-         setError(false)
+        //  setError(false)
 
-         navigate('/home');
+         setOpen(true)
+         setError("Signup Successful")
+
+         navigate('/SignIn', { replace: true });
 
          console.log("Success")
          
@@ -79,8 +85,9 @@ const SignUp = (props) => {
 
         setLoading(false)
 
-        setError(true)
+        setError(err.response.data.message)
 
+          setOpen(true)
         // navigate('/SignUp',{message:true})
         
         
@@ -89,6 +96,10 @@ const SignUp = (props) => {
 
 
     
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   
@@ -107,6 +118,20 @@ const SignUp = (props) => {
    
       <div>
         <Navbar />
+
+        
+      <Snackbar
+  open={open}
+  autoHideDuration={6000}
+  onClose={handleClose}
+  message={error}
+  
+>
+<Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+          {error}
+        </Alert>
+  </Snackbar>
+
 
 
         
@@ -130,7 +155,7 @@ const SignUp = (props) => {
             {false?( <h6 >Your are Registered Successfully </h6>
 ):"Register"}
 
-{ error?( <h6 style={{color:"red"}} > Error in Registeration,Try Again</h6>):""}
+
 
 
 </div>
@@ -193,7 +218,7 @@ const SignUp = (props) => {
           
 
          
-          {/* <div className={styles.Linksto}>Already a member?<Link to='/SignIn'>Sign In</Link></div> */}
+          <div className={styles.Linksto}>Already a member?<Link to='/SignIn'>Sign In</Link></div>
 
 
         </div>
