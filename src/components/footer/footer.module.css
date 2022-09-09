@@ -7,10 +7,15 @@
  bottom: 0px;
  display: flex;
  flex-direction: column;
+<<<<<<< HEAD
  background: #0F2A7080;
  Fill: Solid
  rgba(15, 42, 112, 0.5);
   min-height: 60rem;
+=======
+ background-color:#a473ce;
+  min-height: 50rem;
+>>>>>>> 2f6c866c0c6f5ef1d2cea1af5650ffbb94490025
   max-height: 100%;
   width: 100%;
   margin: 0;
@@ -35,7 +40,7 @@
   width: 50%;
   height: 70%;
   text-align: center;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 .content{
   height: 90%;
@@ -141,14 +146,14 @@ text-align: center;
  }
  .footdown{
   position:relative;
-  top: 2rem;
+  top: 0.2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   /* background-color: aqua; */
-  height: 4.5rem;
+  height: 3rem;
   width: 100%;
-  height: 6rem;
+  /* background-color:red ; */
  
   
  }
@@ -156,11 +161,12 @@ text-align: center;
   display: flex;
   /* border: 2px solid red; */
   margin-left: 5%;
-  margin-top: 0rem;
+  margin-top: -2%;
   height: 4rem;
   width: 50%;
   justify-content: space-around;
   align-items: center;
+  
  
  }
  .social ul{
@@ -169,6 +175,7 @@ text-align: center;
  font-size: 2vw;
  justify-content: space-around;
   align-items: center;
+ 
  }
  .social ul li{
   margin-top: 0vw;
@@ -185,7 +192,8 @@ text-align: center;
   height: 4rem;
   width: 60%;
   margin-left: -1rem;
-   
+  margin-top: -3rem;
+  
  
  }
  .copy h3{
@@ -236,7 +244,13 @@ text-align: center;
   .footdown{
     display: flex;
     flex-direction: column;
-    background-color:  #a473ce
+    height: 5rem;
+    background-color:  #a473ce;
+    /* background-color: red; */
+  }
+  .social{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   
   .form{
@@ -249,21 +263,31 @@ text-align: center;
   .forms textarea{
     width: 100%;
   }
+  .footdown{
+    height: 6rem;
+       background-color:  #a473ce;
+     
+     }
    
  }
  @media (max-width:560px) {
   .footdown{
-    background-color:  #a473ce
-
+    background-color:  #a473ce;
+  
   }
   .content{
     margin-top: 18%;
-    width: 120%;
-    
-    
+    width: 180%;
+  }
+  .content p{
+    font-size: 1.4rem;
+  }
+  .footabout{
+    margin-left: -25%;
   }
   .logo{
-    margin-left: 18%;
+    margin-left: 14%;
+    margin-top: -2%;
   }
   .copy{
     width: 90%;
@@ -272,9 +296,101 @@ text-align: center;
     width: 100%;
     margin-left: -15%;
   }
+  .forms input{
+    height: 2.5rem;
+    width: 80%;
+    margin-top: 1%;
+  }
+  .forms{
+    gap: 1rem;
+    align-items: center;
+   
+  }
+  .forms textarea{
+    height: 4.5rem;
+    width: 80%;
+  }
+  .form h2{
+    width: 130%;
+    font-size: 1.8rem;
+    
+  }
+  .footdown{
+ height: 6rem;
+    background-color:  #a473ce;
+  
+  }
   
  }
- @media (max-width:430px) {
+ @media (max-width:420px) {
+
+   .footdown{
+    background-color:  #a473ce;
+  }
+  .mainfoot{
+    height: 52rem;
+  }
+  .content{
+    margin-top: 18%;
+    width: 180%;
+  }
+  .content p{
+    font-size: 1.3rem;
+  }
+  .footabout{
+    margin-left: -25%;
+  }
+  .logo{
+    margin-left: 14%;
+    margin-top: -2%;
+  }
+  .copy{
+    width: 90%;
+  }
+  .form{
+    width: 100%;
+    margin-left: -15%;
+  }
+  .forms input{
+    height: 2.5rem;
+    width: 80%;
+  }
+  .forms{
+    gap: 0.8rem;
+  }
+  .forms textarea{
+    height: 4.5rem;
+    width: 80%;
+  }
+  
+ }
+ @media (max-width:380px) {
+  .logo{
+    margin-left: 10%;
+    margin-top: -3%;
+  }
+  .copy{
+    font-size: 0.8rem;
+     
+  }
+  
+ }
+ @media (max-width:355px) {
+  .mainfoot{
+    height: 50rem;
+  }
+  .logo{
+    margin-left: 6%;
+    margin-top: -3%;
+  }
+  .copy{
+    font-size: 0.7rem;
+     
+  }
+
+ }
+ 
+ /* @media (max-width:430px) {
   .footdown{
     background-color:  #a473ce
 
@@ -294,20 +410,21 @@ text-align: center;
     margin-left: -16%;
   }
   
- }
- @media (max-width:320px) {
+ } */
+ @media (max-width:348px) {
   .logo{
-    margin-left: 8%;
+    margin-left: 7%;
   }
   .content{
-    margin-top: 39%;
+    margin-top: 30%;
    
+   margin-left: 3%;
   }
   .form{
     margin-left: -23%;
   }
   .form h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .forms input{
 width: 120%;
@@ -316,8 +433,15 @@ width: 120%;
     width: 120%;
   }
   .content p{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
+ }
+ @media (max-width:300px) {
+  .logo{
+    margin-left: 4%;
+  }
+
+  
  }
  /* @media (max-width:950px) {
   .mainfoot{
