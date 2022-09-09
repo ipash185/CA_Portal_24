@@ -7,15 +7,12 @@
  bottom: 0px;
  display: flex;
  flex-direction: column;
-<<<<<<< HEAD
  background: #0F2A7080;
  Fill: Solid
  rgba(15, 42, 112, 0.5);
   min-height: 60rem;
-=======
- background-color:#a473ce;
+
   min-height: 50rem;
->>>>>>> 2f6c866c0c6f5ef1d2cea1af5650ffbb94490025
   max-height: 100%;
   width: 100%;
   margin: 0;
