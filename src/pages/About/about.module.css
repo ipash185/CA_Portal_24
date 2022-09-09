@@ -15,7 +15,7 @@
     align-items: center;
     padding: 5rem;
     padding-top: 20vh;
-    padding-bottom: 40vh;
+    padding-bottom: 20vh;
 }
 
 h1{
@@ -50,15 +50,21 @@ p{
         padding: 2rem 4rem;
         background-color: rgba(255,255,255,0.8);
         min-height: 100%;
-        min-width: 80%;
+        min-width: 85%;
         box-shadow: none;
         margin: 0 1.2rem 0 1.2rem ;
+        /* font-size: ; */
+    }
+
+    p{
+        font-size: 1.5rem;
     }
 
     .main{
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 5rem;
+        padding-top: 0;
     }
 }
     

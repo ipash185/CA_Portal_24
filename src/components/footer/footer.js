@@ -6,10 +6,46 @@ import { BsFacebook } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 import { BsYoutube } from 'react-icons/bs';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 //  import url();
 
 
 function Footer() {
+  let navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      name: name,
+      email: email,
+      message: message,
+      phone: phone,
+    };
+    axios.post("https://cap-ktj-backend.herokuapp.com/user/contact/", data).then((response) => {
+      if (response.status !== 200) {
+        throw new Error(response.statusText);
+      }
+      e.target.reset();
+
+      alert('your query has been submitted');
+    }).catch((err) => {
+
+      console.log(err);
+      e.target.reset();
+
+    })
+
+  }
+
+
+
   return (
     <>
       <div className={classes.mainfoot}>
@@ -26,12 +62,12 @@ function Footer() {
             </div>
           </div>
           <div className={classes.form}>
-            <form className={classes.forms} action="#" method="POST">
+            <form className={classes.forms} onSubmit={handleSubmit} method="POST">
               <h2>For any queries and suggestions</h2>
-              <input type="Name" name="Name" placeholder='Name' />
-              <input type="email" name="email" placeholder='Email' />
-              <input type="contact" name="contact" placeholder='Contact Number' />
-              <textarea name="message" placeholder=' Write to Us ...' />
+              <input type="Name" name="Name" onChange={(e) => { setName(e.target.value); }} placeholder='Name' />
+              <input type="email" name="email" onChange={(e) => { setEmail(e.target.value); }} placeholder='Email' />
+              <input type="contact" name="contact" onChange={(e) => { setPhone(e.target.value); }} placeholder='Contact Number' />
+              <textarea name="message" placeholder=' Write to Us ...' onChange={(e) => { setMessage(e.target.value); }} />
               <button type="submit">Send</button>
             </form>
           </div>

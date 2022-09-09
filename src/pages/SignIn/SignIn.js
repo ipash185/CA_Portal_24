@@ -14,7 +14,7 @@ const SignIn = () => {
     e.preventDefault();
     const user = { email, password };
 
-    axios.post("http://localhost:5000/signin/", user).then((response) => {
+    axios.post("https://cap-ktj-backend.herokuapp.com/signin/", user).then((response) => {
       if (response.status !== 200) {
         throw new Error(response.statusText);
       }
@@ -42,7 +42,7 @@ const SignIn = () => {
           <img src={img1} />
           <div className='SideDivT'><h1>CA Programme Registration</h1></div>
         </div>
-        <div className={styles.Sign}>Sign In</div>
+        <div className={styles.Sign1}>Sign In</div>
         <div className={styles.FormLabel3}>Email-ID</div>
         <input type="text" className={styles.In3} onChange={(e) => { setEmail(e.target.value) }}></input>
         <div className={styles.FormLabel4} >Password</div>

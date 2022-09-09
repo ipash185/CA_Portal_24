@@ -9,7 +9,7 @@ function Responsibility() {
         <div className={styles.card}>
           <div className={styles.circle}></div>
           <p className={styles.para}><div className={styles.pos}>1</div><br/>
-            To act as a bridge between Kshitij, IIT Kharagpur and your respective college</p>
+            To act as a bridge between Kshitij, IIT Kharagpur and your respective college.</p>
         </div>
         <div className={styles.card}>
           <div className={styles.circle}></div>

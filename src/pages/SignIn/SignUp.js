@@ -124,7 +124,7 @@ const SignUp = (props) => {
           </div>
           <div className={styles.Sign}>
             
-     <div style={{display:"flex",columnGap:"50px",padding:"20px 0 "}} >
+     <div style={{display:"flex",columnGap:"50px",padding:"5px 0 "}} className={styles.Sign} >
 
    
             {false?( <h6 >Your are Registered Successfully </h6>
@@ -180,7 +180,7 @@ const SignUp = (props) => {
                         ''
                       )}
 
-             <span >Register</span>
+             <span className='ButtonLabel'>Register</span>
             
             </button>
 

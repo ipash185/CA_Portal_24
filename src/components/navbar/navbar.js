@@ -25,22 +25,22 @@ import {Link} from 'react-router-dom';
           } >
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="/" onClick={()=>setShowMediaIcons(false)}>Home</a>
             </li>
             <li>  
-              <a href = "#about">About Us</a>
+              <a href = "#about" onClick={()=>setShowMediaIcons(false)}>About Us</a>
             </li>
             <li> 
-              <a href = "#resp">Responibilities</a>
+              <a href = "#resp" onClick={()=>setShowMediaIcons(false)}>Responibilities</a>
             </li>
             <li> 
-              <a href = "#inc">Incentives</a>
+              <a href = "#inc" onClick={()=>setShowMediaIcons(false)}>Incentives</a>
             </li>
             <li>
-              <a href = "#testimonials">Testimonials</a>
+              <a href = "#testimonials" onClick={()=>setShowMediaIcons(false)}>Testimonials</a>
             </li>
             <li>
-              <a href = "#contact">Contact</a>
+              <a href = "#contact" onClick={()=>setShowMediaIcons(false)}>Contact</a>
             </li>
              <li>
               <div className="button">
@@ -59,7 +59,7 @@ import {Link} from 'react-router-dom';
           </div>
    
          <div className={classes.hamburger_menu}>
-            <a href="#" onClick={() =>setShowMediaIcons(!showMediaIcons)
+            <a onClick={() =>setShowMediaIcons(!showMediaIcons)
               // humburger.classList.remove('GiHamburgerMenu');
               // humburger.classList.add('GiWideArrowDunk');
             }>
