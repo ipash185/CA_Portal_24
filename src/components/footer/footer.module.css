@@ -1,15 +1,14 @@
 /* *{
   font-family: arial;
 } */
-.mainfoot{
- /* background-image: url('../../images/bg.svg'); */
- position:relative;
- bottom: 0px;
- display: flex;
- flex-direction: column;
- background: #0F2A7080;
- Fill: Solid
- rgba(15, 42, 112, 0.5);
+.mainfoot {
+  /* background-image: url('../../images/bg.svg'); */
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  background: #0F2A7080;
+  Fill: Solid rgba(15, 42, 112, 0.5);
   min-height: 60rem;
 
   min-height: 30rem;
@@ -22,15 +21,17 @@
   z-index: 5;
 }
 
-.social li a{
+.social li a {
   color: white;
 }
-.footup{
+
+.footup {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.footabout{
+
+.footabout {
   margin-top: 0px;
   display: flex;
   border-right: 6px solid white;
@@ -39,7 +40,8 @@
   text-align: center;
   margin-left: 4%;
 }
-.content{
+
+.content {
   height: 90%;
   width: 90%;
   /* margin-left: 15rem; */
@@ -49,54 +51,60 @@
   font-size: 2.7rem;
   font-weight: 400;
 }
+
 .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+
   /* font-size: 4.9rem;  */
   /* initial val =4.9 */
 
-   /* font-weight:420; */
-   /* margin: -5%; */
-   position: absolute;
-   left: 13%;
-   width: 10%;
-   color: white;
+  /* font-weight:420; */
+  /* margin: -5%; */
+  position: absolute;
+  left: 13%;
+  width: 10%;
+  color: white;
 }
-.logo span{
+
+.logo span {
   font-size: 3vw;
   /* min-height: 50px; */
   font-weight: 420;
 }
-.logo img{
+
+.logo img {
   height: 5vw;
   width: 5vw;
 }
-.form{
+
+.form {
   text-align: center;
   /* margin-left: 15%; */
   /* margin-right: -20%; */
-  margin-top:4vw;
+  margin-top: 4vw;
   width: 80%;
   height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.forms{
-display: flex;
-flex-direction: column;
-gap: 2rem;
-width: 80%;
-padding-left: 8rem;
-/* background-color: red; */
-text-align: center;
-/* align-items: center; */
-outline: none;
-  
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+  padding-left: 8rem;
+  /* background-color: red; */
+  text-align: center;
+  /* align-items: center; */
+  outline: none;
+
 }
-.forms input{
+
+.forms input {
   font-family: 'Courier New', Courier, monospace;
   width: 75%;
   height: 4rem;
@@ -105,9 +113,10 @@ outline: none;
   font-size: 1.8rem;
   /* outline: none; */
   padding-left: 4%;
-  border:1px solid;
+  border: 1px solid;
 }
-.forms textarea{
+
+.forms textarea {
   font-family: 'Courier New', Courier, monospace;
   width: 75%;
   height: 14rem;
@@ -116,40 +125,46 @@ outline: none;
   text-align: left;
   /* outline: none; */
   padding-left: 3%;
-  border:1px solid;
+  border: 1px solid;
   font-weight: 10;
 }
- .forms button{
-  font-family: Arial, Helvetica, sans-serif;;
+
+.forms button {
+  font-family: Arial, Helvetica, sans-serif;
+  ;
   width: 8rem;
   height: 3.5rem;
   line-height: 0;
   border-radius: 5px;
   font-weight: 700;
   font-size: 1.5rem;
- }
- .forms button:hover{
+}
+
+.forms button:hover {
   cursor: pointer;
   background-color: antiquewhite;
   font-weight: 900;
   border-radius: 10px;
   width: 10rem;
- }
- .form h2{
+}
+
+.form h2 {
   color: white;
   text-align: left;
   margin-bottom: -15px;
   font-weight: 700;
   font-size: 2.5rem;
- }
- .footdown{
+}
+
+.footdown {
   display: flex;
-  position:relative;
+  position: relative;
   top: 1rem;
 
- }
- .footdown{
-  position:relative;
+}
+
+.footdown {
+  position: relative;
   top: 0.2rem;
   display: flex;
   flex-direction: row;
@@ -158,10 +173,11 @@ outline: none;
   height: 3rem;
   width: 100%;
   /* background-color:red ; */
- 
-  
- }
- .social{
+
+
+}
+
+.social {
   display: flex;
   /* border: 2px solid red; */
   margin-left: 5%;
@@ -170,26 +186,28 @@ outline: none;
   width: 50%;
   justify-content: space-around;
   align-items: center;
-  
- 
- }
- .social ul{
+
+
+}
+
+.social ul {
   display: flex;
   flex-direction: row;
- font-size: 2vw;
- justify-content: space-around;
+  font-size: 2vw;
+  justify-content: space-around;
   align-items: center;
- 
- }
- .social ul li{
+
+}
+
+.social ul li {
   margin-top: 0vw;
   margin-right: 5vw;
 
- }
+}
 
- 
-  
- .copy{
+
+
+.copy {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,58 +215,68 @@ outline: none;
   width: 60%;
   margin-left: -1rem;
   margin-top: -3rem;
-  
- 
- }
- .copy h3{
+
+
+}
+
+.copy h3 {
   color: white;
- }
-.copy span{
+}
+
+.copy span {
   font-size: 2rem;
   color: white;
   font-weight: bolder;
 }
- 
- @media (max-width:1350px) {
-  .mainfoot{
+
+@media (max-width:1350px) {
+  .mainfoot {
     display: flex;
     flex-direction: column;
-  
+
   }
-   .footup{
+
+  .footup {
     display: flex;
     flex-direction: column;
   }
-  .footabout{
+
+  .footabout {
     border: 0px;
     display: flex;
     flex-direction: column;
     margin-right: 19%;
   }
-  .logo{
+
+  .logo {
     margin-left: 20.5%;
-    
-  }.logo img{
+
+  }
+
+  .logo img {
     height: 6rem;
     width: 6rem;
   }
-  .content{
+
+  .content {
     margin-top: 15%;
     width: 120%;
     /* background-color: red; */
-    
-    
+
+
   }
-  .content p{
+
+  .content p {
     font-size: 1.5rem;
-    
+
     text-align: center;
   }
-  .logo span{
+
+  .logo span {
     font-size: 3rem;
   }
-   
-  .footdown{
+
+  .footdown {
     display: flex;
     flex-direction: column;
     height: 0rem;
@@ -256,245 +284,308 @@ outline: none;
     /* background-color: red; */
     /* background: #0F2A7080; */
   }
-  .social{
+
+  .social {
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
-  
-  .form{
+
+  .form {
     width: 100%;
     margin-left: -10%;
   }
-  .forms input{
+
+  .forms input {
     width: 100%;
   }
-  .forms textarea{
+
+  .forms textarea {
     width: 100%;
   }
-  .footdown{
+
+  .footdown {
     height: 6rem;
-       /* background-color:  #a473ce; */
-     
-     }
-   
- }
- @media (max-width:560px) {
+    /* background-color:  #a473ce; */
+
+  }
+
+}
+
+@media (max-width:560px) {
+
   /* .footdown{
     
   
   } */
-  .content{
+
+  .mainfoot{
+    height: 60rem;
+  }
+
+  .content {
     margin-top: 18%;
     width: 180%;
   }
-  .content p{
+
+  .content p {
     font-size: 1.4rem;
   }
-  .footabout{
+
+  .footabout {
     margin-left: -25%;
   }
-  .logo{
+
+  .logo {
     margin-left: 14%;
     margin-top: -2%;
   }
-  .copy{
+
+  .copy {
     width: 90%;
   }
-  .form{
-    width: 100%;
+
+  .form {
+    width: 98%;
     margin-left: -15%;
   }
-  .forms input{
+
+  .forms input {
     height: 2.5rem;
     width: 80%;
     margin-top: 3%;
   }
-  .forms{
+
+  .forms {
     gap: 1rem;
     align-items: center;
-   
+
   }
-  .forms textarea{
+
+  .forms textarea {
     height: 4.5rem;
     width: 80%;
   }
-  .form h2{
-    width: 130%;
-    font-size: 1.8rem;
-    margin-left: 50%;
-  }
-  .footdown{
- height: 6rem;
-    /* background-color:  #a473ce; */
-  
-  }
-  
- }
- @media (max-width:440px) {
 
-   /* .footdown{
+  .form h2 {
+    width: 100vw;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    /* margin-left: -1%; */
+    /* padding: 0; */
+  }
+
+  .footdown {
+    height: 6rem;
+    /* background-color:  #a473ce; */
+
+  }
+
+  .copy{
+    margin-top: 0.5rem;
+  }
+
+}
+
+@media (max-width:440px) {
+
+  /* .footdown{
    
     background: #0F2A7080;
   } */
-  .mainfoot{
+  .mainfoot {
     /* max-height: 40.4rem; */
   }
-  .content{
+
+  .content {
     margin-top: 18%;
     width: 180%;
   }
-  .content p{
+
+  .content p {
     font-size: 1.2rem;
   }
-  .footabout{
+
+  .footabout {
     margin-left: -25%;
   }
-  .logo{
+
+  .logo {
     margin-left: 14%;
     margin-top: -2%;
   }
-  .copy{
+
+  .copy {
     width: 90%;
   }
-  .form{
+
+  .form {
     width: 120%;
     margin-left: -15%;
   }
-  .forms input{
+
+  .forms input {
     height: 2.5rem;
     width: 80%;
     gap: 0.2rem;
   }
-  .form h2{
-font-size: 1.6rem;
-margin-bottom: 1%;
+
+  .form h2 {
+    font-size: 1.6rem;
+    margin-bottom: 3%;
   }
-  .forms{
+
+  .forms {
     gap: 0.1rem;
   }
-   
-  .forms textarea{
+
+  .forms textarea {
     height: 4.5rem;
     width: 80%;
     margin-top: 2%;
   }
-  
- }
- @media (max-width:380px) {
-  .logo{
+
+}
+
+@media (max-width:380px) {
+  .logo {
     margin-left: 10%;
     margin-top: -3%;
   }
-  .copy{
+
+  .copy {
     font-size: 0.7rem;
   }
-  .forms h2{
+
+  .forms h2 {
     font-size: 1.5rem;
     margin-left: 25%;
   }
-  .forms input{
+
+  .forms input {
     width: 100%;
   }
-  .forms textarea{
+
+  .forms textarea {
     width: 100%;
   }
-  .forms button{
+
+  .forms button {
     height: 2.8rem;
     width: 6rem;
   }
+
   /* .mainfoot{
     max-height: 40.7rem;
   } */
-  
- }
- @media (max-width:355px) {
+
+}
+
+@media (max-width:355px) {
+
   /* .mainfoot{
     max-height: 35.55rem;
   } */
-  .logo{
+  .logo {
     margin-left: 9%;
     margin-top: -3.5%;
-   
+
   }
-  
-  .logo span{
+
+  .logo span {
     font-size: 2.2rem;
   }
-  .logo img{
+
+  .logo img {
     height: 4.2rem;
     width: 4.2rem;
   }
-  .copy{
+
+  .copy {
     font-size: 0.6rem;
-     
+
   }
-  .content p{
+
+  .content p {
     font-size: 0.8rem;
   }
-  .form{
+
+  .form {
     margin-left: -30%;
   }
-  .forms h2{
+
+  .forms h2 {
     font-size: 1.5rem;
     margin-left: 40%;
     width: 170%;
-   
-  }
-  .forms input{
-    width: 120%;
-  }
-  .forms textarea{
-    width: 120%;
-  }
- 
 
- }
+  }
+
+  .forms input {
+    width: 120%;
+  }
+
+  .forms textarea {
+    width: 120%;
+  }
+
+
+}
+
 @media (max-width:270px) {
+
   /* .mainfoot{
     max-height: 3rem;
   } */
-  .logo{
+  .logo {
     margin-left: 9%;
     margin-top: -3.9%;
-   
+
   }
-  
-  .logo span{
+
+  .logo span {
     font-size: 1.5rem;
   }
-  .logo img{
+
+  .logo img {
     height: 3.5rem;
     width: 3.5rem;
   }
-  .copy{
+
+  .copy {
     font-size: 0.6rem;
-     
+
   }
-  .content p{
+
+  .content p {
     font-size: 0.5rem;
   }
-  .form{
+
+  .form {
     margin-left: -20%;
   }
-  .forms h2{
+
+  .forms h2 {
     font-size: 1.3rem;
     margin-left: 35%;
     width: 200%;
-   
+
   }
-  .forms input{
+
+  .forms input {
     padding-left: 3%;
     width: 120%;
     height: 1.8rem;
     font-size: 1.3rem;
   }
-  .forms textarea{
+
+  .forms textarea {
     width: 120%;
     height: 3.5rem;
     font-size: 1.3rem;
   }
- 
-  
+
+
 }
-  
- 

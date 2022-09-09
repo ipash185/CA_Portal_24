@@ -72,8 +72,7 @@ function Footer() {
             </form>
           </div>
         </div>
-        <div
-          iv className={classes.footdown}>
+        <div className={classes.footdown}>
           <div className={classes.social}>
             <ul>
               <li>

@@ -96,22 +96,25 @@ li {
   height: 3.5rem;
   width: 8rem;
   color: white;
-  background-color: black;
+  background-color: #083C59;
   font-size: 2rem;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   font-weight: 500;
+  padding: 0.3rem;
+  padding-bottom: 0.5rem;
 }
 .menu_link .sign{
   height: 3.5rem;
   width: 9rem;
-  background-color: black;
+  background-color: #083C59;
   color: yellow;
   font-size: 2rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   font-weight: 500;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   font-weight: 500;
+  padding-bottom: 0.2rem;
 }
 .sign{
   margin-right: 0.3rem;
