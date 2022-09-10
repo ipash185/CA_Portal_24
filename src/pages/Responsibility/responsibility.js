@@ -7,7 +7,7 @@ import ensure from "../../images/ensure.jpg";
 function Responsibility() {
   return (
     <div className={styles.cov}>
-      <h1>RESONSIBILITIES</h1>
+      <h1>RESPONSIBILITIES</h1>
       <div className={styles.main}>
         <div className={styles.card}>
           <img className={styles.circle} src={people}></img>

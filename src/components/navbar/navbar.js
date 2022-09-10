@@ -49,7 +49,7 @@ import {Link} from 'react-router-dom';
              className={classes.sign}>
               <Link to="/Signup">Sign Up</Link>
              </button>  
-              <button className={classes.login}>
+              <button className={classes.sign}>
               <div to="/Login">Sign In</div>
              </button></>):""
              
