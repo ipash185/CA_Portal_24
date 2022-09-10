@@ -21,6 +21,7 @@ const SignUp = (props) => {
 
   const [show,setShow] = useState(false)
   const [error,setError] = useState(false)
+  const [isError,setIsError] =  useState(true)
   const [loading,setLoading] = useState(false)
   const [open, setOpen] = useState(false);
 
@@ -68,9 +69,10 @@ const SignUp = (props) => {
         //  setError(false)
 
          setOpen(true)
+         setIsError(false)
          setError("Signup Successful")
 
-         navigate('/SignIn', { replace: true });
+         navigate('/SignIn', { state: { replace:"true" } });
 
          console.log("Success")
          
@@ -86,6 +88,8 @@ const SignUp = (props) => {
         setLoading(false)
 
         setError(err.response.data.message)
+
+        setIsError(true)
 
           setOpen(true)
         // navigate('/SignUp',{message:true})
@@ -127,7 +131,7 @@ const SignUp = (props) => {
   message={error}
   
 >
-<Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+<Alert onClose={handleClose} severity={isError?"error":"success"} sx={{ width: '100%' }}>
           {error}
         </Alert>
   </Snackbar>
