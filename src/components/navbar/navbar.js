@@ -50,7 +50,7 @@ import {Link} from 'react-router-dom';
               <Link to="/Signup">Sign Up</Link>
              </button>  
               <button className={classes.login}>
-              <div to="/Login">Sign In</div>
+              <Link to="/Login">Sign In</Link>
              </button></>):""
              
              }
