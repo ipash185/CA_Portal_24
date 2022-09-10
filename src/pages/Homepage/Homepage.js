@@ -11,6 +11,7 @@ import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 import Responsibility from '../Responsibility/responsibility';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Faq from '../Faq/Faq';
 
 function Home() {
 
@@ -60,7 +61,10 @@ function Home() {
                 <div id = "resp" className={styles.scroll}><Responsibility/></div>
                 <div id="inc" className={styles.scroll}><Incentives/></div>
                 <div id="testimonials" className={styles.scroll}><CarouselComponent/></div>
+                <div id="faq"><Faq/></div>
                 <div id="contact" className={styles.scroll}><Contact/></div>
+
+
             </div>
             <Footer/>
         </div>
