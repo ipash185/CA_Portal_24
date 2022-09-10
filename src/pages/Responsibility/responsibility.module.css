@@ -50,12 +50,13 @@
     margin: auto;
     margin-top: 8rem;
     transition: all ease 0.3s;
+    transform: scale(0.8);
 }
 
 .para{
     display: none;
     color: #4D4141;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     margin: auto;
     margin-top: 3rem;
