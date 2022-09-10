@@ -21,6 +21,7 @@
     transition: all ease 0.3s;
     background-position: center;
     background-size:cover;
+    transform: scale(0.8);
 }
 
 .elem:hover .circle{
