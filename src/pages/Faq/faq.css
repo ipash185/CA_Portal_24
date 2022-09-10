@@ -9,11 +9,16 @@
     color:#354A7F
 }
 
+.faq_div{
+    width: 70%;
+    margin: 0 auto;
+}
+
 /* .MuiTypography-root{
     color: black !important;
 } */
 
-@media only screen and (min-width:800px){
+@media only screen and (max-width:1200px){
     .faq_div{
         width:70%;
         margin: 0 auto;

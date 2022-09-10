@@ -175,7 +175,7 @@ const SignUp = (props) => {
             <div className={styles.FormLabel1}>First Name</div>
             <div className={styles.FormLabel2}>Last Name</div>
             <div className={styles.PLabel3}>Gender</div>
-            <div className={styles.PLabel4}>MobileNumber</div>
+            <div className={styles.PLabel4}>Mobile Number</div>
             <div className={styles.PLabel5}>Email-ID</div>
             <div className={styles.PLabel6}>College Name</div>
             <div className={styles.PLabel7}>City</div>

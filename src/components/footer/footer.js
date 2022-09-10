@@ -63,11 +63,11 @@ function Footer() {
           </div>
           <div className={classes.form}>
             <form className={classes.forms} onSubmit={handleSubmit} method="POST">
-              <h2>For any queries and suggestions</h2>
+              <div className={classes.h2}>For any queries and suggestions</div>
               <input type="Name" name="Name" onChange={(e) => { setName(e.target.value); }} placeholder='Name' />
               <input type="email" name="email" onChange={(e) => { setEmail(e.target.value); }} placeholder='Email' />
               <input type="contact" name="contact" onChange={(e) => { setPhone(e.target.value); }} placeholder='Contact Number' />
-              <textarea name="message" placeholder=' Write to Us ...' onChange={(e) => { setMessage(e.target.value); }} />
+              <textarea style={{padding:"0.5rem"}} name="message" placeholder=' Write to Us ...' onChange={(e) => { setMessage(e.target.value); }} />
               <button type="submit">Send</button>
             </form>
           </div>
@@ -76,19 +76,19 @@ function Footer() {
           <div className={classes.social}>
             <ul>
               <li>
-                <a href='https://www.facebook.com/ktj.iitkgp' target="_blank" className='Bs'><BsFacebook /></a>
+                <a href='https://www.facebook.com/ktj.iitkgp' target="_blank" className='Bs'><BsFacebook  size={30} className={classes.ii} /></a>
               </li>
               <li>
-                <a href='https://www.instagram.com/ktj.iitkgp/' target="_blank" className='Bs'><BsInstagram /></a>
+                <a href='https://www.instagram.com/ktj.iitkgp/' target="_blank" className='Bs'><BsInstagram size={30} className={classes.ii} /></a>
               </li>
               <li>
-                <a  href='https://twitter.com/ktj_iitkgp' target="_blank" className='Bs'><BsTwitter /></a>
+                <a  href='https://twitter.com/ktj_iitkgp' target="_blank" className='Bs'><BsTwitter size={30}  className={classes.ii}/></a>
               </li>
               <li>
-                <a  href='https://www.linkedin.com/company/kshitij-iit-kharagpur/' target="_blank" className='Bs'><BsLinkedin /></a>
+                <a  href='https://www.linkedin.com/company/kshitij-iit-kharagpur/' target="_blank" className='Bs'><BsLinkedin size={30} className={classes.ii} /></a>
               </li>
               <li>
-                <a  href='https://www.youtube.com/ktjiitkgp' target="_blank" className='Bs'><BsYoutube /></a>
+                <a  href='https://www.youtube.com/ktjiitkgp' target="_blank" className='Bs'><BsYoutube size={30} className={classes.ii} /></a>
               </li>
             </ul>
           </div>

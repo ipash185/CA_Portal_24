@@ -41,7 +41,7 @@
 
 .circle{
     box-sizing: border-box;
-    border-radius: 30rem;
+    /* border-radius: 30rem; */
     background: grey;
     background-position: center;
     background-size:cover;

@@ -51,7 +51,7 @@ li {
   align-items: center;
   box-shadow: 0px 4px 4px 0px #00000040;
 
-    background: #0F2A70C2;
+    background: #0f4d70;
     Fill: Solid
     rgba(15, 42, 112, 0.76);
   position: absolute;
@@ -112,12 +112,14 @@ li {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   font-weight: 500;
-  border-radius: 0.8rem;
+  border: 1px solid white;
+  border-radius: 0.3rem;
   font-weight: 500;
   padding-bottom: 0.2rem;
 }
 .sign{
-  margin-right: 0.3rem;
+  margin-right: 0rem;
+  background-color: #083c59;
 }
 .menu_link ul li {
   display: flex;
