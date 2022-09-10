@@ -11,6 +11,8 @@ import Stack from '@mui/material/Stack';
 import { useNavigate } from "react-router-dom";
 import Snackbar from '@mui/material/Snackbar';
 
+import { useLocation } from 'react-router-dom'
+
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -18,6 +20,13 @@ const SignIn = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(true);
+  const[rep,setRep] = useState(false)
+  
+
+  const location = useLocation();
+
+  const {replace} = location.state || {replace: false};
+ 
 
   const handleClose = () => {
     setOpen(false);
@@ -65,21 +74,43 @@ const SignIn = () => {
 
   return (
     <div>
+ 
+
+{
+  replace&&!(error)? (<Snackbar
+ open={open}
+ autoHideDuration={6000}
+ onClose={handleClose}
+ message={error}
+ 
+>
+<Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+        You are Successfully Registered Now Login
+       </Alert>
+ </Snackbar>)
+
+:""}
+
+
       <Navbar />
 
      
-      <Snackbar
-  open={open}
-  autoHideDuration={6000}
-  onClose={handleClose}
-  message={error}
-  
->
-<Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-          {error}
-        </Alert>
-  </Snackbar>
 
+     {
+      error?  (<Snackbar
+      open={open}
+      autoHideDuration={6000}
+      onClose={handleClose}
+      message={error}
+      
+    >
+    <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+              {error}
+            </Alert>
+      </Snackbar>):""
+    
+     }
+    
       
   
 
