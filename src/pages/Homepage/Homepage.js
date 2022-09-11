@@ -51,7 +51,7 @@ function Home() {
                     <h2 className ={styles.head2}> KSHITIJ, IIT KHARAGPUR</h2>
 
                     {
-                        auth?<h1 className={styles.btn} >Your Appication is in Progress</h1>: <Link to='/SignUp'><ButtonUnstyled className={styles.btn} variant="contained">Register for CA Programme
+                        auth?<h1 className={styles.btn} >Your Application is in Progress</h1>: <Link to='/SignUp'><ButtonUnstyled className={styles.btn} variant="contained">Register for CA Programme
                         </ButtonUnstyled></Link>
                     }
                    
