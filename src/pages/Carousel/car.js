@@ -54,7 +54,7 @@ function CarouselComponent() {
 
         <Card name="Sarfaraz Ahmad" img="https://drive.google.com/uc?export=view&id=15zjXFbk8o1jOM8mwJjMtsHhSFUh3L4Yd" inst="Future institute of Engineering and management " city="west bengal" desc="Thank you IIT Kharagpur for giving me this wonderful opportunity.Being the CA of Kshitij of IIT Kharagpur was in itself a proud moment for me. Showcasing my management skills actually got more better by being a part. I was lucky to be a part of various events and workshops conducted by IIT KGP.The tenure was really important both at personal level and at corporate level .It was really a great experience."></Card>
 
-        <Card name="Sarfaraz Ahmad" img="https://drive.google.com/uc?export=view&id=1VdGpgbWvi7lIcBPQAsvfe1X2Nz3QW_aX" inst="University of Petroleum and Engineering Studies" city="Uttarakhand" desc="Working as a campus ambassador has been a really good experience. The tasks are not at all tedious and I had great fun while doing them. It's a great way to put yourself out and communicate"></Card>
+        <Card name="Kothapally Agasthya" img="https://drive.google.com/uc?export=view&id=1VdGpgbWvi7lIcBPQAsvfe1X2Nz3QW_aX" inst="University of Petroleum and Engineering Studies" city="Uttarakhand" desc="Working as a campus ambassador has been a really good experience. The tasks are not at all tedious and I had great fun while doing them. It's a great way to put yourself out and communicate"></Card>
       </Carousel>
     </div>
   )
