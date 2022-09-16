@@ -172,23 +172,23 @@ const SignUp = (props) => {
 
           <div className={styles.PLabel}>
          
-            <div className={styles.FormLabel1}>First Name</div>
-            <div className={styles.FormLabel2}>Last Name</div>
-            <div className={styles.PLabel3}>Gender</div>
-            <div className={styles.PLabel4}>Mobile Number</div>
-            <div className={styles.PLabel5}>Email-ID</div>
-            <div className={styles.PLabel6}>College Name</div>
-            <div className={styles.PLabel7}>City</div>
-            <div className={styles.PLabel8}>State</div>
-            <div className={styles.PLabel9}>Password</div>
+            <div className={styles.FormLabel1}>FIRST NAME</div>
+            <div className={styles.FormLabel2}>LAST NAME</div>
+            <div className={styles.PLabel3}>GENDER</div>
+            <div className={styles.PLabel4}>MOBILE NUMBER</div>
+            <div className={styles.PLabel5}>EMAIL-ID</div>
+            <div className={styles.PLabel6}>COLLEGE NAME</div>
+            <div className={styles.PLabel7}>CITY</div>
+            <div className={styles.PLabel8}>STATE</div>
+            <div className={styles.PLabel9}>PASSWORD</div>
           </div>
           <input type="text" required = "true" name="first_name" className={styles.In1}></input>
           <input type="text" required = "true" name="last_name" className={styles.In2}></input>
           <select name="gender" type="text" className={styles.PIn3}>
-            <option>Select</option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Others</option>
+            <option>SELECT</option>
+            <option>MALE</option>
+            <option>FEMALE</option>
+            <option>OTHERS</option>
           </select>
           <input type="number"  name="phone" className={styles.PIn4}></input>
           <input type="text" required = "true" name="email" className={styles.PIn5}></input>

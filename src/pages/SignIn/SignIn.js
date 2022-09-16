@@ -124,12 +124,12 @@ const SignIn = () => {
           <img src={img1} />
           <div className='SideDivT'><h1>CA Programme Registration</h1></div>
         </div>
-        <div className={styles.Sign1}>Sign In</div>
+        <div className={styles.Sign1}>SIGN IN</div>
        
 
-        <div className={styles.FormLabel3}>Email-ID</div>
+        <div className={styles.FormLabel3}>EMAIL-ID</div>
         <input type="text" className={styles.In3} onChange={(e) => { setEmail(e.target.value) }}></input>
-        <div className={styles.FormLabel4} >Password</div>
+        <div className={styles.FormLabel4} >PASSWORD</div>
         <input type="password" className={styles.In4} onChange={(e) => { setPassword(e.target.value); }}></input>
         <div id='Eye'></div>
 
@@ -143,7 +143,7 @@ const SignIn = () => {
                         ''
                       )}
 
-             <span  className='ButtonLabel'>Register</span>
+             <span  className='ButtonLabel'>REGISTER</span>
 
 
         </button>
