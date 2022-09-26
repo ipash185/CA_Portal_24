@@ -20,18 +20,18 @@ const SignIn = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(true);
-  const[rep,setRep] = useState(false)
-  
+  const [rep, setRep] = useState(false)
+
 
   const location = useLocation();
 
-  const {replace} = location.state || {replace: false};
- 
+  const { replace } = location.state || { replace: false };
+
 
   const handleClose = () => {
     setOpen(false);
   };
-  
+
 
   let navigate = useNavigate();
 
@@ -61,7 +61,7 @@ const SignIn = () => {
     }).catch((err) => {
       // setMessage(err.toString());
 
-       console.log(err.response.data.message);
+      console.log(err.response.data.message);
       setLoading(false);
       setError(err.response.data.message);
       setOpen(true)
@@ -74,58 +74,58 @@ const SignIn = () => {
 
   return (
     <div>
- 
 
-{
-  replace&&!(error)? (<Snackbar
- open={open}
- autoHideDuration={6000}
- onClose={handleClose}
- message={error}
- 
->
-<Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-        You are Successfully Registered Now Login
-       </Alert>
- </Snackbar>)
 
-:""}
+      {
+        replace && !(error) ? (<Snackbar
+          open={open}
+          autoHideDuration={6000}
+          onClose={handleClose}
+          message={error}
+
+        >
+          <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+            You are Successfully Registered Now Login
+          </Alert>
+        </Snackbar>)
+
+          : ""}
 
 
       <Navbar />
 
-     
 
-     {
-      error?  (<Snackbar
-      open={open}
-      autoHideDuration={6000}
-      onClose={handleClose}
-      message={error}
-      
-    >
-    <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-              {error}
-            </Alert>
-      </Snackbar>):""
-    
-     }
-    
-      
-  
+
+      {
+        error ? (<Snackbar
+          open={open}
+          autoHideDuration={6000}
+          onClose={handleClose}
+          message={error}
+
+        >
+          <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+            {error}
+          </Alert>
+        </Snackbar>) : ""
+
+      }
+
+
+
 
       <div className={styles.cont}>
 
-    
+
 
         <div className={styles.SignIn}></div>
         <div className={styles.SignSide}>
-        
+
           <img src={img1} />
           <div className='SideDivT'><h1>CA Programme Registration</h1></div>
         </div>
         <div className={styles.Sign1}>SIGN IN</div>
-       
+
 
         <div className={styles.FormLabel3}>EMAIL-ID</div>
         <input type="text" className={styles.In3} onChange={(e) => { setEmail(e.target.value) }}></input>
@@ -133,17 +133,17 @@ const SignIn = () => {
         <input type="password" className={styles.In4} onChange={(e) => { setPassword(e.target.value); }}></input>
         <div id='Eye'></div>
 
-        <button onClick={handleSubmit} style={{cursor:"pointer",color:"white"}} className={styles.SignInB} >
+        <button onClick={handleSubmit} style={{ cursor: "pointer", color: "white" }} className={styles.SignInB} >
 
-        {loading ? (
-                        <span style={{ marginRight: '9px',marginTop:"5px" }}>
-                          <TailSpin width='20' height='12' />
-                        </span>
-                      ) : (
-                        ''
-                      )}
+          {loading ? (
+            <span style={{ marginRight: '9px', marginTop: "5px" }}>
+              <TailSpin width='20' height='12' />
+            </span>
+          ) : (
+            ''
+          )}
 
-             <span  className='ButtonLabel'>REGISTER</span>
+          <span className='ButtonLabel'>REGISTER</span>
 
 
         </button>
