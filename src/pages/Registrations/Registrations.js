@@ -111,7 +111,7 @@ function Registrations() {
             dataIndex: 'Selected',
             render: (_, record) => (
                 <Space size="middle">
-                    <a>{record.Selected === "No" ? `Select ${record.first}` : `Select ${record.first}`}</a>
+                    <a>{record.Selected === "No" ? `Select ${record.first}` : `Remove ${record.first}`}</a>
                 </Space>
             ),
         },
