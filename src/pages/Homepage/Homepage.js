@@ -16,6 +16,7 @@ import Faq from '../Faq/Faq';
 function Home() {
 
     const [auth,setAuth] = useState(false);
+    const [app_id, setapp_id] = useState(null);
 
     useEffect(()=>{
 
@@ -29,6 +30,7 @@ function Home() {
             axios.get('https://cap-ktj-backend.herokuapp.com/user/login_check',requestOptions).then((res)=>{
 
             console.log(res.data);
+            setapp_id(res.data.user.app_id)
                 setAuth(true);
             }).catch((err)=>{
                 console.log(err);
@@ -51,7 +53,7 @@ function Home() {
                     <h2 className ={styles.head2}> KSHITIJ, IIT KHARAGPUR</h2>
 
                     {
-                        auth?<h1 className={styles.btn} >Your Application is in Progress</h1>: <Link to='/SignUp'><ButtonUnstyled className={styles.btn} variant="contained">Register for CA Programme
+                        auth?<><h1 className={styles.btn} >Your Application is in Progress</h1><div className={styles.info}>Your application ID is <span style={{fontWeight: "bold"}}>{app_id}</span></div></>: <Link to='/SignUp'><ButtonUnstyled className={styles.btn} variant="contained">Register for CA Programme
                         </ButtonUnstyled></Link>
                     }
                    

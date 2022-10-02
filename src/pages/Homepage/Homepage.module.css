@@ -106,6 +106,14 @@ p{
   background-color: #0059B2;
 }
 
+.info{
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.3rem 0.6rem;
+}
+
 @media only screen and (max-width:1000px) {
     .bg2{
       position: relative;
