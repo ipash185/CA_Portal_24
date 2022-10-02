@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import classes from './Registrations.module.css'
-// import 'antd/dist/antd.css';
+import 'antd/dist/antd.css';
 import { SearchOutlined } from '@ant-design/icons';
 import { Space, Table, Tag, Button, Input } from 'antd';
 import Highlighter from 'react-highlight-words';

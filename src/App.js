@@ -5,7 +5,7 @@ import Home2 from './pages/Homepage/Homepage2'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from './pages/SignIn/SignUp';
 import SignIn from './pages/SignIn/SignIn';
-import Registrations from './pages/Registrations/Registrations';
+import Registrations from './admin_panel/Registrations/Registrations';
 import ProfileEdit from './pages/Profile/ProfileEdit';
 import ProfileSave from './pages/Profile/ProfileSave';
 import { useEffect, useState } from "react";
