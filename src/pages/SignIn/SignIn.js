@@ -10,7 +10,7 @@ import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import { useNavigate } from "react-router-dom";
 import Snackbar from '@mui/material/Snackbar';
-
+import Api from '../../API/Api'
 import { useLocation } from 'react-router-dom'
 
 
@@ -42,7 +42,7 @@ const SignIn = () => {
 
     setLoading(true);
 
-    axios.post("https://cap-ktj-backend.herokuapp.com/signin/", user).then((response) => {
+    Api.post(`/signin/`, user).then((response) => {
       if (response.status !== 200) {
         throw new Error(response.statusText);
       }

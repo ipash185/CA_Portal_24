@@ -12,6 +12,7 @@ import Responsibility from '../Responsibility/responsibility';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Faq from '../Faq/Faq';
+import Api from '../../API/Api';
 
 function Home() {
 
@@ -27,7 +28,7 @@ function Home() {
       
        
      
-            axios.get('https://cap-ktj-backend.herokuapp.com/user/login_check',requestOptions).then((res)=>{
+            Api.get(`/user/login_check`,requestOptions).then((res)=>{
 
             console.log(res.data);
             setapp_id(res.data.user.app_id)

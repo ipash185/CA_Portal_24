@@ -9,6 +9,7 @@ import Registrations from './admin_panel/Registrations/Registrations';
 import ProfileEdit from './pages/Profile/ProfileEdit';
 import ProfileSave from './pages/Profile/ProfileSave';
 import { useEffect, useState } from "react";
+import Api from './API/Api';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -19,7 +20,7 @@ function App() {
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem('token') }
     };
 
-    fetch("https://cap-ktj-backend.herokuapp.com/user/login_check", requestOptions)
+    fetch(`https://cap-ktj-backend.herokuapp.com/user/login_check`, requestOptions)
       .then((res) => res.json())
       .then((data) => {
         // setUser(data.user);

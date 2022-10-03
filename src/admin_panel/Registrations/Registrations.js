@@ -1,63 +1,16 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import classes from './Registrations.module.css'
 import 'antd/dist/antd.css';
 import { SearchOutlined } from '@ant-design/icons';
 import { Space, Table, Tag, Button, Input } from 'antd';
 import Highlighter from 'react-highlight-words';
+import Api from '../../API/Api';
+import { useNavigate } from 'react-router-dom';
 
 function Registrations() {
 
-    const data = [
-        {
-            'first': 'Souvik',
-            'second': 'Mondal',
-            'Gender': 'MALE',
-            'Number': '7283920362',
-            'Email': 'sadihfi@idbnbnd.com',
-            'College': 'Indian Institute of Bangkok, Russia',
-            'City': 'Amritsar',
-            'State': 'Kada Road',
-            'Selected': 'No',
-            'Selection': 'Pending'
-        },
-        {
-            'first': 'Shiva',
-            'second': 'Bhakto',
-            'Gender': 'MALE',
-            'Number': '7283920362',
-            'Email': 'sadihfi@idbnbnd.com',
-            'College': 'Indian Institute of Bangkok, Russia',
-            'City': 'Amritsar',
-            'State': 'Kada Road',
-            'Selected': 'No',
-            'Selection': 'Completed'
-        },
-        {
-            'first': 'Mia',
-            'second': 'Khalifa',
-            'Gender': 'FEMALE',
-            'Number': '7283920362',
-            'Email': 'sadihfi@idbnbnd.com',
-            'College': 'Indian Institute of Bangkok, Russia',
-            'City': 'Amritsar',
-            'State': 'Kada Road',
-            'Selected': 'Yes',
-            'Selection': 'Completed'
-        },
-        {
-            'first': 'jONNY',
-            'second': 'sINS',
-            'Gender': 'MALE',
-            'Number': '7283920362',
-            'Email': 'sadihfi@idbnbnd.com',
-            'College': 'Indian Institute of Bangkok, Russia',
-            'City': 'Amritsar',
-            'State': 'Kada Road',
-            'Selected': 'Yes',
-            'Selection': 'Completed'
-        }
-    ]
-
+    const navigate = useNavigate();
+    const [data, setData] = useState([])
     const [searchText, setSearchText] = useState('');
     const [searchedColumn, setSearchedColumn] = useState('');
     const searchInput = useRef(null);
@@ -212,8 +165,8 @@ function Registrations() {
             dataIndex: 'Selection',
             filters: [
                 {
-                    text: 'Pending',
-                    value: 'Pending',
+                    text: 'pending',
+                    value: 'pending',
                 },
                 {
                     text: 'Completed',
@@ -223,49 +176,119 @@ function Registrations() {
             onFilter: (value, record) => record.Selection.startsWith(value),
             filterSearch: true,
             render: (_, record) => (
-                <Space size="middle" onClick={() => { handleClick() }}>
+                <Space size="middle" 
+                // onClick={(record) => { handleClick(record) }}
+                >
                     <a>{record.Selection}</a>
                 </Space>
             ),
         },
-        {
-            title: 'Result',
-            key: 'Selected',
-            dataIndex: 'Selected',
-            filters: [
-                {
-                    text: 'Selected',
-                    value: 'Yes',
-                },
-                {
-                    text: 'Not Selected',
-                    value: 'No',
-                },
-            ],
-            onFilter: (value, record) => record.Selected.startsWith(value),
-            filterSearch: true,
-            render: (_, record) => (
-                <Space size="middle" onClick={() => { handleClick() }}>
-                    <div>{record.Selected === "No" ? `Not Selected` : `Selected`}</div>
-                </Space>
-            ),
+        // {
+        //     title: 'Result',
+        //     key: 'Selected',
+        //     dataIndex: 'Selected',
+        //     filters: [
+        //         {
+        //             text: 'Selected',
+        //             value: 'Yes',
+        //         },
+        //         {
+        //             text: 'Not Selected',
+        //             value: 'No',
+        //         },
+        //     ],
+        //     onFilter: (value, record) => record.Selected.startsWith(value),
+        //     filterSearch: true,
+        //     render: (_, record) => (
+        //         <Space size="middle" 
+        //         // onClick={(record) => { handleClick(record) }}
+        //         >
+        //             <div >{record.Selected === "No" ? `Not Selected` : `Selected`}</div>
+        //         </Space>
+        //     ),
             
-        },
+        // },
         {
             title: 'Edit Selection',
             key: 'Selected',
             dataIndex: 'Selected',
             render: (_, record) => (
-                <Space size="middle">
-                    <a>{record.Selected === "No" ? `Select ${record.first}` : `Remove ${record.first}`}</a>
+                <Space size="middle" >
+                <Space size="middle" >
+                    <a onClick={() => { handleClick(record, "yes") }}>Select {record.first}</a>
+                </Space>
+                <Space size="middle" >
+                    <a onClick={() => { handleClick(record, "no") }}>Unselect {record.first}</a>
+                </Space>
                 </Space>
             ),
         }
     ];
-
-    const handleClick = () => {
-        // for toggling selection
+    
+    const handleClick = async (user, opt) => {
+        // console.log(opt)
+        try{
+            const requestOptions = {
+                headers: { 
+                'Content-Type': 'application/json', 
+                'Authorization': 'Bearer ' + localStorage.getItem('token') 
+                },
+            };
+            const res = await Api.put("/user/update_ca",
+            {
+                ca_id: user.ca_id,
+                selection: opt
+            }
+            , requestOptions);
+            const data = await res.data;
+            // console.log(data);
+            await fetchUsers();
+        }
+        catch(e){
+            console.log(e);
+        }
     }
+
+    const lout = ()=>{
+        localStorage.removeItem("token");
+        localStorage.removeItem("user");
+        navigate("/SignIn");
+    }
+
+    const fetchUsers = async()=>{
+        try{
+            const requestOptions = {
+                headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem('token') }
+            };
+            const res = await Api.get("/user/get_alluser", requestOptions);
+            const data = await res.data;
+            const newdata = data.map((e,index)=>{
+                return{
+                    "first": e.first_name,
+                    "second" : e.last_name,
+                    "Gender" : e.gender,
+                    "Number" : e.phone,
+                    "Email": e.Email,
+                    "College": e.college,
+                    "City": e.city,
+                    "State" : e.state,
+                    "Selection": e.selection,
+                    "ca_id": e.ca_id
+                }
+                
+            })
+            setData(newdata);
+
+        }catch(e){
+            console.log(e.response);
+        }
+    }
+
+    useEffect(() => {
+        // if(localStorage.getItem('token') == null)
+        fetchUsers();
+    }, [])
+    
 
     return (
         <div className={classes.Registrations}>
@@ -273,7 +296,7 @@ function Registrations() {
             <div className={classes.list}>
                 <Table columns={columns} dataSource={data} />
             </div>
-            <Button type="primary" size='large'>LOG OUT</Button>
+            <Button type="primary" size='large' onClick={()=>lout()}>LOG OUT</Button>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios"
 import {Redirect } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
+import Api from "../../API/Api";
 
 function useForm({ form, additionalData, endpointUrl }) {
 
@@ -40,7 +41,7 @@ function useForm({ form, additionalData, endpointUrl }) {
       console.log(data);
 
 
-      axios.post("https://cap-ktj-backend.herokuapp.com/signup", data).then((response) => {
+      Api.post(`/signup`, data).then((response) => {
         if (response.status !== 200) {
           throw new Error(response.statusText);
         }

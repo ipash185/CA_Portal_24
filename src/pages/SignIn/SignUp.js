@@ -10,7 +10,7 @@ import Navbar from '../../components/navbar/navbar';
 import img1 from "../../images/homepage_img.svg"
 import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
-
+import Api from '../../API/Api'
 
 import Alert from '@mui/material/Alert';
 
@@ -60,7 +60,7 @@ const SignUp = (props) => {
       setLoading(true);
 
 
-      axios.post("https://cap-ktj-backend.herokuapp.com/signup", data).then((response) => {
+      Api.post(`/signup`, data).then((response) => {
         if (response.status !== 200) {
           throw new Error(response.statusText);
         }
