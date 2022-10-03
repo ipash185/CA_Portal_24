@@ -6,6 +6,7 @@ import { Space, Table, Tag, Button, Input } from 'antd';
 import Highlighter from 'react-highlight-words';
 import Api from '../../API/Api';
 import { useNavigate } from 'react-router-dom';
+import { MdEmail, MdFacebook } from 'react-icons/md';
 
 function Registrations() {
 
@@ -165,13 +166,17 @@ function Registrations() {
             dataIndex: 'Selection',
             filters: [
                 {
-                    text: 'pending',
+                    text: 'Pending',
                     value: 'pending',
                 },
                 {
-                    text: 'Completed',
-                    value: 'Completed',
+                    text: 'Yes',
+                    value: 'yes',
                 },
+                {
+                    text: 'No',
+                    value: 'no',
+                }
             ],
             onFilter: (value, record) => record.Selection.startsWith(value),
             filterSearch: true,
@@ -179,7 +184,7 @@ function Registrations() {
                 <Space size="middle" 
                 // onClick={(record) => { handleClick(record) }}
                 >
-                    <a>{record.Selection}</a>
+                    <div>{record.Selection} <span style={{textAlign:"center"}}><a href={`mailto:${record.Email}`}><MdEmail/></a></span></div>
                 </Space>
             ),
         },
@@ -262,13 +267,14 @@ function Registrations() {
             };
             const res = await Api.get("/user/get_alluser", requestOptions);
             const data = await res.data;
+            // console.log(data)
             const newdata = data.map((e,index)=>{
                 return{
                     "first": e.first_name,
                     "second" : e.last_name,
                     "Gender" : e.gender,
                     "Number" : e.phone,
-                    "Email": e.Email,
+                    "Email": e.email,
                     "College": e.college,
                     "City": e.city,
                     "State" : e.state,
@@ -296,7 +302,7 @@ function Registrations() {
             <div className={classes.list}>
                 <Table columns={columns} dataSource={data} />
             </div>
-            <Button type="primary" size='large' onClick={()=>lout()}>LOG OUT</Button>
+            <Button type="primary" size='large' onClick={()=>lout()} style={{marginBottom:"2rem"}}>LOG OUT</Button>
         </div>
     )
 }
