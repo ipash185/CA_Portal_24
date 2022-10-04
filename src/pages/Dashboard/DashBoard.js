@@ -8,7 +8,8 @@ const DashBoard = () => {
       <div className={styles.TotalDiv}>
         <Navbar />
         <div className={styles.LeftDiv}>
-            <div className={styles.NameOf}>NAME OF THE CANDI<br />KTJ ID : KTJ229856</div>
+            <div className={styles.NameOf}>NAME OF THE CANDI<br />KTJ ID : KTJ229856
+            <br /><br /><br /><br /><br />SHARE TO EARN MORE REWARD POINTS</div>
             <div className={styles.RewardP}></div>
         </div>
         <div classname={styles.TopDiv}></div>
