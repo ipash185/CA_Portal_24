@@ -51,7 +51,11 @@ const Navbar = (props) => {
                 </button>
                   <button className={classes.sign} >
                     <Link to="/SignIn">Sign In</Link>
-                  </button></>) : ""
+                  </button></>) : (<><button
+                    className={classes.sign}>
+                    <Link to="/Profile">Profile</Link>
+                  </button>
+                  </>)
 
                 }
 
@@ -65,7 +69,7 @@ const Navbar = (props) => {
             // humburger.classList.remove('GiHamburgerMenu');
             // humburger.classList.add('GiWideArrowDunk');
           }>
-            <GiHamburgerMenu style={{color: "white", marginBottom:"0.5rem", userSelect: "none"}}/>
+            <GiHamburgerMenu style={{ color: "white", marginBottom: "0.5rem", userSelect: "none" }} />
           </a>
         </div>
       </div>

@@ -36,7 +36,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/SignUp' getMessage={({ params }) => params.message} element={<SignUp />} />
         <Route path='/SignIn' element={<SignIn />} />
-        <Route path='/ProfileEdit' element={<ProfileEdit />} />
+        <Route path='/Profile' element={<ProfileEdit />} />
         <Route path='/ProfileSave' element={<ProfileSave />} />
         {/* <Route path='/Registrations' element={<Registrations />} /> */}
         <Route path  = '/home' element = {<Home2/>}/>
