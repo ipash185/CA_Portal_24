@@ -82,7 +82,12 @@ position:absolute;
 }
 
 .RewardP {
-    height: 15.5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 2rem;
+height: 15.5vh;
 width: 23.6vw;
 left: 4.6vw;
 top: 62vh;
