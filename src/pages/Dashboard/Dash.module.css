@@ -108,6 +108,7 @@ top: 10rem;
 border-radius: 8.5rem;
 position:absolute;
 background-color: white;
+overflow: hidden;
 }
 .ChangeAvatar {
     height: 3rem;

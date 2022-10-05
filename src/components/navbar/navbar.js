@@ -55,6 +55,9 @@ const Navbar = (props) => {
                     className={classes.sign}>
                     <Link to="/Profile">Profile</Link>
                   </button>
+                  <button className={classes.sign} >
+                    <Link to="/Dashboard">Dashboard</Link>
+                  </button>
                   </>)
 
                 }
