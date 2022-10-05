@@ -48,14 +48,14 @@ const ProfileSave = () => {
     try{
         const requestOptions = {
             method: 'POST',
-            user:user,
             headers: { 
             'Content-Type': 'application/json', 
             'Authorization': 'Bearer ' + localStorage.getItem('token') 
             },
         };
-        const res = await Api.put("/user/profileedit",
+        const res = await Api.post("/user/profileedit",
         {
+            ca_id: user.ca_id,
             phone: ph,
             college: clg, 
             city: ct, 
