@@ -43,8 +43,7 @@ const DashBoard = () => {
             {auth == false && user!={}?<>loading..</>:<>
             {user?.first_name} {user?.last_name} 
             </>}
-            <br />KTJ ID : 
-            {auth == false && user!={}?<>loading..</>:<>
+            <br />{auth == false && user!={}?<>loading..</>:<>
             {user?.ca_id}
             </>}
             <br /><br /><br /><br /><br />SHARE TO EARN MORE REWARD POINTS</div>
@@ -56,7 +55,8 @@ const DashBoard = () => {
         </div>
         <div className={styles.ProfilePic}><img height="100%" width="100%" src={auth ? user.gender === "MALE" ? male : user.gender === "FEMALE" ? female : unknown : unknown} /></div>
         {/* appears accordingly male, female and unknown , default male */}
-        <button className={styles.ChangeAvatar}><p> CHANGE AVATAR</p></button>
+        {/* <button className={styles.ChangeAvatar}><p> CHANGE AVATAR</p></button> */}
+
         {/* <div classname={styles.TopDiv}></div> */}
         {/* <div className={styles.Div1}>
           <div className={styles.Over1}>Hello</div>
