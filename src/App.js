@@ -5,6 +5,7 @@ import Home2 from './pages/Homepage/Homepage2'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from './pages/SignIn/SignUp';
 import SignIn from './pages/SignIn/SignIn';
+import DashBoard from './pages/Dashboard/DashBoard';
 // import Registrations from './admin_panel/Registrations/Registrations';
 import ProfileEdit from './pages/Profile/ProfileEdit';
 import ProfileSave from './pages/Profile/ProfileSave';
@@ -38,6 +39,7 @@ function App() {
         <Route path='/SignIn' element={<SignIn />} />
         <Route path='/Profile' element={<ProfileEdit />} />
         <Route path='/ProfileSave' element={<ProfileSave />} />
+        <Route path='/DashBoard' element={<DashBoard />} />
         {/* <Route path='/Registrations' element={<Registrations />} /> */}
         <Route path  = '/home' element = {<Home2/>}/>
       </Routes>
