@@ -2,6 +2,9 @@ import React, {useState, useEffect} from "react";
 import styles from "./Dash.module.css";
 import Navbar from "../../components/navbar/navbar";
 import Api from '../../API/Api';
+import male from '../../images/male_avatar.jpg';
+import female from '../../images/female_avatar.jpg';
+import unknown from '../../images/unknown_avatar.png';
 
 const DashBoard = () => {
 
@@ -51,6 +54,9 @@ const DashBoard = () => {
             </>}    
             </div>
         </div>
+        <div className={styles.ProfilePic}><img height="100%" width="100%" src={auth ? user.gender === "MALE" ? male : user.gender === "FEMALE" ? female : unknown : unknown} /></div>
+        {/* appears accordingly male, female and unknown , default male */}
+        <button className={styles.ChangeAvatar}><p> CHANGE AVATAR</p></button>
         {/* <div classname={styles.TopDiv}></div> */}
         {/* <div className={styles.Div1}>
           <div className={styles.Over1}>Hello</div>
