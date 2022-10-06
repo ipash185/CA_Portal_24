@@ -22,9 +22,11 @@ const DashBoard = () => {
     Api.get(`/user/login_check`, requestOptions).then((res) => {
 
       // console.log(res.data);
-      setUser(res?.data?.user)
-      setAuth(true);
-      console.log(res.data.user)
+      console.log(res?.data?.user);
+      if(res?.data?.user?.selection == "yes"){
+        setUser(res?.data?.user);
+        setAuth(true);
+      }
     }).catch((err) => {
       console.log(err);
       setAuth(false);
