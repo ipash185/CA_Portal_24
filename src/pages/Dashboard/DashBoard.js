@@ -37,7 +37,7 @@ const DashBoard = () => {
 
 
   return (
-    <div>
+    <div className={styles.Container}>
       <div className={styles.TotalDiv}>
         <Navbar show={auth}/>
         <div className={styles.LeftDiv}>
