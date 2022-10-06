@@ -1,10 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import img1 from "../../images/icon2.png"
 import { Link } from 'react-router-dom';
+import Api from '../../API/Api';
 
 const Navbar = (props) => {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+
+    const requestOptions = {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem('token') }
+    };
+
+
+
+    Api.get(`/user/login_check`, requestOptions).then((res) => {
+
+      // console.log(res.data);
+      console.log(res?.data?.user);
+      if(res?.data?.user?.selection == "yes"){
+        setUser(res?.data?.user);
+      }
+    }).catch((err) => {
+      console.log(err);
+    })
+
+
+  }, [])
 
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
@@ -55,9 +80,9 @@ const Navbar = (props) => {
                     className={classes.sign}>
                     <Link to="/Profile">Profile</Link>
                   </button>
-                  <button className={classes.sign} >
+                  {user?.selection === "yes" ? <button className={classes.sign} >
                     <Link to="/Dashboard">Dashboard</Link>
-                  </button>
+                  </button> :""}
                   </>)
 
                 }
