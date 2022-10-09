@@ -5,6 +5,8 @@ import Api from '../../API/Api';
 import male from '../../images/male_avatar.jpg';
 import female from '../../images/female_avatar.jpg';
 import unknown from '../../images/unknown_avatar.png';
+import Card from "./Card/Card";
+import ICS from "./caa.png";
 
 const DashBoard = () => {
 
@@ -71,6 +73,9 @@ const DashBoard = () => {
         {/* <div className={styles.Div2}></div> */}
         {/* <div className={styles.Div1}></div> */}
         {/* <div className={styles.Div1}></div> */}
+        <div className={styles.cardpos}>
+          <Card img={ICS} />
+        </div>
       </div>
     </div>
   );
