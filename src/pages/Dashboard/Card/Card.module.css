@@ -1,0 +1,33 @@
+.card{
+    display: flex;
+    /* box-sizing: border-box; */
+    border-radius: 0.5rem;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 4fr repeat(4,1fr); */
+    align-items: center;
+    justify-items: center;
+    background: white;
+    text-align: center;
+    transition: all 0.3s;
+    position: relative;
+    /* top:-50rem; */
+    z-index: 20;
+    width: 30rem;
+    height: 18rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 3rem;
+}
+.circle{
+    /* box-sizing: border-box; */
+    border-radius: 30rem;
+    background: grey;
+    background-position: center;
+    background-size:cover;
+    height: 18rem;
+    width: 30rem;
+    align-self: center;
+    /* grid-row: 1/2; */
+    /* overflow: hidden; */
+}

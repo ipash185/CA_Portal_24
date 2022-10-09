@@ -138,3 +138,14 @@ p {
     font-size: 1.8rem;
     font-weight: bold;
 }
+img {
+    width:30rem;
+}
+
+.cardpos{
+    position: absolute;
+    top: 30vh;
+    left: 26vw;
+    width: 100vw;
+    /* height: 90vh; */
+}
