@@ -13,6 +13,8 @@ const DashBoard = () => {
   const [auth, setAuth] = useState(false)
   const [auth1, setAuth1] = useState(false)
   const [user, setUser] = useState({});
+  const [data, setData] = useState([])
+  const [loader, setLoader] = useState(false);
   useEffect(() => {
 
     const requestOptions = {
@@ -39,6 +41,28 @@ const DashBoard = () => {
 
   }, [])
 
+  useEffect(() => {
+    fetchData();
+  }, [])
+
+  const fetchData = async()=>{
+    try{
+      setLoader(true);
+      const requestOptions = {
+        headers: { 
+          'Content-Type': 'application/json', 
+          'Authorization': 'Bearer ' + localStorage.getItem('token') 
+        },
+      };
+      const res = await Api.get("/event/getEvents", requestOptions);
+      const data = await res.data;
+      console.log(data);
+      setData(data?.events)
+      setLoader(false);
+    }catch(e){
+      console.log(e);
+    }
+  }
 
   return (
     <div className={styles.Container}>
@@ -75,18 +99,16 @@ const DashBoard = () => {
         {/* <div className={styles.Div1}></div> */}
         
         <button className={styles.Button}>LIVE EVENTS</button>
-        
-        <div className={styles.cardpos}>
-          <Card img={ICS} />
-          <Card img={ICS} />
-          <Card img={ICS} />
-          <Card img={ICS} />
-          <Card img={ICS} />
-          <Card img={ICS} />
-          <Card img={ICS} />
-          <Card img={ICS} />
-          <Card img={ICS} />
-        </div>
+        {auth? 
+          <div className={styles.cardpos}>
+            {data.map((e)=>{
+              return(
+                <Card desc={e}/>
+              )
+            })}
+          </div>  : ""
+        }
+
       </div>
     </div>
   );
