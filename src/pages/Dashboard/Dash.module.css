@@ -144,13 +144,8 @@ img {
 
 .cardpos{
     position: absolute;
-    top: 27vh;
-    left: 22.5vw;
-    width:80vw;
-     height: 50vh;
-     display: flex; 
-     flex-direction: row;
-     flex-wrap:wrap;
-     flex-flow: row wrap;
+    top: 30vh;
+    left: 26vw;
+    width: 100vw;
+    /* height: 90vh; */
 }
-
