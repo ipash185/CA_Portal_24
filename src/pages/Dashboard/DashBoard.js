@@ -75,6 +75,14 @@ const DashBoard = () => {
         {/* <div className={styles.Div1}></div> */}
         <div className={styles.cardpos}>
           <Card img={ICS} />
+          <Card img={ICS} />
+          <Card img={ICS} />
+          <Card img={ICS} />
+          <Card img={ICS} />
+          <Card img={ICS} />
+          <Card img={ICS} />
+          <Card img={ICS} />
+          <Card img={ICS} />
         </div>
       </div>
     </div>
