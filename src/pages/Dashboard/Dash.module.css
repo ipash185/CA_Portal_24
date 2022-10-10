@@ -148,6 +148,30 @@ p {
     width: 30rem;
 } */
 
+.Button{
+    position:absolute;
+    top:15vh;
+    left:10rem;
+    width:30rem;
+    /* height:13%; */
+    padding:1rem;
+    font-size:3rem;
+    font-weight: bolder;
+    color:#0f4d70;
+    border-radius:22px;
+    background-color:white;
+    border:4px solid white;
+    margin-left: 30rem;
+    /* cursor:pointer; */
+    transition-duration:0.4s;
+}
+
+.Button:hover {
+    background-color:#0f4d70;
+    color: white;
+    transform: scale(0.95);
+}
+
 .cardpos {
     position: absolute;
     top: 30vh;
