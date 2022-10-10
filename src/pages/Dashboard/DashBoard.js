@@ -7,11 +7,6 @@ import female from '../../images/female_avatar.jpg';
 import unknown from '../../images/unknown_avatar.png';
 import Card from "./Card/Card";
 import ICS from "./caa.png";
-import Fb from "./Facebook-logo.png";
-import LIn from "./LinkedIn logo.png";
-import Tw from "./Twitter logo.png";
-import Insta from "./Insta logo.jpg";
-import WhaA from "./WhatsApp Logo.png";
 
 const DashBoard = () => {
 
@@ -79,20 +74,10 @@ const DashBoard = () => {
         {/* <div className={styles.Div1}></div> */}
         {/* <div className={styles.Div1}></div> */}
         <div className={styles.cardpos}>
-          <Card img={ICS} Heading="INDIAN CASE CHALLENGE" img1={Fb} img2={LIn} img3={Tw} img4={Insta} img5={WhaA} />
-      
-          <Card img={ICS} Heading="INDIAN CASE CHALLENGE" img1={Fb} img2={LIn} img3={Tw} img4={Insta} img5={WhaA} />
-           
-          <Card img={ICS} Heading="INDIAN CASE CHALLENGE" img1={Fb} img2={LIn} img3={Tw} img4={Insta} img5={WhaA} />
-
-          <Card img={ICS} Heading="INDIAN CASE CHALLENGE" img1={Fb} img2={LIn} img3={Tw} img4={Insta} img5={WhaA} />
-
-          <Card img={ICS} Heading="INDIAN CASE CHALLENGE" img1={Fb} img2={LIn} img3={Tw} img4={Insta} img5={WhaA} />
-
-          <Card img={ICS} Heading="INDIAN CASE CHALLENGE" img1={Fb} img2={LIn} img3={Tw} img4={Insta} img5={WhaA} />
-          </div>
+          <Card img={ICS} />
         </div>
       </div>
+    </div>
   );
 };
 
