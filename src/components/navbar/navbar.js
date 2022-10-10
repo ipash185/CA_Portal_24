@@ -55,7 +55,7 @@ const Navbar = (props) => {
               <a href="#about" onClick={() => setShowMediaIcons(false)}>About Us</a>
             </li>
             <li>
-              <a href="#resp" onClick={() => setShowMediaIcons(false)}>Responibilities</a>
+              <a href="#resp" onClick={() => setShowMediaIcons(false)}>Responsibilities</a>
             </li>
             <li>
               <a href="#inc" onClick={() => setShowMediaIcons(false)}>Incentives</a>

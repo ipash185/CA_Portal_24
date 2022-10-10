@@ -73,6 +73,9 @@ const DashBoard = () => {
         {/* <div className={styles.Div2}></div> */}
         {/* <div className={styles.Div1}></div> */}
         {/* <div className={styles.Div1}></div> */}
+        
+        <button className={styles.Button}>LIVE EVENTS</button>
+        
         <div className={styles.cardpos}>
           <Card img={ICS} />
           <Card img={ICS} />
