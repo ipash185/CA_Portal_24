@@ -73,14 +73,15 @@ const DashBoard = () => {
             {auth == false && user != {} ? <>Not found</> : <>
               {user?.first_name} {user?.last_name}
             </>}
-            <br /><span style={{fontSize: "1.6rem", marginTop: "0.5rem"}}>KTJ ID : {auth == false && user != {} ? <>Not Applicable</> : <>
+            <br /><span className={styles.ktjid}>KTJ ID : {auth == false && user != {} ? <>Not Applicable</> : <>
               {user?.ca_id}
             </>}</span><br/>
-            <br/><br/><br/><br/><br/><br/><br/><span style={{fontFamily: "monospace", fontSize: "1.6rem", lineHeight: "1.6rem"}}>SHARE TO EARN MORE REWARD POINTS</span></div>
+            <br/><br/><br/><br/><br/><br/><br/><span className={styles.share}>SHARE TO EARN MORE REWARD POINTS</span></div>
           <div className={styles.RewardP}>
             <span style={{whiteSpace: "nowrap", paddingBottom:"0.5rem", borderBottom: "2px solid black"}}>:: REWARD POINTS ::</span> <br/><div style={{textAlign: "center"}}>{auth == false && user != {} ? <>N/A</> : <>
               {user?.points}
             </>}</div>
+            {/* style=>{{fontFamily: "monospace", fontSize: "1.6rem", lineHeight: "1.6rem"}} */}
           </div>
         </div>
         <div className={styles.ProfilePic}><img height="100%" width="100%" src={auth ? user.gender === "MALE" ? male : user.gender === "FEMALE" ? female : unknown : unknown} /></div>
