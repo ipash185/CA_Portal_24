@@ -208,6 +208,8 @@ p {
      margin-top: 0.5rem;
 }
 
+
+
 @media (max-width: 1301px){
     .RewardP {
         font-size: 1.75rem;
@@ -352,7 +354,7 @@ p {
     .Button{
         position:relative;
          left: -28rem;
-         top: 11%;
+         top: 12%;
         width:22%;
         /* height:13%; */
        
@@ -368,7 +370,7 @@ p {
     }
     .cardpos {
         position: absolute;
-        top: 32%;
+        top: 37%;
         left: 4%;
         width: 96%;
         height: 65%;
@@ -402,13 +404,22 @@ p {
 .RewardP{
     font-size: 0.9rem;
     flex-direction: row;
+    
+}
+.RewardP span {
+    /* background-color: red; */
+    margin-top: -1rem;
+}
+.RewardP div {
+    /* background-color: red; */
+    margin-top: -0.1rem;
 }
 .NameOf{
     font-size: 2rem;
 }
 .Button{
     width:28%;
-   
+    top: 11.5%;
     font-size:1.3rem;
 }
 }
