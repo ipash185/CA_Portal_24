@@ -200,7 +200,7 @@ p {
     flex-wrap: wrap;
     overflow-y: scroll;
     cursor: pointer;
-   
+  
     /* height: 90vh; */
 }
 .ktjid{
@@ -219,6 +219,8 @@ p {
     .cardpos {
         width: 68%;
         height: 63%;
+     
+        width: 70%;
     }
    
 }
@@ -251,6 +253,7 @@ p {
     .cardpos {
         width: 66%;
         height: 61%;
+        width: 70%;
     }
 }
 @media (max-width: 882px){
@@ -287,6 +290,7 @@ p {
     .cardpos {
         width: 62%;
         height: 58%;
+        width: 70%;
     }
 }
  
@@ -366,7 +370,7 @@ p {
         position: absolute;
         top: 32%;
         left: 4%;
-        width: 100%;
+        width: 96%;
         height: 65%;
         display: flex;
         justify-content: flex-start;
@@ -421,8 +425,38 @@ p {
    
 }
 @media (max-width: 396px){
-     
+     .TotalDiv{
+        width: 114%;
+        height: 114%;
+     }
     .cardpos{
-        top: 30%;
+        top: 31%;
         width: 95%;
     }}
+    @media (max-width: 325px){
+        .TotalDiv{
+           width: 126%;
+           height: 129%;
+        }
+       .cardpos{
+           top: 30%;
+           width: 95%;
+       }}
+       @media (max-width: 294px){
+        .TotalDiv{
+           width: 142%;
+           height: 140%;
+        }
+       .cardpos{
+           top: 29%;
+           width: 95%;
+       }}
+       @media (max-width: 260px){
+        .TotalDiv{
+           width: 160%;
+           height: 160%;
+        }
+       .cardpos{
+           top: 27%;
+           width: 95%;
+       }}
