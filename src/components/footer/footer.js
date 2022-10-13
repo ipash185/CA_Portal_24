@@ -28,7 +28,7 @@ function Footer() {
       message: message,
       phone: phone,
     };
-    axios.post("https://cap-ktj-backend.herokuapp.com/user/contact/", data).then((response) => {
+    axios.post("https://ca-backend-api.herokuapp.com/user/contact/", data).then((response) => {
       if (response.status !== 200) {
         throw new Error(response.statusText);
       }

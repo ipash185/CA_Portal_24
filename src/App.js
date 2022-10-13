@@ -21,7 +21,7 @@ function App() {
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem('token') }
     };
 
-    fetch(`https://cap-ktj-backend.herokuapp.com/user/login_check`, requestOptions)
+    fetch(`https://ca-backend-api.herokuapp.com/user/login_check`, requestOptions)
       .then((res) => res.json())
       .then((data) => {
         // setUser(data.user);
