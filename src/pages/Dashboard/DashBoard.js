@@ -104,7 +104,15 @@ const DashBoard = () => {
           <div className={styles.cardpos}>
             {data.map((e)=>{
               return(
+                <>
                 <Card desc={e}/>
+                <Card desc={e}/>
+                <Card desc={e}/>
+                <Card desc={e}/>
+                <Card desc={e}/>
+                <Card desc={e}/></>
+
+                // <Card desc={e}/>
               )
             })}
           </div>  : ""

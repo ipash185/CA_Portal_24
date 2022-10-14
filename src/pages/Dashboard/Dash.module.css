@@ -16,7 +16,7 @@
      font-Size: 1.7rem;
       line-height: 1.6rem;
       position: relative;
-      top: 10rem;
+      top: 3.8rem;
      
 }
 
@@ -181,7 +181,7 @@ p {
     margin-left: 30rem;
     /* cursor:pointer; */
     transition-duration:0.4s;
-    
+    z-index: 40;
 }
 
 .Button:hover {
@@ -192,7 +192,7 @@ p {
 
 .cardpos {
     position: absolute;
-    top: 32%;
+    top: 19%;
     left: 30%;
     width: 70%;
     height: 65%;
@@ -220,6 +220,7 @@ p {
     width: 64%;
     left: 15%;
     top: 59%;
+    
     }
     .cardpos {
         width: 68%;
@@ -247,6 +248,7 @@ p {
     }
     .share{
         font-size: 1.4rem;
+      
         /* margin-top: 5%; */
        
        
@@ -263,15 +265,15 @@ p {
         width: 70%;
     }
 }
-@media (max-height:814px) {
+/* @media (max-height:814px) {
     .share{
        
        position: relative;
        top: 2rem;
     }
     
-}
-@media (max-width: 882px){
+} */
+/* @media (max-width: 882px){
     .ProfilePic{
         left: 1.5%;
         height: 13rem;
@@ -297,7 +299,7 @@ p {
     }
     .share{
         font-size: 1.2rem;
-        /* margin-top: 5%; */
+       
     }
     .Button{
         width: 28%;
@@ -307,26 +309,26 @@ p {
         height: 58%;
         width: 70%;
     }
-}
+} */
  
-@media (max-width: 750px){
+@media (max-width: 1088px){
     .ProfilePic{
-      height: 7rem;
-      width: 7rem;
-      top: 6.5rem;
+      height: 6.5rem;
+      width: 6.5rem;
+      top: 7.2rem;
     }
     .share{
-      
+    
         display: none;
     }
     .RewardP{
-         
+       
        
         font-size: 1.2rem;
         height: 15%;
-        width: 25%;
-        left: 70%;
-        top: 1rem;
+        width: 22%;
+        left: 72%;
+        top: 2.5rem;
         border-radius: -5px;
         background-color: #FFFFFF;
         position: absolute;
@@ -340,12 +342,13 @@ p {
         flex-direction: column;
         
     }
+    
      
         .NameOf {
             height:3rem;
             width: 20rem;
             left: 11%;
-            top: 2rem;
+            top: 2.9rem;
             border-radius: nullpx;
             color: #FFFFFF;
             /* font-family: Montserrat; */
@@ -359,10 +362,11 @@ p {
         }
     
     .LeftDiv{
-        height: 8rem;
+        height: 9rem;
         width: 100%;
         display: flex;
         flex-direction: row;
+        top: 7%;
     }
     .Button{
         position:relative;
@@ -383,7 +387,7 @@ p {
     }
     .cardpos {
         position: absolute;
-        top: 37%;
+        top: 20%;
         left: 4%;
         width: 96%;
         height: 65%;
@@ -399,6 +403,22 @@ p {
     }
    
       
+}
+@media (max-width:710px) {
+    .ProfilePic{
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+    .NameOf{
+font-size: 2.1rem;
+    }
+    .ktjid{
+font-size: 1.3rem;
+    }
+    .cardpos{
+        justify-content: center;
+    }
+    
 }
 @media (max-width: 640px){
     .RewardP{
@@ -431,16 +451,19 @@ p {
     font-size: 2rem;
 }
 .Button{
-    width:28%;
+    width:11rem;
     top: 11.5%;
-    font-size:1.3rem;
+    font-size:1.2rem;
+}
+.cardpos{
+    top: 25%;
 }
 }
 @media (max-width: 410px){
     .Button{
-        width:22%;
-        top: 11%;
-        font-size:0.8rem;
+        width:9rem;
+        top: 10.5%;
+        font-size:1rem;
     }
     .cardpos{
         top: 30%;
@@ -453,19 +476,29 @@ p {
         width: 114%;
         height: 114%;
      }
+     .LeftDiv{
+        top:6%;
+     }
     .cardpos{
-        top: 31%;
+        top: 23%;
         width: 95%;
-    }}
+    }
+    .ProfilePic{
+        left:1%;
+    }
+ }
     @media (max-width: 325px){
         .TotalDiv{
            width: 126%;
            height: 129%;
         }
        .cardpos{
-           top: 30%;
+           top: 23%;
            width: 95%;
-       }}
+       }
+    .LeftDiv{
+        top:5.4rem;
+    }}
        @media (max-width: 294px){
         .TotalDiv{
            width: 142%;
