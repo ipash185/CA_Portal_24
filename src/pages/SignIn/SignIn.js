@@ -143,7 +143,7 @@ const SignIn = () => {
             ''
           )}
 
-          <span className='ButtonLabel'>REGISTER</span>
+          <span className='ButtonLabel'>Sign In</span>
 
 
         </button>
