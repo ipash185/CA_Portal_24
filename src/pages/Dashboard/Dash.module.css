@@ -15,10 +15,13 @@
     font-Family: monospace;
      font-Size: 1.7rem;
       line-height: 1.6rem;
+      position: relative;
+      top: 10rem;
+     
 }
 
 .LeftDiv {
-    height: 91%;
+    height: 92%;
     width: 22%;
     left: 0px;
     top: 6.4rem;
@@ -245,6 +248,8 @@ p {
     .share{
         font-size: 1.4rem;
         /* margin-top: 5%; */
+       
+       
     }
     .ktjid{
         font-size: 1.5rem;
@@ -257,6 +262,14 @@ p {
         height: 61%;
         width: 70%;
     }
+}
+@media (max-height:814px) {
+    .share{
+       
+       position: relative;
+       top: 2rem;
+    }
+    
 }
 @media (max-width: 882px){
     .ProfilePic{
