@@ -19,6 +19,8 @@
     flex-wrap: wrap;
     overflow: hidden;
     gap: 3rem;
+    margin-left: 3rem;
+    margin-top: 7%;
 }
 .circle{
     /* box-sizing: border-box; */
@@ -85,4 +87,96 @@ a{
     opacity: 1;
     border-radius: 1rem;
 }
+@media (max-width: 1659px){
+     .card{
+        margin-left: 12rem;
+        width: 34rem;
+        height: 21rem;
+        margin-bottom: 3rem;
+     }
+     .circle{
+        height: 21rem;
+        width: 34rem;
+    }
+
+}
+@media (max-width: 1460px){
+    .card{
+       margin-left: 9rem;
+       width: 34rem;
+       height: 21rem;
+    }
+    .circle{
+       height: 21rem;
+       width: 34rem;
+   }
+
+}
+@media (max-width: 1322px){
+    .card{
+        margin-left: 30%;
+       margin-bottom: 5rem;
+       width: 36rem;
+       height: 22rem;
+    }
+    .circle{
+       height: 22rem;
+       width: 36rem;
+   }
+
+}
+@media (max-width: 1086px){
+    .card{
+        margin-left: 30%;
+       width: 36rem;
+       height: 23rem;
+    
+    }
+    .circle{
+       height: 23rem;
+       width: 36rem;
+   }
+
+}
+@media (max-width:900px) {
+    .card{
+        margin-left: 30%;
+        width: 34rem;
+        height: 21rem;
+        
+    }
+    .circle{
+        height: 21rem;
+        width: 34rem;
+    }
+    
+}
+@media (max-width:711px) {
+    .card{
+        margin-left: 10%;
+        width: 34rem;
+        height: 21rem;
+        
+    }
+    .circle{
+        height: 21rem;
+        width: 34rem;
+    }
+    
+}
+@media (max-width:510px) {
+    .card{
+        margin-left: 1%;
+        width: 32rem;
+        height: 19rem;
+        
+    }
+    .circle{
+        height: 20rem;
+        width: 32rem;
+    }
+    
+}
+
+
 
