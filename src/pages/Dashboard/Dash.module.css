@@ -199,11 +199,11 @@ p {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2rem;
     flex-wrap: wrap;
     overflow-y: scroll;
     cursor: pointer;
-  
+    
     /* height: 90vh; */
 }
 .ktjid{
@@ -387,8 +387,8 @@ p {
     }
     .cardpos {
         position: absolute;
-        top: 20%;
-        left: 4%;
+        top: 24%;
+        left: 2%;
         width: 96%;
         height: 65%;
         display: flex;

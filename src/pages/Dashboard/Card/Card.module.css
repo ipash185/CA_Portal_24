@@ -87,7 +87,7 @@ a{
     opacity: 1;
     border-radius: 1rem;
 }
-@media (max-width: 1659px){
+/* @media (max-width: 1659px){
      .card{
         margin-left: 12rem;
         width: 34rem;
@@ -99,7 +99,7 @@ a{
         width: 34rem;
     }
 
-}
+} */
 @media (max-width: 1460px){
     .card{
        margin-left: 9rem;
