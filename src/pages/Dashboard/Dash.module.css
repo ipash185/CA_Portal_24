@@ -181,7 +181,7 @@ p {
     margin-left: 30rem;
     /* cursor:pointer; */
     transition-duration:0.4s;
-    
+    z-index: 40;
 }
 
 .Button:hover {
@@ -313,8 +313,8 @@ p {
  
 @media (max-width: 1088px){
     .ProfilePic{
-      height: 7rem;
-      width: 7rem;
+      height: 6.5rem;
+      width: 6.5rem;
       top: 7.2rem;
     }
     .share{
@@ -328,7 +328,7 @@ p {
         height: 15%;
         width: 22%;
         left: 72%;
-        top: 1.6rem;
+        top: 2.5rem;
         border-radius: -5px;
         background-color: #FFFFFF;
         position: absolute;
@@ -348,7 +348,7 @@ p {
             height:3rem;
             width: 20rem;
             left: 11%;
-            top: 2rem;
+            top: 2.9rem;
             border-radius: nullpx;
             color: #FFFFFF;
             /* font-family: Montserrat; */
@@ -362,7 +362,7 @@ p {
         }
     
     .LeftDiv{
-        height: 8rem;
+        height: 9rem;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -482,6 +482,9 @@ font-size: 1.3rem;
     .cardpos{
         top: 23%;
         width: 95%;
+    }
+    .ProfilePic{
+        left:1%;
     }
  }
     @media (max-width: 325px){
