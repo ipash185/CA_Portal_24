@@ -73,7 +73,7 @@ const DashBoard = () => {
             {auth == false && user != {} ? <>Not found</> : <>
               {user?.first_name} {user?.last_name}
             </>}
-            <br /><span className={styles.ktjid}>KTJ ID : {auth == false && user != {} ? <>Not Applicable</> : <>
+            <br /><span className={styles.ktjid}>CA ID : {auth == false && user != {} ? <>Not Applicable</> : <>
               {user?.ca_id}
             </>}</span><br/>
             <br/><br/><br/><br/><br/><br/><br/><span className={styles.share}>SHARE TO EARN MORE REWARD POINTS</span></div>
