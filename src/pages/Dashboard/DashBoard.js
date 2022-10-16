@@ -32,6 +32,7 @@ const DashBoard = () => {
       if (res?.data?.user?.selection == "yes") {
         setUser(res?.data?.user);
         setAuth(true);
+        // console.log("verfied");
       }
     }).catch((err) => {
       console.log(err);
@@ -86,25 +87,13 @@ const DashBoard = () => {
         </div>
         <div className={styles.ProfilePic}><img height="100%" width="100%" src={auth ? user.gender === "MALE" ? male : user.gender === "FEMALE" ? female : unknown : unknown} /></div>
         {/* appears accordingly male, female and unknown , default male */}
-        {/* <button className={styles.ChangeAvatar}><p> CHANGE AVATAR</p></button> */}
-
-        {/* <div classname={styles.TopDiv}></div> */}
-        {/* <div className={styles.Div1}>
-          <div className={styles.Over1}>Hello</div>
-        </div> */}
-
-        {/* <div className={styles.Div1}></div> */}
-        {/* <div className={styles.Div1}></div> */}
-        {/* <div className={styles.Div2}></div> */}
-        {/* <div className={styles.Div1}></div> */}
-        {/* <div className={styles.Div1}></div> */}
         
         <button className={styles.Button}>LIVE EVENTS</button>
         {auth? 
           <div className={styles.cardpos}>
             {data.map((e)=>{
               return(
-                <Card desc={e}/>
+                <Card desc={e} key={e._id} user={user}/>
               )
             })}
           </div>  : ""
