@@ -15,6 +15,7 @@ const DashBoard = () => {
   const [user, setUser] = useState({});
   const [data, setData] = useState([])
   const [loader, setLoader] = useState(false);
+  const [points, setPoints] = useState(0)
   useEffect(() => {
 
     const requestOptions = {
@@ -32,6 +33,7 @@ const DashBoard = () => {
       if (res?.data?.user?.selection == "yes") {
         setUser(res?.data?.user);
         setAuth(true);
+        setPoints(res?.data?.user?.points)
         // console.log("verfied");
       }
     }).catch((err) => {
@@ -80,7 +82,7 @@ const DashBoard = () => {
             <br/><br/><br/><br/><br/><br/><br/><span className={styles.share}>SHARE TO EARN MORE REWARD POINTS</span></div>
           <div className={styles.RewardP}>
             <span style={{whiteSpace: "nowrap", paddingBottom:"0.5rem", borderBottom: "2px solid black"}}>:: REWARD POINTS ::</span> <br/><div style={{textAlign: "center"}}>{auth == false && user != {} ? <>N/A</> : <>
-              {user?.points}
+              {points}
             </>}</div>
             {/* style=>{{fontFamily: "monospace", fontSize: "1.6rem", lineHeight: "1.6rem"}} */}
           </div>
@@ -93,7 +95,7 @@ const DashBoard = () => {
           <div className={styles.cardpos}>
             {data.map((e)=>{
               return(
-                <Card desc={e} key={e._id} user={user}/>
+                <Card desc={e} key={e._id} user={user} setPoints={setPoints} points={points}/>
               )
             })}
           </div>  : ""
