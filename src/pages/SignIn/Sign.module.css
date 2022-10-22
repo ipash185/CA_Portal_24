@@ -334,8 +334,8 @@ font-size:2.9rem;
   color: linear-gradient(0deg, #000000, #000000);
   position: absolute;
   }
-  .Linksto Link {
-    color:linear-gradient(0deg, #35469E, #35469E);
+  .Linksto a {
+    color: #35469E;
   }
   input {
     outline: none;
