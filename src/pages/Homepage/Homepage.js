@@ -1,4 +1,4 @@
-import React, { useEffect ,useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import bg from "../../images/bg.png"
 import styles from './Homepage.module.css';
 import About from '../About/about';
@@ -16,60 +16,62 @@ import Api from '../../API/Api';
 
 function Home() {
 
-    const [auth,setAuth] = useState(false);
+    const [auth, setAuth] = useState(false);
     const [app_id, setapp_id] = useState(null);
+    const [sel, setSel] = useState("no");
 
-    useEffect(()=>{
+    useEffect(() => {
 
         const requestOptions = {
             method: 'GET',
             headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + localStorage.getItem('token') }
-          };
-      
-       
-     
-            Api.get(`/user/login_check`,requestOptions).then((res)=>{
+        };
 
-            console.log(res.data);
+
+
+        Api.get(`/user/login_check`, requestOptions).then((res) => {
+
+            // console.log(res.data.user);
             setapp_id(res.data.user.app_id)
-                setAuth(true);
-            }).catch((err)=>{
-                console.log(err);
-                setAuth(false);
-            })
-        
+            setSel(res.data.user.selection);
+            setAuth(true);
+        }).catch((err) => {
+            console.log(err);
+            setAuth(false);
+        })
 
-    },[])
+
+    }, [])
 
 
     return (
         <div>
-            <Navbar show = {auth} />
+            <Navbar show={auth} />
             <div className={styles.container}>
-                <div className={styles.bg1}> 
-                <div className={styles.bg2}> <img src={bg}/>
-                </div>
-                <div className={styles.bg}> 
-                    <h1 className={styles.heading}>CAMPUS AMBASSADOR PROGRAM</h1>
-                    <h2 className ={styles.head2}> KSHITIJ, IIT KHARAGPUR</h2>
+                <div className={styles.bg1}>
+                    <div className={styles.bg2}> <img src={bg} />
+                    </div>
+                    <div className={styles.bg}>
+                        <h1 className={styles.heading}>CAMPUS AMBASSADOR PROGRAM</h1>
+                        <h2 className={styles.head2}> KSHITIJ, IIT KHARAGPUR</h2>
 
-                    {
-                        auth?<><h1 className={styles.btn} >Your Application is in Progress</h1><div className={styles.info}>Your application ID is <span style={{fontWeight: "bold"}}>{app_id}</span></div></>: <Link to='/SignUp'><ButtonUnstyled className={styles.btn} variant="contained">Register for CA Programme
-                        </ButtonUnstyled></Link>
-                    }
-                   
+                        {
+                            auth ? <><h1 className={styles.btn} > {sel==="yes" ? "Congratulations! You are selected" : "Your Application is in Progress"} </h1><div className={styles.info}>Your application ID is <span style={{ fontWeight: "bold" }}>{app_id}</span></div></> : <Link to='/SignUp'><ButtonUnstyled className={styles.btn} variant="contained">Register for CA Programme
+                            </ButtonUnstyled></Link>
+                        }
+
+                    </div>
                 </div>
-                </div>
-                <div id ="about" className={styles.scroll}><About/></div>
-                <div id = "resp" className={styles.scroll}><Responsibility/></div>
-                <div id="inc" className={styles.scroll}><Incentives/></div>
-                <div id="testimonials" className={styles.scroll}><CarouselComponent/></div>
-                <div id="faq"><Faq/></div>
-                <div id="contact" className={styles.scroll}><Contact/></div>
+                <div id="about" className={styles.scroll}><About /></div>
+                <div id="resp" className={styles.scroll}><Responsibility /></div>
+                <div id="inc" className={styles.scroll}><Incentives /></div>
+                <div id="testimonials" className={styles.scroll}><CarouselComponent /></div>
+                <div id="faq"><Faq /></div>
+                <div id="contact" className={styles.scroll}><Contact /></div>
 
 
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 
