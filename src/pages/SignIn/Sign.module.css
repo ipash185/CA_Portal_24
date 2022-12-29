@@ -395,6 +395,23 @@ left: 39vw;
 top: 73vh;
 position:absolute;
   }
+  .forget{
+    font-weight: 600;
+    color: blue;
+    height: 3.05vh;
+    width: 100%;
+    left: 39vw;
+    top: 60.6vh;
+    border-radius: nullpx;
+    /* font-family: Montserrat; */
+    font-size: 2.15vh;
+    line-height: 2.636vh;
+    letter-spacing: 0em;
+    text-align: justified;
+    vertical-align: top;
+    cursor: pointer;
+    position: absolute;
+  }
   .PLabel {
     border-radius: nullpx;
 /* font-family: Montserrat; */
@@ -567,7 +584,11 @@ background:#D9D9D9;
     .RememberMe,.ForgotPassword {
       font-size: 1.7vh;
     }
-    .FormLabel1,.FormLabel3,.In3,.PLabel3,.FormLabel4,.PLabel5,.PLabel7,.PIn7,.PLabel6,.PIn6,.PLabel9,.PIn9,.In1,.PIn3,.In4,.PIn5 {
+    .FormLabel1,.FormLabel3,.In3,.PLabel3,.FormLabel4,.PLabel5,.PLabel7,.PIn7,.PLabel6,.PIn6,.PLabel9,.PIn9,.In1,.PIn3,.In4,.PIn5{
+      left:13vw;
+      font-size:1.9vh;
+    }
+    .forget{
       left:13vw;
       font-size:1.9vh;
     }

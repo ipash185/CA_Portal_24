@@ -21,6 +21,9 @@ const SignIn = () => {
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(true);
   const [rep, setRep] = useState(false)
+  const [forget, setForget] = useState(false);
+  const [femail, setFemail] = useState("");
+  const [text, setText] = useState("")
 
 
   const location = useLocation();
@@ -71,6 +74,42 @@ const SignIn = () => {
 
 
   };
+
+  const handleForgetSubmit = (e) => {
+    e.preventDefault();
+    const user = { "email": femail };
+
+    setLoading(true);
+
+    Api.post(`/user/updatePassword/`, user).then((response) => {
+      if (response.status !== 200) {
+        throw new Error(response.status);
+      }
+
+      setError(false)
+      setLoading(false)
+
+      setError("Check Mail")
+      setFemail("")
+      setOpen(true)
+      setText("Check your mail. It may take upto a minute.")
+      console.log(response);
+
+    }).catch((err) => {
+      console.log(err?.response?.data?.message)
+      console.log(err?.response?.status)
+      // setMessage(err.toString());
+      setError("could not reset password");
+      if(err.response.status == 401)
+      setText("No Account Found. Try Again");
+      else
+      setText("Server busy. Click again after 5 minutes");
+      setOpen(true)
+      setLoading(false);
+      console.log(err);
+      // setStatus("error");
+    })
+  }
 
   return (
     <div>
@@ -124,15 +163,38 @@ const SignIn = () => {
           <img src={img1} />
           <div className='SideDivT'><h1>CA Programme Registration</h1></div>
         </div>
-        <div className={styles.Sign1}>SIGN IN</div>
+        <div className={styles.Sign1}>{forget ? "Forgot Password" : "SIGN IN"}</div>
 
 
         <div className={styles.FormLabel3}>EMAIL-ID</div>
-        <input type="text" className={styles.In3} onChange={(e) => { setEmail(e.target.value) }}></input>
+
+        {forget ? <input type="text" className={styles.In3} onChange={(e) => { setFemail(e.target.value) }}></input>
+          : <div><input type="text" className={styles.In3} onChange={(e) => { setEmail(e.target.value) }}></input>
         <div className={styles.FormLabel4} >PASSWORD</div>
-        <input type="password" className={styles.In4} onChange={(e) => { setPassword(e.target.value); }}></input>
+        <input type="password" className={styles.In4} onChange={(e) => { setPassword(e.target.value); }}></input></div>}
         <div id='Eye'></div>
 
+        <div className={styles.forget} onClick={() => { setForget(!forget) }}>{forget?"Sign In" :"Forgot Password?"}</div>
+
+        {forget?
+        <button onClick={handleForgetSubmit} style={{ cursor: "pointer", color: "white" }} className={styles.SignInB} >
+
+        {loading ? (
+          <span style={{ marginRight: '9px', marginTop: "5px" }}>
+            <TailSpin width='20' height='12' /> Processing
+          </span>
+        ) : (
+          <>
+          {
+            text == ""?
+            <span className='ButtonLabel'>Reset Password. </span>:
+            <span className='ButtonLabel'>{text}</span>
+          }
+          </>
+        )}
+      </button>
+        :
+        
         <button onClick={handleSubmit} style={{ cursor: "pointer", color: "white" }} className={styles.SignInB} >
 
           {loading ? (
@@ -143,10 +205,8 @@ const SignIn = () => {
             ''
           )}
 
-          <span className='ButtonLabel'>Sign In</span>
+          <span className='ButtonLabel'>Sign In </span></button>}
 
-
-        </button>
         {/* <div className={styles.SignInT} >Sign In</div> */}
         <div className={styles.Linksto}>New Here ? <Link to='/SignUp'>Sign Up</Link></div>
       </div>
