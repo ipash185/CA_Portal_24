@@ -1,0 +1,27 @@
+.faq_div p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color:#354A7F
+}
+
+.faq_div{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* .MuiTypography-root{
+    color: black !important;
+} */
+
+@media only screen and (max-width:1200px){
+    .faq_div{
+        width:95%;
+        margin: 0 auto;
+
+    }
+}

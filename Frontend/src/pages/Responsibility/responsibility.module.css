@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Mplus;
+    src: url("../../fonts/Mplus1p-Regular.otf");
+  }
+
+.cov{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    /* gap: 2rem; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-bottom: 20rem;
+}
+
+.card{
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-items: center;
+    background: white;
+    text-align: center;
+    padding: 2rem 4rem;
+    transition: all 0.3s;
+    z-index: 20;
+    max-height: 50vh;
+    min-height: 50vh;
+    width: 30rem;
+    /* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    box-sizing: border-box;
+    /* border-radius: 30rem; */
+    background: grey;
+    background-position: center;
+    background-size:cover;
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: 8rem;
+    transition: all ease 0.3s;
+}
+
+.para{
+    display: none;
+    color: #4D4141;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+
+}
+
+.pos{
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+.card:hover .para{
+    display: block;
+}
+
+.card:hover .circle{
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .card{
+        width: 45%;
+        height: max-content;
+        margin: 1.4rem 0 1.4rem 0;
+    }
+
+    .card .para{
+        font-size: 3rem;
+    }
+
+    .pos{
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card{
+        width: 70%;
+        height: max-content;
+        margin: 1.4rem 0 1.4rem 0;
+    }
+
+    .card .para{
+        font-size: 2rem;
+    }
+
+    .pos{
+        font-size: 2.2rem;
+    }
+  }
