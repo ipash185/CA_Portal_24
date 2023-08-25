@@ -13,7 +13,7 @@ function useForm({ form, additionalData, endpointUrl }) {
   const [message, setMessage] = useState("");
 
   const showSuccessMessage = ()=>{
-    return <h1> Register Successfully</h1>
+    return <h1> Registered Successfully</h1>
   }
 
   const showErrorMessage = ()=>{
@@ -71,7 +71,7 @@ function useForm({ form, additionalData, endpointUrl }) {
     }
   };
 
-  <h1>Registeration Successfull</h1>
+  <h1>Registration Successful</h1>
 
   return { handleSubmit, status, message,message };
 }
